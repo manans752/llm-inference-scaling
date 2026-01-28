@@ -1,32 +1,24 @@
-import torch
-from transformers import AutoTokenizer, AutoModelForCausalLM
+import os
+import requests
+import json
+from pathlib import Path
 
-MODEL_NAME = "mistralai/Mistral-7B-Instruct-v0.3"
+HF_TOKEN = os.getenv("HF_TOKEN")
+API_URL = os.getenv("API_URL")
+headers = {"Authorization": f"Bearer {HF_TOKEN}"}
 
-tokenizer = AutoTokenizer.from_pretrained(
-    MODEL_NAME,
-    use_fast=True
-)
+HERE = Path(__file__).parent
+PATH_TO_TASKS = HERE.parent / "data" / "tasks.json"
 
-if tokenizer.pad_token is None:
-    tokenizer.pad_token = tokenizer.eos_token
+with PATH_TO_TASKS.open("r", encoding="utf-8") as f:
+    tasks = json.load(f)
 
-model = AutoModelForCausalLM.from_pretrained(
-    MODEL_NAME,
-    dtype=torch.float16,
-    device_map="auto"
-)
+print(f"Confirm loaded {len(tasks)} tasks.")
 
-model.eval()
+def query(prompt):
+    response = requests.post(API_URL, headers=headers, json={"inputs": prompt})
+    return response.json()
+
 
 def format_prompt(question: str) -> str:
     return f"<s>[INST] {question} [/INST]"
-
-
-
-def tokenize_prompt(prompt: str):
-    return tokenizer(
-        prompt,
-        return_tensors="pt",
-        add_special_tokens=False
-    )
