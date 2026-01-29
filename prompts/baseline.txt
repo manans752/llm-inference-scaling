@@ -1,0 +1,5 @@
+Answer the following question directly and concisely.
+
+Question: {question}
+
+Answer:
