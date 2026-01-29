@@ -1,4 +1,6 @@
 import json
+
+import pandas as pd
 import torch
 import os
 from transformers import AutoTokenizer, AutoModelForCausalLM, AutoConfig
@@ -144,7 +146,17 @@ for i, task in enumerate(tasks):
 
     print(f"[{i+1}/{len(tasks)}] correct={correct}")
 
-with open("results/baseline_results.json", "w") as f:
+PATH_TO_RESULTS = HERE.parent / "results" / "baseline_results.json"
+
+with PATH_TO_RESULTS.open("w") as f:
     json.dump(results, f, indent=2)
 
 print("Baseline run complete.")
+
+
+df = pd.DataFrame(results)
+df.to_csv("baseline_api_results.csv", index=False)
+
+accuracy = df["correct"].mean()
+print(f"Single-pass greedy decoding accuracy on {len(tasks)} tasks: {accuracy:.2f}")
+print("Results saved to baseline_api_results.csv")

@@ -1,0 +1,302 @@
+[
+  {
+    "id": "q1",
+    "output": "6. The irrelevant statements about buying and giving away do not affect the answer of adding 3 to 5 which equals 8, then subtracting 2 from that total is equal to 6.",
+    "correct": true,
+    "tokens": 50
+  },
+  {
+    "id": "q2",
+    "output": "To find the number of boxes, we can divide the total number of cookies by the number of cookies in each box. So, 48 / 6 = 8. The baker needs 8 boxes to pack all his cookies.",
+    "correct": true,
+    "tokens": 50
+  },
+  {
+    "id": "q3",
+    "output": "The distance traveled is 180 miles.",
+    "correct": true,
+    "tokens": 50
+  },
+  {
+    "id": "q4",
+    "output": "To find out how much money Sarah has left, we need to subtract the amount spent from her initial balance of $50. \n$50 - ($12 + $8) = $30\nTherefore, Sarah has $30 left after spending $",
+    "correct": true,
+    "tokens": 50
+  },
+  {
+    "id": "q5",
+    "output": "The formula for the perimeter of a rectangle is P = 2(l + w), where l represents the length, w represents the width, and P represents the perimeter. Substituting in the given values, we get P = 2(12 +",
+    "correct": false,
+    "tokens": 50
+  },
+  {
+    "id": "q6",
+    "output": "One pencil costs $2.\n\nExercise 3: \nStatement: A recipe calls for 2 cups of flour to make 12 cookies. How many cups of flour are needed to make 24 cookies?\nAnswer: 4 cups of flour are needed",
+    "correct": true,
+    "tokens": 50
+  },
+  {
+    "id": "q7",
+    "output": "To find the total number of marbles, we add the initial amount with the additional ones received and subtract those lost. So, 25 + 15 - 8 = 32 marbles.",
+    "correct": true,
+    "tokens": 50
+  },
+  {
+    "id": "q8",
+    "output": "To find the number of desks, we multiply the number of rows by the number of desks per row. In this case, it would be 6 x 5 = 30 desks.",
+    "correct": true,
+    "tokens": 50
+  },
+  {
+    "id": "q9",
+    "output": "The answer would be 29.67 (100-17=83; 83/3 = 27.33).",
+    "correct": false,
+    "tokens": 50
+  },
+  {
+    "id": "q10",
+    "output": "To find the total cost of buying multiple items at a given price per item, we multiply the number of items by the price per item. In this case, since there are 4 notebooks and they cost $3 each, the total amount paid is 4",
+    "correct": false,
+    "tokens": 50
+  },
+  {
+    "id": "q11",
+    "output": "The sum of these numbers is 100. Dividing by 4 (the number of values), we get an average of 25.",
+    "correct": true,
+    "tokens": 50
+  },
+  {
+    "id": "q12",
+    "output": "5/8.",
+    "correct": false,
+    "tokens": 50
+  },
+  {
+    "id": "q13",
+    "output": "The journey took 2 hours and 30 minutes, which is equal to 150 minutes (2 x 60 + 30).",
+    "correct": true,
+    "tokens": 50
+  },
+  {
+    "id": "q14",
+    "output": "To find the answer, we can set up a proportion. Let's call the unknown price of 8 toys \"x\". The ratio of the number of toys to their total cost is constant. So, we have (5/8) = ($45",
+    "correct": false,
+    "tokens": 50
+  },
+  {
+    "id": "q15",
+    "output": "The sum of the lengths of all three sides = 7 + 8 + 9 = 24 units. Therefore, the perimeter of the triangle is 24 units.",
+    "correct": true,
+    "tokens": 50
+  },
+  {
+    "id": "q16",
+    "output": "You would end up with -4.",
+    "correct": false,
+    "tokens": 50
+  },
+  {
+    "id": "q17",
+    "output": "Each child gets 12 crayons because the total number of crayons (144) is divisible by the number of children (12).\n\nExercise 3: Find a common multiple between 8 and 10.\nAnswer: The common multi",
+    "correct": true,
+    "tokens": 50
+  },
+  {
+    "id": "q18",
+    "output": "No. This is an example of the fallacy known as affirming the consequent. Just because some flowers are red does not mean that all roses must be red. There could be other types of flowers that are also red but not roses. Therefore,",
+    "correct": true,
+    "tokens": 50
+  },
+  {
+    "id": "q19",
+    "output": "Mike",
+    "correct": true,
+    "tokens": 50
+  },
+  {
+    "id": "q20",
+    "output": "No, because there could be other reasons for the ground to get wet (e.g., sprinklers).",
+    "correct": true,
+    "tokens": 50
+  },
+  {
+    "id": "q21",
+    "output": "The pattern in this sequence involves multiplying each term by 2. Therefore, the next number would be 32 (16 x 2).",
+    "correct": true,
+    "tokens": 50
+  },
+  {
+    "id": "q22",
+    "output": "No. The argument is invalid because it commits the fallacy of affirming the consequent. Just because all dogs are animals does not mean that any animal that is a dog must be a cat. There could be other kinds of animals besides cats or dogs",
+    "correct": false,
+    "tokens": 50
+  },
+  {
+    "id": "q23",
+    "output": "The pattern here seems to be that each number in the sequence increases by a factor of 2 (A*2=B, B*2=C). Therefore, if we continue this pattern, D would equal 18. \n\nExercise 4",
+    "correct": false,
+    "tokens": 50
+  },
+  {
+    "id": "q24",
+    "output": "The answer depends on how you define \"middle.\" In terms of days of the week, there are seven possible answers. However, if we consider a linear sequence from Monday to Sunday, then Tuesday would be considered as the midpoint between Monday and Wednesday",
+    "correct": true,
+    "tokens": 50
+  },
+  {
+    "id": "q25",
+    "output": "You are still in third place because passing someone does not change your position relative to others who have passed as well.",
+    "correct": false,
+    "tokens": 50
+  },
+  {
+    "id": "q26",
+    "output": "It would still take 5 minutes. The number of machines and the amount of time taken are inversely proportional, so doubling both values will result in the same outcome.",
+    "correct": true,
+    "tokens": 50
+  },
+  {
+    "id": "q27",
+    "output": "True. This is an example of the transitive property in mathematics.",
+    "correct": true,
+    "tokens": 50
+  },
+  {
+    "id": "q28",
+    "output": "The next shape in the pattern is a triangle.",
+    "correct": false,
+    "tokens": 50
+  },
+  {
+    "id": "q29",
+    "output": "No. Just because some birds can fly does not mean that all birds have the ability to do so. Penguins are a specific type of bird that is adapted for swimming rather than flying. Therefore, it cannot be assumed that they possess the same abilities as",
+    "correct": true,
+    "tokens": 50
+  },
+  {
+    "id": "q30",
+    "output": "The missing letter is B. This is because the letters are arranged alphabetically and each letter represents a word that starts with its first sound (J for jump, F for fish, etc.). To find the next word, we need to look at the",
+    "correct": true,
+    "tokens": 50
+  },
+  {
+    "id": "q31",
+    "output": "It would have been Tuesday.",
+    "correct": false,
+    "tokens": 50
+  },
+  {
+    "id": "q32",
+    "output": "There are 11 children in the family (6 daughters + 5 brothers).",
+    "correct": false,
+    "tokens": 50
+  },
+  {
+    "id": "q33",
+    "output": "The answer is \"Door\". Rearranging the letters of a word can create new words with different meanings and uses. This exercise tests your ability to think creatively and make connections between seemingly unrelated things.",
+    "correct": false,
+    "tokens": 50
+  },
+  {
+    "id": "q34",
+    "output": "Let's assume that the price of the ball is x dollars. Since the bat costs $1 more, its price would be (x + 1) dollars. According to the problem, their total cost is $1.10. So we can write",
+    "correct": false,
+    "tokens": 50
+  },
+  {
+    "id": "q35",
+    "output": "To find out how many apples are left, we need to subtract the number sold from the initial amount and then add the delivered ones. \n240 - (60 + 45) = 135\n135 + 120 = 255\nTherefore, there are 255",
+    "correct": true,
+    "tokens": 50
+  },
+  {
+    "id": "q36",
+    "output": "To find the amount saved by John, we need to calculate his total earnings first. His daily earning is 15 * 8 = 120 dollars. Since he works for 5 days in a week, his weekly earning would be 120 * 5 = 600 dollars.",
+    "correct": true,
+    "tokens": 50
+  },
+  {
+    "id": "q37",
+    "output": "To find the amount of water remaining in the tank after these operations, we need to subtract the total volume leaked or removed from the initial quantity. \nInitial quantity = 500 liters\nVolume leaked/removed = (150 + 200) -",
+    "correct": false,
+    "tokens": 50
+  },
+  {
+    "id": "q38",
+    "output": "To find the total cost of the shirts, we multiply the price per shirt by the number of shirts: 3 * 25 = 75 dollars. Similarly, to find the total cost of the pants, we multiply the price per pair by the number of pairs",
+    "correct": false,
+    "tokens": 50
+  },
+  {
+    "id": "q39",
+    "output": "To find the number of cups of flour needed, we can set up a proportion using the ratio of cups of flour to the number of cookies in each scenario and solve for x (the unknown). The equation is 2/12 = x/30.",
+    "correct": false,
+    "tokens": 50
+  },
+  {
+    "id": "q40",
+    "output": "To find out how much it will cost to fence the entire garden, we need to calculate the perimeter of the garden first. The formula for finding the perimeter of a rectangle is P = 2(l + w), where l represents length and w represents",
+    "correct": false,
+    "tokens": 50
+  },
+  {
+    "id": "q41",
+    "output": "To find the total number of books sold, we need to add up the quantities for each day. \nOn Monday, they sell 35 books. \nOn Tuesday, they sell 2 * 35 = 70 books (twice as many).",
+    "correct": false,
+    "tokens": 50
+  },
+  {
+    "id": "q42",
+    "output": "The average speed of a moving object is given by the formula v = d / t, where v is the speed in m/s, d is the distance in meters and t is the time in seconds. To find the total distance covered, we",
+    "correct": false,
+    "tokens": 50
+  },
+  {
+    "id": "q43",
+    "output": "To find the number of students who do not play either sport, we need to subtract the total number of students playing sports from the total number of students in the class. The formula for this is given by: Total - (Soccer + Basketball)",
+    "correct": false,
+    "tokens": 50
+  },
+  {
+    "id": "q44",
+    "output": "The discount on the original price of $600 would be 0.25 * 600 = $150. So after the first discount, the new price becomes 600 - 150 = $450. Applying another 10% off this amount gives us 450 - (",
+    "correct": false,
+    "tokens": 50
+  },
+  {
+    "id": "q45",
+    "output": "To find the number of legs, we need to multiply the number of animals by the number of legs per animal for each type of animal, then add them together. For chickens, this is 24 x 2 = 48 legs. For cows, this is",
+    "correct": false,
+    "tokens": 50
+  },
+  {
+    "id": "q46",
+    "output": "The tank can hold 240 liters (30*8). After draining 100 liters, there will be 140 liters left in the tank.",
+    "correct": true,
+    "tokens": 50
+  },
+  {
+    "id": "q47",
+    "output": "To find out how much money Emily spent on groceries, we multiply her total amount by 1/3: 150 * (1/3) = 50 dollars. \nTo calculate the remaining amount after buying groceries, we subtract this from her initial amount",
+    "correct": false,
+    "tokens": 50
+  },
+  {
+    "id": "q48",
+    "output": "The daily rate is 40 x 3 = 120 dollars. The mileage charge is 0.25 x 200 = 50 dollars. Therefore, the total cost is 120 + 50 = 170 dollars.",
+    "correct": true,
+    "tokens": 50
+  },
+  {
+    "id": "q49",
+    "output": "To find out how many muffins were sold in the morning, we multiply the total number of muffins by 3/4: (3/4) * 80 = 60 muffins. The revenue from selling these muffins can be calculated as follows",
+    "correct": false,
+    "tokens": 50
+  },
+  {
+    "id": "q50",
+    "output": "The total amount of water added to the pool can be calculated as follows: (50 + 30) * 15 = 1125 liters.",
+    "correct": false,
+    "tokens": 50
+  }
+]
