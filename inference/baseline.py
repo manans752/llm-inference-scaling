@@ -67,9 +67,9 @@ def tokenize_prompt(prompt: str):
         return_tensors="pt"
     )
 
-def single_pass_generate(prompt: str, max_new_tokens: int):
+def generate(prompt: str, max_new_tokens: int):
     inputs = tokenize_prompt(prompt)
-    inputs = {k: v.to(model.device) for k, v in inputs.items()}
+    inputs = {k: v.to(model.device) for k, v in inputs.items()} #move tensor value to the same device as model, no operation if tensors are already on device.
 
     input_len = inputs["input_ids"].shape[1]
 
@@ -132,7 +132,7 @@ results = []
 
 for i, task in enumerate(tasks):
     prompt = format_prompt(task["question"])
-    output = single_pass_generate(prompt, MAX_NEW_TOKENS)
+    output = generate(prompt, MAX_NEW_TOKENS)
 
     correct = str(task["answer"]) in output
     print(f"Task {i}: {task['question']}: {task['answer']}: output: {output}")
