@@ -1,5 +1,5 @@
 import json
-
+import re
 import pandas as pd
 import torch
 import os
@@ -13,14 +13,16 @@ TOKEN_BUDGETS = [50,100,200]
 
 def prompt_explicit_cot(question: str) -> str:
     return (
-        f"Question: {question.strip()}\n"
-        "Answer: Let's solve step by step.\n"
+        f"Question: {question.strip}\n"
+        "Solve step by step.\n"
+        "End with: Final Answer: <answer>\n"
     )
 
 def prompt_constrained_cot(question: str) -> str:
     return (
         f"Question: {question.strip()}\n"
-        "Answer: Solve step by step using at most 5 short steps.\n"
+        "Solve in at most 5 short steps.\n"
+        "End with: Final Answer: <answer>\n"
     )
 
 PROMPTS = {
@@ -63,6 +65,44 @@ model = AutoModelForCausalLM.from_pretrained(
 
 model.eval()
 
+
+def extract_final_answer(text: str):
+    match = re.search(r"Final Answer:\s*(.*)", text, re.IGNORECASE)
+    if match:
+        return match.group(1).strip()
+    lines = [l.strip() for l in text.split("\n") if l.strip()]
+    return lines[0] if lines else None
+
+def normalise(ans: str): # yes = YES
+    if ans is None:
+        return None
+    return ans.strip().lower()
+
+def answers_match(pred: str, target_answer: str): #ensure semantically equal answers are not marked false
+    if pred is None or target_answer is None:
+        return False
+
+    pred = pred.strip().lower()
+    target_answer = target_answer.strip().lower()
+
+    # target_answer  is numeric
+    if target_answer.replace(".", "", 1).isdigit():
+
+        # extract first number from prediction
+        match = re.search(r"-?\d+(\.\d+)?", pred)
+
+        if match:
+            pred_num = match.group(0)
+            return pred_num == target_answer
+
+        return False
+
+    # target_answer is text
+    pred = re.sub(r"[^a-z0-9]", "", pred)
+    target_answer = re.sub(r"[^a-z0-9]", "", target_answer)
+
+    return pred == target_answer
+
 # #returns a dictionary
 # def tokenize_prompt(prompt: str):
 #     return tokenizer(
@@ -86,8 +126,8 @@ def generate(prompt: str, max_new_tokens: int):
         )
 
 
-    print(f"Full output shape: {outputs.shape}")
-    print(f"Full output: {outputs}")
+    # print(f"Full output shape: {outputs.shape}")
+    # print(f"Full output: {outputs}")
 
     # Slice off the prompt tokens b/c model is causal LM, it returns prompt tokens + generated tokens
     generated_tokens = outputs[0][input_len:]
@@ -97,15 +137,15 @@ def generate(prompt: str, max_new_tokens: int):
         stop_idx = generated_list.index(0)
         generated_tokens = generated_tokens[:stop_idx]
 
-    print(outputs)
+    # print(outputs)
     # Debug: print token IDs
-    print(f"Generated token IDs: {generated_tokens[:10]}")  # First 10
+    # print(f"Generated token IDs: {generated_tokens[:10]}")  # First 10
 
     decoded = tokenizer.decode(
         generated_tokens,
         skip_special_tokens=True
     )
-    print(f"Decoded tokens: {decoded}")
+    # print(f"Decoded tokens: {decoded}")
 
     return decoded.strip()
 
@@ -114,15 +154,16 @@ results = []
 
 for task in tasks:
     q = task["question"]
-    ans = str(task["answer"])
+    ans = normalise(str(task["answer"]))
 
     for strategy_name, prompt_fn in PROMPTS.items():
         for budget in TOKEN_BUDGETS:
 
             prompt = prompt_fn(q)
             output = generate(prompt, budget)
+            prediction = normalise(extract_final_answer(output))
 
-            correct = ans in output
+            correct = answers_match(prediction, ans)
             results.append({
                 "id": task["id"],
                 "strategy": strategy_name,
@@ -133,13 +174,10 @@ for task in tasks:
 
             print(f"[{strategy_name}] budget={budget} correct={correct}")
 
-
 PATH_TO_RESULTS = HERE.parent / "results" / "cot_results.json"
 
 with PATH_TO_RESULTS.open("w") as f:
     json.dump(results, f, indent=2)
-
-print("Baseline run complete.")
 
 df = pd.DataFrame(results)
 df.to_csv(RESULTS_PATH, index=False)
