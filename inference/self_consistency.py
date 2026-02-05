@@ -1,6 +1,7 @@
 import json
 import torch
 import pandas as pd
+import re
 from pathlib import Path
 from collections import Counter
 from transformers import AutoTokenizer, AutoModelForCausalLM, AutoConfig
@@ -57,7 +58,8 @@ def sample(prompt: str, max_new_tokens=100):
             max_new_tokens=max_new_tokens,
             do_sample=True, #don't always pick the most likely token, sample from distribution
             temperature=0.7, #randomness of output, will produce different reasoning paths
-            top_p=0.9 #guarantees we only pick from 'reasonable' tokens
+            top_p=0.9, #guarantees we only pick from 'reasonable' tokens
+            repetition_penalty=1.1 #ensure we don't get stuck in loops
         )
 
     generated_tokens = output_ids[0][input_len:]
@@ -74,12 +76,33 @@ def sample(prompt: str, max_new_tokens=100):
 
     return decoded.strip()
 
+def extract_final_number(text: str) -> str:
+    text = text.strip()
+
+    # Find all integers or decimals
+    numbers = re.findall(r"-?\d+\.?\d*", text)
+
+    if not numbers:
+        return ""
+
+    return numbers[-1]  # last number should be the final answer
+
 def majority_vote(outputs):
-    answers = [o.split()[-1] for o in outputs if len(o.split()) > 0]
-    return Counter(answers).most_common(1)[0][0]
+    answers = [extract_final_number(o) for o in outputs]
+    answers = [x for x in answers if x != ""]
+
+    if len(answers) == 0:
+        return "", answers
+
+    vote = Counter(answers)
+    final_answer = vote.most_common(1)[0][0]
+
+    return final_answer, answers
 
 results = []
-for task in tasks:
+tasks_small = tasks[1:3]
+print(tasks_small)
+for task in tasks_small:
     q = task["question"]
     answer = str(task["answer"])
 
@@ -88,21 +111,29 @@ for task in tasks:
     for n in N_SAMPLES:
 
         samples = [sample(prompt) for _ in range(n)]
-        final = majority_vote(samples)
 
-        correct = answer in final
+        final_answer, extracted_answers = majority_vote(samples)
 
-        variance = len(set(samples)) / n
+        correct = (final_answer == answer)
+
+        #disagreement across extracted answers
+        variance = len(set(extracted_answers)) / len(extracted_answers)
 
         results.append({
             "id": task["id"],
             "N": n,
-            "final_answer": final,
+            "final_answer": final_answer,
             "correct": correct,
             "variance": variance
         })
 
-        print(f"N={n} correct={correct} variance={variance:.2f}")
+        print(f"Task={task['id']} N={n}")
+        print("Extracted answers:", extracted_answers)
+        print("Final vote:", final_answer)
+        print("Correct:", correct)
+        print("Variance:", variance)
+
+        # print(f"N={n} correct={correct} variance={variance:.2f}")
 
 PATH_TO_RESULTS = HERE.parent / "results" / "self_consistency_results.json"
 
@@ -111,6 +142,7 @@ with PATH_TO_RESULTS.open("w") as f:
 
 df = pd.DataFrame(results)
 df.to_csv(RESULTS_PATH, index=False)
-
 print("Saved to", RESULTS_PATH)
+
+print("\nAccuracy by sample count:")
 print(df.groupby("N")["correct"].mean())
