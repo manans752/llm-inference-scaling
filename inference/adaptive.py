@@ -1,4 +1,5 @@
 import json
+import re
 import torch
 import pandas as pd
 from pathlib import Path
@@ -69,10 +70,67 @@ def generate(prompt, max_new_tokens):
 
     return decoded.strip()
 
-def low_confidence(output: str):
-    if len(output.split()) <2: #too short
+def base_prompt(q: str):
+    return (
+        "Solve the problem and output ONLY the final number.\n\n"
+        f"Problem: {q}\n"
+        "Final Answer:"
+    )
+
+def cot_prompt(q: str):
+    return (
+        "Solve the problem step by step.\n"
+        "End with 'Final Answer: <number>'.\n\n"
+        f"Problem: {q}\n"
+    )
+
+def extract_final_answer(text: str):
+    match = re.search(r"Final Answer:\s*(.*)", text, re.IGNORECASE)
+    if match:
+        return match.group(1).strip()
+    lines = [l.strip() for l in text.split("\n") if l.strip()]
+    return lines[0] if lines else None
+
+
+def normalise(ans: str): # yes = YES
+    if ans is None:
+        return None
+    return ans.strip().lower()
+
+def answers_match(pred: str, target_answer: str): #ensure semantically equal answers are not marked false
+    if pred is None or target_answer is None:
+        return False
+
+    pred = pred.strip().lower()
+    target_answer = target_answer.strip().lower()
+
+    # target_answer  is numeric
+    if target_answer.replace(".", "", 1).isdigit():
+
+        # extract first number from prediction
+        match = re.search(r"-?\d+(\.\d+)?", pred)
+
+        if match:
+            pred_num = match.group(0)
+            return pred_num == target_answer
+
+        return False
+
+    # target_answer is text
+    pred = re.sub(r"[^a-z0-9]", "", pred)
+    target_answer = re.sub(r"[^a-z0-9]", "", target_answer)
+
+    return pred == target_answer
+
+def low_confidence(output: str): #True if output seems unreliable
+    ans = extract_final_answer(output)
+    if ans is None:
         return True
-    if not any(ch.isdigit() for ch in output): #no number in answer
+    if len(ans.strip()) == 0: # answer too short
+        return True
+    if len(ans.split()) > 6: # answer too long = model is rambling
+        return True
+    if len(output.split()) > 60: # output too long = drifting away
         return True
     return False
 
@@ -82,26 +140,29 @@ print(tasks_small)
 
 for task in tasks_small:
     q = task["question"]
-    answer = str(task["answer"])
+    answer = normalise(str(task["answer"]))
 
-    prompt = f"Question: {q}\nAnswer: (only include the final result, dont restate the question)"
-    output = generate(prompt, 30)
-    tokens_used = 30
+    prompt = base_prompt(q)
+    output = generate(prompt, max_new_tokens=20)
+    prediction = normalise(extract_final_answer(output))
+    tokens_used = 20
 
-    conf_low = low_confidence(output);
-    if conf_low:
-        prompt = f"Question: {q}\nAnswer: Let's solve step by step.\n"
-        output = generate(prompt, 150)
-        tokens_used = 150
+    if prediction is None or low_confidence(output):
+        prompt = cot_prompt(q)
+        output = generate(prompt, max_new_tokens=120)
+        prediction = normalise(extract_final_answer(output))
+        tokens_used = 120
 
-    correct = str(task["answer"]) in output
+
+
+    print(prediction, answer)
+    correct = answers_match(prediction, answer)
 
     results.append({
         "id": task["id"],
         "output": output,
         "correct": correct,
-        "tokens_used": tokens_used,
-        "low confidence": conf_low,
+        "tokens_used": tokens_used
     })
 
     print("Correct:", correct, "Tokens:", tokens_used)
