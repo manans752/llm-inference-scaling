@@ -46,6 +46,44 @@ model = AutoModelForCausalLM.from_pretrained(
 
 model.eval()
 
+def extract_final_answer(text: str):
+    match = re.search(r"Final Answer:\s*(.*)", text, re.IGNORECASE)
+    if match:
+        return match.group(1).strip()
+    lines = [l.strip() for l in text.split("\n") if l.strip()]
+    return lines[0] if lines else None
+
+
+def normalise(ans: str): # yes = YES
+    if ans is None:
+        return None
+    return ans.strip().lower()
+
+def answers_match(pred: str, target_answer: str): #ensure semantically equal answers are not marked false
+    if pred is None or target_answer is None:
+        return False
+
+    pred = pred.strip().lower()
+    target_answer = target_answer.strip().lower()
+
+    # target_answer  is numeric
+    if target_answer.replace(".", "", 1).isdigit():
+
+        # extract first number from prediction
+        match = re.search(r"-?\d+(\.\d+)?", pred)
+
+        if match:
+            pred_num = match.group(0)
+            return pred_num == target_answer
+
+        return False
+
+    # target_answer is text
+    pred = re.sub(r"[^a-z0-9]", "", pred)
+    target_answer = re.sub(r"[^a-z0-9]", "", target_answer)
+
+    return pred == target_answer
+
 def sample(prompt: str, max_new_tokens=100):
     inputs = tokenizer(prompt, return_tensors="pt")
     inputs = {k: v.to(model.device) for k, v in inputs.items()}
@@ -76,48 +114,56 @@ def sample(prompt: str, max_new_tokens=100):
 
     return decoded.strip()
 
-def extract_final_number(text: str) -> str:
-    text = text.strip()
+# def extract_final_number(text: str) -> str:
+#     text = text.strip()
+#
+#     # Find all integers or decimals
+#     numbers = re.findall(r"-?\d+\.?\d*", text)
+#
+#     if not numbers:
+#         return ""
+#
+#     return numbers[-1]  # last number should be the final answer
+#
+# def majority_vote(outputs):
+#     answers = [extract_final_number(o) for o in outputs]
+#     answers = [x for x in answers if x != ""]
+#
+#     if len(answers) == 0:
+#         return "", answers
+#
+#     vote = Counter(answers)
+#     final_answer = vote.most_common(1)[0][0]
+#
+#     return final_answer, answers
 
-    # Find all integers or decimals
-    numbers = re.findall(r"-?\d+\.?\d*", text)
-
-    if not numbers:
-        return ""
-
-    return numbers[-1]  # last number should be the final answer
-
-def majority_vote(outputs):
-    answers = [extract_final_number(o) for o in outputs]
-    answers = [x for x in answers if x != ""]
-
-    if len(answers) == 0:
-        return "", answers
-
-    vote = Counter(answers)
-    final_answer = vote.most_common(1)[0][0]
-
-    return final_answer, answers
+def majority_vote(predictions):
+    vote = Counter(predictions)
+    return vote.most_common(1)[0][0]
 
 results = []
-tasks_small = tasks[1:3]
-print(tasks_small)
-for task in tasks_small:
+# tasks_small = tasks[1:3]
+# print(tasks_small)
+for task in tasks:
     q = task["question"]
-    answer = str(task["answer"])
+    answer = normalise(str(task["answer"]))
 
-    prompt = f"Question: {q}\nAnswer:"
+    prompt = (
+        f"Problem: {task['question']}\n"
+        "Solve step by step.\n"
+        "End with: Final Answer: <answer>\n"
+    )
 
     for n in N_SAMPLES:
-
         samples = [sample(prompt) for _ in range(n)]
 
-        final_answer, extracted_answers = majority_vote(samples)
+        final_answer = majority_vote(samples)
 
-        correct = (final_answer == answer)
+        correct = answers_match(final_answer, answer)
+
 
         #disagreement across extracted answers
-        variance = len(set(extracted_answers)) / len(extracted_answers)
+        variance = len(set(samples)) / len(samples)
 
         results.append({
             "id": task["id"],
@@ -128,7 +174,7 @@ for task in tasks_small:
         })
 
         print(f"Task={task['id']} N={n}")
-        print("Extracted answers:", extracted_answers)
+        # print("Extracted answers:", extracted_answers)
         print("Final vote:", final_answer)
         print("Correct:", correct)
         print("Variance:", variance)
