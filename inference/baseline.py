@@ -1,5 +1,5 @@
 import json
-
+import re
 import pandas as pd
 import torch
 import os
@@ -19,8 +19,8 @@ if tokenizer.pad_token is None:
     tokenizer.pad_token = tokenizer.eos_token
     tokenizer.pad_token_id = tokenizer.eos_token_id
 
-print(f"EOS token ID: {tokenizer.eos_token_id}")
-print(f"Pad token ID: {tokenizer.pad_token_id}")
+# print(f"EOS token ID: {tokenizer.eos_token_id}")
+# print(f"Pad token ID: {tokenizer.pad_token_id}")
 
 HERE = Path(__file__).parent
 PATH_TO_TASKS = HERE.parent / "data" / "tasks.json"
@@ -52,9 +52,49 @@ model = AutoModelForCausalLM.from_pretrained(
 # print(f"Model generation config pad_token_id: {model.generation_config.pad_token_id}")
 model.eval()
 
+def extract_final_answer(text: str):
+    match = re.search(r"Final Answer:\s*(.*)", text, re.IGNORECASE)
+    if match:
+        return match.group(1).strip()
+    lines = [l.strip() for l in text.split("\n") if l.strip()]
+    return lines[0] if lines else None
+
+def normalise(ans: str): # yes = YES
+    if ans is None:
+        return None
+    return ans.strip().lower()
+
+def answers_match(pred: str, target_answer: str): #ensure semantically equal answers are not marked false
+    if pred is None or target_answer is None:
+        return False
+
+    pred = pred.strip().lower()
+    target_answer = target_answer.strip().lower()
+
+    # target_answer  is numeric
+    if target_answer.replace(".", "", 1).isdigit():
+
+        # extract first number from prediction
+        match = re.search(r"-?\d+(\.\d+)?", pred)
+
+        if match:
+            pred_num = match.group(0)
+            return pred_num == target_answer
+
+        return False
+
+    # target_answer is text
+    pred = re.sub(r"[^a-z0-9]", "", pred)
+    target_answer = re.sub(r"[^a-z0-9]", "", target_answer)
+
+    return pred == target_answer
+
 def format_prompt(question: str) -> str:
-    # return question.strip()
-    return f"Question: {question.strip()}\nAnswer:"
+    return (
+        "Solve the problem and output ONLY the final number.\n\n"
+        f"Problem: {question}\n"
+        "Final Answer:"
+    )
 
 
 # print("tokenizer is:", tokenizer)
@@ -133,8 +173,11 @@ results = []
 for i, task in enumerate(tasks):
     prompt = format_prompt(task["question"])
     output = generate(prompt, MAX_NEW_TOKENS)
+    prediction = normalise(extract_final_answer(output))
 
-    correct = str(task["answer"]) in output
+    answer = normalise(str(task["answer"]))
+
+    correct = answers_match(prediction, answer)
     print(f"Task {i}: {task['question']}: {task['answer']}: output: {output}")
 
     results.append({
@@ -152,7 +195,6 @@ with PATH_TO_RESULTS.open("w") as f:
     json.dump(results, f, indent=2)
 
 print("Baseline run complete.")
-
 
 df = pd.DataFrame(results)
 df.to_csv("baseline_api_results.csv", index=False)
