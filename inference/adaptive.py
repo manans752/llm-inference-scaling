@@ -122,23 +122,62 @@ def answers_match(pred: str, target_answer: str): #ensure semantically equal ans
 
     return pred == target_answer
 
-def low_confidence(output: str): #True if output seems unreliable
+# def low_confidence(output: str): #True if output seems unreliable
+#     ans = extract_final_answer(output)
+#     if ans is None:
+#         return True
+#     if len(ans.strip()) == 0: # answer too short
+#         return True
+#     if len(ans.split()) > 6: # answer too long = model is rambling
+#         return True
+#     if len(output.split()) > 60: # output too long = drifting away
+#         return True
+#     return False
+
+def low_confidence(output: str):
     ans = extract_final_answer(output)
     if ans is None:
         return True
-    if len(ans.strip()) == 0: # answer too short
+
+    ans = ans.strip().lower()
+
+    if len(ans) == 0:
         return True
-    if len(ans.split()) > 6: # answer too long = model is rambling
+
+    # placeholder / junk outputs
+    bad_markers = [
+        "<show",
+        "<answer>",
+        "<option>",
+        "step",
+        "solution",
+        "divide",
+        "let x",
+        "|question_end|"
+    ]
+    if any(b in ans for b in bad_markers):
         return True
-    if len(output.split()) > 60: # output too long = drifting away
+
+    # answer too long (rambling)
+    if len(ans.split()) > 6:
         return True
+
+    # output contains multiple numbers → unstable
+    nums = re.findall(r"-?\d+(\.\d+)?", output)
+    if len(nums) > 1:
+        return True
+
+    # output too long overall
+    if len(output.split()) > 50:
+        return True
+
     return False
 
 results = []
-tasks_small = tasks[1:3]
-print(tasks_small)
+# tasks_small = tasks[1:3]
+# print(tasks_small)
 
-for task in tasks_small:
+for task in tasks:
     q = task["question"]
     answer = normalise(str(task["answer"]))
 
@@ -153,10 +192,11 @@ for task in tasks_small:
         prediction = normalise(extract_final_answer(output))
         tokens_used = 120
 
-
-
-    print(prediction, answer)
     correct = answers_match(prediction, answer)
+    print(f"Pred: {prediction} | True: {answer}")
+    print("Correct:", correct, "Tokens:", tokens_used)
+    print("-" * 60)
+
 
     results.append({
         "id": task["id"],
