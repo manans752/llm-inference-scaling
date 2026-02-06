@@ -1,0 +1,352 @@
+[
+  {
+    "id": "q1",
+    "prediction": "alice has 6 apples.",
+    "answer": "6",
+    "correct": true,
+    "tokens_used": 120
+  },
+  {
+    "id": "q2",
+    "prediction": "the baker needs 8 boxes to pack all the cookies.",
+    "answer": "8",
+    "correct": true,
+    "tokens_used": 120
+  },
+  {
+    "id": "q3",
+    "prediction": "the car",
+    "answer": "180",
+    "correct": false,
+    "tokens_used": 120
+  },
+  {
+    "id": "q4",
+    "prediction": "sarah has $30 left.",
+    "answer": "30",
+    "correct": true,
+    "tokens_used": 120
+  },
+  {
+    "id": "q5",
+    "prediction": "the perimeter of the rectangle is 34 cm.",
+    "answer": "34",
+    "correct": true,
+    "tokens_used": 120
+  },
+  {
+    "id": "q6",
+    "prediction": "one pencil costs $2.",
+    "answer": "2",
+    "correct": true,
+    "tokens_used": 120
+  },
+  {
+    "id": "q7",
+    "prediction": "tom has 32 marbles now.",
+    "answer": "32",
+    "correct": true,
+    "tokens_used": 120
+  },
+  {
+    "id": "q8",
+    "prediction": "30 desks.",
+    "answer": "30",
+    "correct": true,
+    "tokens_used": 120
+  },
+  {
+    "id": "q9",
+    "prediction": "27.6667",
+    "answer": "27.67",
+    "correct": false,
+    "tokens_used": 120
+  },
+  {
+    "id": "q10",
+    "prediction": "you pay $12.",
+    "answer": "12",
+    "correct": true,
+    "tokens_used": 120
+  },
+  {
+    "id": "q11",
+    "prediction": "the average of 10, 20, 30, and 40 is 25.",
+    "answer": "25",
+    "correct": false,
+    "tokens_used": 120
+  },
+  {
+    "id": "q12",
+    "prediction": "solution:",
+    "answer": "0.625",
+    "correct": false,
+    "tokens_used": 120
+  },
+  {
+    "id": "q13",
+    "prediction": "the journey was 150 minutes long.",
+    "answer": "150",
+    "correct": true,
+    "tokens_used": 120
+  },
+  {
+    "id": "q14",
+    "prediction": "$72",
+    "answer": "72",
+    "correct": true,
+    "tokens_used": 120
+  },
+  {
+    "id": "q15",
+    "prediction": "the perimeter of the triangle is 24 units.",
+    "answer": "24",
+    "correct": true,
+    "tokens_used": 120
+  },
+  {
+    "id": "q16",
+    "prediction": "16",
+    "answer": "16",
+    "correct": true,
+    "tokens_used": 120
+  },
+  {
+    "id": "q17",
+    "prediction": "each child gets 12 crayons.",
+    "answer": "12",
+    "correct": true,
+    "tokens_used": 120
+  },
+  {
+    "id": "q18",
+    "prediction": "solution:",
+    "answer": "no",
+    "correct": false,
+    "tokens_used": 120
+  },
+  {
+    "id": "q19",
+    "prediction": "mike",
+    "answer": "mike",
+    "correct": true,
+    "tokens_used": 20
+  },
+  {
+    "id": "q20",
+    "prediction": "yes, it necessarily rained.",
+    "answer": "no",
+    "correct": false,
+    "tokens_used": 20
+  },
+  {
+    "id": "q21",
+    "prediction": "the next number in the sequence is 32.",
+    "answer": "32",
+    "correct": true,
+    "tokens_used": 120
+  },
+  {
+    "id": "q22",
+    "prediction": "yes",
+    "answer": "yes",
+    "correct": true,
+    "tokens_used": 20
+  },
+  {
+    "id": "q23",
+    "prediction": "solution:",
+    "answer": "12",
+    "correct": false,
+    "tokens_used": 120
+  },
+  {
+    "id": "q24",
+    "prediction": "tuesday",
+    "answer": "tuesday",
+    "correct": true,
+    "tokens_used": 20
+  },
+  {
+    "id": "q25",
+    "prediction": "you are in first place.",
+    "answer": "second",
+    "correct": false,
+    "tokens_used": 120
+  },
+  {
+    "id": "q26",
+    "prediction": "5 minutes",
+    "answer": "5",
+    "correct": true,
+    "tokens_used": 20
+  },
+  {
+    "id": "q27",
+    "prediction": "true",
+    "answer": "true",
+    "correct": true,
+    "tokens_used": 20
+  },
+  {
+    "id": "q28",
+    "prediction": "triangle",
+    "answer": "triangle",
+    "correct": true,
+    "tokens_used": 20
+  },
+  {
+    "id": "q29",
+    "prediction": "no, not all penguins can fly.",
+    "answer": "no",
+    "correct": false,
+    "tokens_used": 20
+  },
+  {
+    "id": "q30",
+    "prediction": "f",
+    "answer": "j",
+    "correct": false,
+    "tokens_used": 20
+  },
+  {
+    "id": "q31",
+    "prediction": "tuesday",
+    "answer": "sunday",
+    "correct": false,
+    "tokens_used": 20
+  },
+  {
+    "id": "q32",
+    "prediction": "there are 12 children in the family.",
+    "answer": "7",
+    "correct": false,
+    "tokens_used": 120
+  },
+  {
+    "id": "q33",
+    "prediction": "the final answer is:",
+    "answer": "one word",
+    "correct": false,
+    "tokens_used": 20
+  },
+  {
+    "id": "q34",
+    "prediction": "10 cents",
+    "answer": "0.05",
+    "correct": false,
+    "tokens_used": 20
+  },
+  {
+    "id": "q35",
+    "prediction": "the store now has 315 apples.",
+    "answer": "255",
+    "correct": false,
+    "tokens_used": 120
+  },
+  {
+    "id": "q36",
+    "prediction": "john saves $120.",
+    "answer": "120",
+    "correct": true,
+    "tokens_used": 120
+  },
+  {
+    "id": "q37",
+    "prediction": "250 liters.",
+    "answer": "450",
+    "correct": false,
+    "tokens_used": 120
+  },
+  {
+    "id": "q38",
+    "prediction": "maria receives $45 in change.",
+    "answer": "45",
+    "correct": true,
+    "tokens_used": 120
+  },
+  {
+    "id": "q39",
+    "prediction": "5 cups of flour are needed for 30 cookies.",
+    "answer": "5",
+    "correct": true,
+    "tokens_used": 120
+  },
+  {
+    "id": "q40",
+    "prediction": "it costs $552 to fence the entire garden.",
+    "answer": "552",
+    "correct": true,
+    "tokens_used": 120
+  },
+  {
+    "id": "q41",
+    "prediction": "the bookstore sold a total of 155 books.",
+    "answer": "155",
+    "correct": true,
+    "tokens_used": 120
+  },
+  {
+    "id": "q42",
+    "prediction": "",
+    "answer": "85",
+    "correct": false,
+    "tokens_used": 120
+  },
+  {
+    "id": "q43",
+    "prediction": "solution:",
+    "answer": "5",
+    "correct": false,
+    "tokens_used": 120
+  },
+  {
+    "id": "q44",
+    "prediction": "the final price is $405.",
+    "answer": "405",
+    "correct": true,
+    "tokens_used": 120
+  },
+  {
+    "id": "q45",
+    "prediction": "64",
+    "answer": "80",
+    "correct": false,
+    "tokens_used": 20
+  },
+  {
+    "id": "q46",
+    "prediction": "the tank's capacity is 240 liters and 140 liters remain after draining 100 liters.",
+    "answer": "140",
+    "correct": false,
+    "tokens_used": 120
+  },
+  {
+    "id": "q47",
+    "prediction": "emily has $80 left.",
+    "answer": "80",
+    "correct": true,
+    "tokens_used": 120
+  },
+  {
+    "id": "q48",
+    "prediction": "the total cost is $170.",
+    "answer": "170",
+    "correct": true,
+    "tokens_used": 120
+  },
+  {
+    "id": "q49",
+    "prediction": "solution:",
+    "answer": "150",
+    "correct": false,
+    "tokens_used": 120
+  },
+  {
+    "id": "q50",
+    "prediction": "there are 1200 liters in the pool.",
+    "answer": "1200",
+    "correct": true,
+    "tokens_used": 120
+  }
+]

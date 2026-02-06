@@ -1,0 +1,51 @@
+id,prediction,answer,correct,tokens_used
+q1,alice has 6 apples.,6,True,120
+q2,the baker needs 8 boxes to pack all the cookies.,8,True,120
+q3,the car,180,False,120
+q4,sarah has $30 left.,30,True,120
+q5,the perimeter of the rectangle is 34 cm.,34,True,120
+q6,one pencil costs $2.,2,True,120
+q7,tom has 32 marbles now.,32,True,120
+q8,30 desks.,30,True,120
+q9,27.6667,27.67,False,120
+q10,you pay $12.,12,True,120
+q11,"the average of 10, 20, 30, and 40 is 25.",25,False,120
+q12,solution:,0.625,False,120
+q13,the journey was 150 minutes long.,150,True,120
+q14,$72,72,True,120
+q15,the perimeter of the triangle is 24 units.,24,True,120
+q16,16,16,True,120
+q17,each child gets 12 crayons.,12,True,120
+q18,solution:,no,False,120
+q19,mike,mike,True,20
+q20,"yes, it necessarily rained.",no,False,20
+q21,the next number in the sequence is 32.,32,True,120
+q22,yes,yes,True,20
+q23,solution:,12,False,120
+q24,tuesday,tuesday,True,20
+q25,you are in first place.,second,False,120
+q26,5 minutes,5,True,20
+q27,true,true,True,20
+q28,triangle,triangle,True,20
+q29,"no, not all penguins can fly.",no,False,20
+q30,f,j,False,20
+q31,tuesday,sunday,False,20
+q32,there are 12 children in the family.,7,False,120
+q33,the final answer is:,one word,False,20
+q34,10 cents,0.05,False,20
+q35,the store now has 315 apples.,255,False,120
+q36,john saves $120.,120,True,120
+q37,250 liters.,450,False,120
+q38,maria receives $45 in change.,45,True,120
+q39,5 cups of flour are needed for 30 cookies.,5,True,120
+q40,it costs $552 to fence the entire garden.,552,True,120
+q41,the bookstore sold a total of 155 books.,155,True,120
+q42,,85,False,120
+q43,solution:,5,False,120
+q44,the final price is $405.,405,True,120
+q45,64,80,False,20
+q46,the tank's capacity is 240 liters and 140 liters remain after draining 100 liters.,140,False,120
+q47,emily has $80 left.,80,True,120
+q48,the total cost is $170.,170,True,120
+q49,solution:,150,False,120
+q50,there are 1200 liters in the pool.,1200,True,120

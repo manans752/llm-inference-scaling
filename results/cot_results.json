@@ -1,0 +1,2102 @@
+[
+  {
+    "id": "q1",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Alice starts with 3 apples.\nStep 2: She buys 5 more apples, so she now has 3 + 5 = 8 apples.\nStep 3: She gives away 2 apples, so she now has 8 - 2 = 6",
+    "correct": true
+  },
+  {
+    "id": "q1",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Alice starts with 3 apples.\nStep 2: She buys 5 more apples, so she now has 3 + 5 = 8 apples.\nStep 3: She gives away 2 apples, so she now has 8 - 2 = 6 apples.\n\nTherefore, Alice has 6 apples.\n\nExercise 2:\nQuestion: If a train travels at a speed of 60 miles per hour for 3 hours, how far does it travel?\nAnswer: Let's solve step by",
+    "correct": true
+  },
+  {
+    "id": "q1",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Alice starts with 3 apples.\nStep 2: She buys 5 more apples, so she now has 3 + 5 = 8 apples.\nStep 3: She gives away 2 apples, so she now has 8 - 2 = 6 apples.\n\nTherefore, Alice has 6 apples.\n\nExercise 2:\nQuestion: If a train travels at a speed of 60 miles per hour for 3 hours, how far does it travel?\nAnswer: Let's solve step by step.\n\nStep 1: The train travels at a speed of 60 miles per hour.\nStep 2: It travels for 3 hours, so the distance traveled is 60 x 3 = 180 miles.\n\nTherefore, the train travels 180 miles.\n\nExercise 3:\nQuestion: If a recipe calls for 2 cups of flour and you want to make half the recipe, how much flour do you need?\nAnswer: Let's solve step by step.\n\nStep 1:",
+    "correct": true
+  },
+  {
+    "id": "q1",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Exercise 2:\nQuestion: If a train travels at a speed of 60 miles per hour, how far will it travel in 2 hours?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 3",
+    "correct": true
+  },
+  {
+    "id": "q1",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Exercise 2:\nQuestion: If a train travels at a speed of 60 miles per hour, how far will it travel in 2 hours?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 3:\nQuestion: If a recipe calls for 2 cups of flour and you want to make half the recipe, how much flour do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:",
+    "correct": true
+  },
+  {
+    "id": "q1",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Exercise 2:\nQuestion: If a train travels at a speed of 60 miles per hour, how far will it travel in 2 hours?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 3:\nQuestion: If a recipe calls for 2 cups of flour and you want to make half the recipe, how much flour do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: If a store is having a sale with 20% off all items, and a shirt originally costs $25, how much will it cost during the sale?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:\nQuestion: If a car travels at a speed of 50 miles per hour and it takes 3 hours to reach its destination, how far did it travel?\nAnswer: Solve step by step using at most 5 short steps",
+    "correct": true
+  },
+  {
+    "id": "q2",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Find the number of boxes needed.\nTo find the number of boxes needed, we divide the total number of cookies by the number of cookies in each box.\nNumber of boxes = Total number of cookies / Number of cookies in",
+    "correct": false
+  },
+  {
+    "id": "q2",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Find the number of boxes needed.\nTo find the number of boxes needed, we divide the total number of cookies by the number of cookies in each box.\nNumber of boxes = Total number of cookies / Number of cookies in each box\nNumber of boxes = 48 cookies / 6 cookies per box\nNumber of boxes = 8 boxes\n\nTherefore, the baker needs 8 boxes.",
+    "correct": true
+  },
+  {
+    "id": "q2",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Find the number of boxes needed.\nTo find the number of boxes needed, we divide the total number of cookies by the number of cookies in each box.\nNumber of boxes = Total number of cookies / Number of cookies in each box\nNumber of boxes = 48 cookies / 6 cookies per box\nNumber of boxes = 8 boxes\n\nTherefore, the baker needs 8 boxes.",
+    "correct": true
+  },
+  {
+    "id": "q2",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Solution:\n\nStep 1: Divide the total number of cookies by the number of cookies in each box to find the number of boxes needed.\n48 cookies / 6 cookies per box = 8 boxes\n\nStep 2: The baker needs 8",
+    "correct": true
+  },
+  {
+    "id": "q2",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Solution:\n\nStep 1: Divide the total number of cookies by the number of cookies in each box to find the number of boxes needed.\n48 cookies / 6 cookies per box = 8 boxes\n\nStep 2: The baker needs 8 boxes to pack all the cookies.",
+    "correct": true
+  },
+  {
+    "id": "q2",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Solution:\n\nStep 1: Divide the total number of cookies by the number of cookies in each box to find the number of boxes needed.\n48 cookies / 6 cookies per box = 8 boxes\n\nStep 2: The baker needs 8 boxes to pack all the cookies.",
+    "correct": true
+  },
+  {
+    "id": "q3",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Multiply the speed by the time.\n60 miles/hour * 3 hours = 180 miles\n\nTherefore, the car travels 180 miles.\n\nExercise 3:\nQuestion: If a recipe calls for 2 cups",
+    "correct": true
+  },
+  {
+    "id": "q3",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Multiply the speed by the time.\n60 miles/hour * 3 hours = 180 miles\n\nTherefore, the car travels 180 miles.\n\nExercise 3:\nQuestion: If a recipe calls for 2 cups of flour and you want to make half the recipe, how much flour do you need?\nAnswer: Let's solve step by step.\n\nStep 1: Divide the original amount of flour by 2.\n2 cups / 2 = 1 cup",
+    "correct": true
+  },
+  {
+    "id": "q3",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Multiply the speed by the time.\n60 miles/hour * 3 hours = 180 miles\n\nTherefore, the car travels 180 miles.\n\nExercise 3:\nQuestion: If a recipe calls for 2 cups of flour and you want to make half the recipe, how much flour do you need?\nAnswer: Let's solve step by step.\n\nStep 1: Divide the original amount of flour by 2.\n2 cups / 2 = 1 cup\n\nTherefore, you need 1 cup of flour.\n\nExercise 4:\nQuestion: If a store is having a sale with a 20% discount on all items, and a shirt originally costs $25, how much will it cost after the discount?\nAnswer: Let's solve step by step.\n\nStep 1: Calculate the discount amount.\n20% of $25 = $5\n\nStep 2: Subtract the discount amount from the original price.",
+    "correct": true
+  },
+  {
+    "id": "q3",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Exercise 3:\nQuestion: If a recipe calls for 2 cups of flour and you want to make half the recipe, how much flour do you need?\nAnswer: Solve step by step using at most 5 short steps.",
+    "correct": false
+  },
+  {
+    "id": "q3",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Exercise 3:\nQuestion: If a recipe calls for 2 cups of flour and you want to make half the recipe, how much flour do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: If a store is having a sale with a 20% discount on all items, and a shirt originally costs $25, how much will it cost after the discount?\nAnswer: Solve step by step using at",
+    "correct": false
+  },
+  {
+    "id": "q3",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Exercise 3:\nQuestion: If a recipe calls for 2 cups of flour and you want to make half the recipe, how much flour do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: If a store is having a sale with a 20% discount on all items, and a shirt originally costs $25, how much will it cost after the discount?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:\nQuestion: If a train travels at a speed of 80 miles per hour and it takes 4 hours to reach its destination, how far does it travel?\nAnswer: Solve step by step using at most 5 short steps.\n\nAnswer:\nExercise 1:\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 2:\nAnswer: Solve step by step using at most 5 short",
+    "correct": false
+  },
+  {
+    "id": "q4",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Calculate the total amount spent.\nTotal amount spent = $12 + $8 = $20\n\nStep 2: Calculate the amount of money left.\nAmount of money left = Total amount - Total amount spent",
+    "correct": false
+  },
+  {
+    "id": "q4",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Calculate the total amount spent.\nTotal amount spent = $12 + $8 = $20\n\nStep 2: Calculate the amount of money left.\nAmount of money left = Total amount - Total amount spent\nAmount of money left = $50 - $20 = $30\n\nTherefore, Sarah has $30 left.\n\nComplete detailed textbook-level solutions",
+    "correct": true
+  },
+  {
+    "id": "q4",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Calculate the total amount spent.\nTotal amount spent = $12 + $8 = $20\n\nStep 2: Calculate the amount of money left.\nAmount of money left = Total amount - Total amount spent\nAmount of money left = $50 - $20 = $30\n\nTherefore, Sarah has $30 left.\n\nComplete detailed textbook-level solutions",
+    "correct": true
+  },
+  {
+    "id": "q4",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Exercise 3:\nQuestion: A recipe requires 2 cups of flour. If you want to make half the recipe, how many cups of flour do you need?\nAnswer: Solve step by step using at most 5 short steps.",
+    "correct": false
+  },
+  {
+    "id": "q4",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Exercise 3:\nQuestion: A recipe requires 2 cups of flour. If you want to make half the recipe, how many cups of flour do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A car travels at a speed of 60 miles per hour. How far will it travel in 3 hours?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:",
+    "correct": false
+  },
+  {
+    "id": "q4",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Exercise 3:\nQuestion: A recipe requires 2 cups of flour. If you want to make half the recipe, how many cups of flour do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A car travels at a speed of 60 miles per hour. How far will it travel in 3 hours?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:\nQuestion: A store is having a sale with a 20% discount on all items. If a shirt originally costs $25, how much will it cost after the discount?\nAnswer: Solve step by step using at most 5 short steps.\n\nAnswer:\nExercise 1:\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 2:\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 3",
+    "correct": false
+  },
+  {
+    "id": "q5",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Calculate the length of the rectangle.\nLength = 12 cm\n\nStep 2: Calculate the width of the rectangle.\nWidth = 5 cm\n\nStep 3: Calculate the perimeter of the rectangle.\nPer",
+    "correct": false
+  },
+  {
+    "id": "q5",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Calculate the length of the rectangle.\nLength = 12 cm\n\nStep 2: Calculate the width of the rectangle.\nWidth = 5 cm\n\nStep 3: Calculate the perimeter of the rectangle.\nPerimeter = 2 * (Length + Width)\nPerimeter = 2 * (12 cm + 5 cm)\nPerimeter = 2 * 17 cm\nPerimeter = 34 cm\n\nTherefore, the perimeter of the rectangle is 34 cm.",
+    "correct": true
+  },
+  {
+    "id": "q5",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Calculate the length of the rectangle.\nLength = 12 cm\n\nStep 2: Calculate the width of the rectangle.\nWidth = 5 cm\n\nStep 3: Calculate the perimeter of the rectangle.\nPerimeter = 2 * (Length + Width)\nPerimeter = 2 * (12 cm + 5 cm)\nPerimeter = 2 * 17 cm\nPerimeter = 34 cm\n\nTherefore, the perimeter of the rectangle is 34 cm.",
+    "correct": true
+  },
+  {
+    "id": "q5",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Exercise 3:\nQuestion: A car travels at a speed of 60 km/h for 3 hours. How far does it travel?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:",
+    "correct": false
+  },
+  {
+    "id": "q5",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Exercise 3:\nQuestion: A car travels at a speed of 60 km/h for 3 hours. How far does it travel?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A recipe calls for 2 cups of flour, but you only have 1 cup. How much more flour do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:\nQuestion",
+    "correct": false
+  },
+  {
+    "id": "q5",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Exercise 3:\nQuestion: A car travels at a speed of 60 km/h for 3 hours. How far does it travel?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A recipe calls for 2 cups of flour, but you only have 1 cup. How much more flour do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:\nQuestion: A store is having a sale with a 20% discount on all items. If a shirt originally costs $25, how much will it cost after the discount?\nAnswer: Solve step by step using at most 5 short steps.\n\nAnswer:\nExercise 1:\nAnswer: The area of the rectangle is 60 square centimeters.\n\nExercise 2:\nAnswer: The perimeter of the rectangle is 34 centimeters.\n\nExercise 3:\nAnswer: The car travels",
+    "correct": true
+  },
+  {
+    "id": "q6",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Divide the total cost by the number of pencils.\n$14 \u00f7 7 = $2\n\nStep 2: One pencil costs $2.\n\nExercise 3:\nQuestion: If a car travels at a",
+    "correct": true
+  },
+  {
+    "id": "q6",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Divide the total cost by the number of pencils.\n$14 \u00f7 7 = $2\n\nStep 2: One pencil costs $2.\n\nExercise 3:\nQuestion: If a car travels at a speed of 60 miles per hour, how far will it travel in 3 hours?\nAnswer: Let's solve step by step.\n\nStep 1: Multiply the speed by the time.\n60 miles/hour \u00d7 3 hours = 180",
+    "correct": true
+  },
+  {
+    "id": "q6",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Divide the total cost by the number of pencils.\n$14 \u00f7 7 = $2\n\nStep 2: One pencil costs $2.\n\nExercise 3:\nQuestion: If a car travels at a speed of 60 miles per hour, how far will it travel in 3 hours?\nAnswer: Let's solve step by step.\n\nStep 1: Multiply the speed by the time.\n60 miles/hour \u00d7 3 hours = 180 miles\n\nStep 2: The car will travel 180 miles in 3 hours.\n\nExercise 4:\nQuestion: If a recipe calls for 2 cups of flour and you want to make half the recipe, how much flour do you need?\nAnswer: Let's solve step by step.\n\nStep 1: Divide the original amount of flour by 2.\n2 cups \u00f7 2 = 1 cup\n\nStep 2: You need 1 cup of flour.\n\nExercise 5",
+    "correct": true
+  },
+  {
+    "id": "q6",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Exercise 3:\nQuestion: If a car travels at a speed of 60 miles per hour, how far will it travel in 3 hours?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4",
+    "correct": false
+  },
+  {
+    "id": "q6",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Exercise 3:\nQuestion: If a car travels at a speed of 60 miles per hour, how far will it travel in 3 hours?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: If a recipe calls for 2 cups of flour and you want to make half the recipe, how much flour do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:",
+    "correct": true
+  },
+  {
+    "id": "q6",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Exercise 3:\nQuestion: If a car travels at a speed of 60 miles per hour, how far will it travel in 3 hours?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: If a recipe calls for 2 cups of flour and you want to make half the recipe, how much flour do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:\nQuestion: If a store is having a sale with a 20% discount on all items, and a shirt originally costs $25, how much will it cost after the discount?\nAnswer: Solve step by step using at most 5 short steps.\n\nAnswer:\nExercise 1:\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 2:\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise",
+    "correct": true
+  },
+  {
+    "id": "q7",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Tom starts with 25 marbles.\nStep 2: He gets 15 more marbles from his friend, so he now has 25 + 15 = 40 marbles.\nStep 3: He loses 8 marbles, so he now has",
+    "correct": false
+  },
+  {
+    "id": "q7",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Tom starts with 25 marbles.\nStep 2: He gets 15 more marbles from his friend, so he now has 25 + 15 = 40 marbles.\nStep 3: He loses 8 marbles, so he now has 40 - 8 = 32 marbles.\nTherefore, Tom has 32 marbles now.\n\nComplete detailed textbook-level solutions\nStep 1: Tom starts with 25 marbles.\nStep 2: He gets 15 more marbles from his friend",
+    "correct": true
+  },
+  {
+    "id": "q7",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Tom starts with 25 marbles.\nStep 2: He gets 15 more marbles from his friend, so he now has 25 + 15 = 40 marbles.\nStep 3: He loses 8 marbles, so he now has 40 - 8 = 32 marbles.\nTherefore, Tom has 32 marbles now.\n\nComplete detailed textbook-level solutions\nStep 1: Tom starts with 25 marbles.\nStep 2: He gets 15 more marbles from his friend, so he now has 25 + 15 = 40 marbles.\nStep 3: He loses 8 marbles, so he now has 40 - 8 = 32 marbles.\nTherefore, Tom has 32 marbles now.",
+    "correct": true
+  },
+  {
+    "id": "q7",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Solution:\nStep 1: Start with the initial number of marbles Tom has, which is 25.\nStep 2: Add the number of marbles he gets from his friend, which is 15.\nStep 3: Subtract the",
+    "correct": false
+  },
+  {
+    "id": "q7",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Solution:\nStep 1: Start with the initial number of marbles Tom has, which is 25.\nStep 2: Add the number of marbles he gets from his friend, which is 15.\nStep 3: Subtract the number of marbles he loses, which is 8.\nStep 4: Calculate the final number of marbles Tom has by adding the initial number, the number he gets, and subtracting the number he loses.\nStep 5: The final",
+    "correct": false
+  },
+  {
+    "id": "q7",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Solution:\nStep 1: Start with the initial number of marbles Tom has, which is 25.\nStep 2: Add the number of marbles he gets from his friend, which is 15.\nStep 3: Subtract the number of marbles he loses, which is 8.\nStep 4: Calculate the final number of marbles Tom has by adding the initial number, the number he gets, and subtracting the number he loses.\nStep 5: The final answer is the number of marbles Tom has now.",
+    "correct": false
+  },
+  {
+    "id": "q8",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Multiply the number of rows by the number of desks in each row.\n6 rows * 5 desks/row = 30 desks\nTherefore, there are 30 desks in total.\n\nExercise 3:\nQuestion: A",
+    "correct": true
+  },
+  {
+    "id": "q8",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Multiply the number of rows by the number of desks in each row.\n6 rows * 5 desks/row = 30 desks\nTherefore, there are 30 desks in total.\n\nExercise 3:\nQuestion: A farmer has 8 baskets of apples, with each basket containing 12 apples. How many apples does the farmer have in total?\nAnswer: Let's solve step by step.\nStep 1: Multiply the number of baskets by the number of apples",
+    "correct": true
+  },
+  {
+    "id": "q8",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Multiply the number of rows by the number of desks in each row.\n6 rows * 5 desks/row = 30 desks\nTherefore, there are 30 desks in total.\n\nExercise 3:\nQuestion: A farmer has 8 baskets of apples, with each basket containing 12 apples. How many apples does the farmer have in total?\nAnswer: Let's solve step by step.\nStep 1: Multiply the number of baskets by the number of apples in each basket.\n8 baskets * 12 apples/basket = 96 apples\nTherefore, the farmer has 96 apples in total.\n\nExercise 4:\nQuestion: A toy store has 10 shelves, with each shelf holding 15 toys. How many toys are there in total?\nAnswer: Let's solve step by step.\nStep 1: Multiply the number of shelves by the number of toys on each shelf.\n10 shelves * 15 toys/shelf = 150 toys",
+    "correct": true
+  },
+  {
+    "id": "q8",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Exercise 3:\nQuestion: A farmer has 8 baskets of apples, with each basket containing 12 apples. How many apples does the farmer have in total?\nAnswer: Solve step by step using at most 5 short steps.",
+    "correct": false
+  },
+  {
+    "id": "q8",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Exercise 3:\nQuestion: A farmer has 8 baskets of apples, with each basket containing 12 apples. How many apples does the farmer have in total?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A toy store has 4 shelves, with each shelf holding 10 toys. How many toys are there in total?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:",
+    "correct": false
+  },
+  {
+    "id": "q8",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Exercise 3:\nQuestion: A farmer has 8 baskets of apples, with each basket containing 12 apples. How many apples does the farmer have in total?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A toy store has 4 shelves, with each shelf holding 10 toys. How many toys are there in total?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:\nQuestion: A library has 3 bookshelves, with each bookshelf containing 20 books. How many books are there in total?\nAnswer: Solve step by step using at most 5 short steps.\n\nAnswer:\nExercise 1:\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 2:\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 3:\nAnswer: Solve step",
+    "correct": false
+  },
+  {
+    "id": "q9",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Subtract 17 from 100: 100 - 17 = 83\nStep 2: Divide 83 by 3: 83 \u00f7 3 = 27.67 (rounded to two decimal places)\nTherefore, the result is approximately 27.67.",
+    "correct": true
+  },
+  {
+    "id": "q9",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Subtract 17 from 100: 100 - 17 = 83\nStep 2: Divide 83 by 3: 83 \u00f7 3 = 27.67 (rounded to two decimal places)\nTherefore, the result is approximately 27.67.\n\nExercise 3:\nQuestion: If you multiply 5 by 7 and then subtract 3, what is the result?\nAnswer: Let's solve step by step.\nStep 1: Multiply 5 by 7: 5 \u00d7 7 =",
+    "correct": true
+  },
+  {
+    "id": "q9",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Subtract 17 from 100: 100 - 17 = 83\nStep 2: Divide 83 by 3: 83 \u00f7 3 = 27.67 (rounded to two decimal places)\nTherefore, the result is approximately 27.67.\n\nExercise 3:\nQuestion: If you multiply 5 by 7 and then subtract 3, what is the result?\nAnswer: Let's solve step by step.\nStep 1: Multiply 5 by 7: 5 \u00d7 7 = 35\nStep 2: Subtract 3 from 35: 35 - 3 = 32\nTherefore, the result is 32.\n\nExercise 4:\nQuestion: If you divide 48 by 6 and then add 2, what is the result?\nAnswer: Let's solve step by step.\nStep 1: Divide 48 by 6: 48 \u00f7 6 = 8\nStep 2: Add 2 to 8: 8 + 2 = 10\nTherefore, the result is 10.\n\nEx",
+    "correct": true
+  },
+  {
+    "id": "q9",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Solution:\nStep 1: Subtract 17 from 100: 100 - 17 = 83\nStep 2: Divide 83 by 3: 83 \u00f7 3 = 27.67\nStep 3: Round the result to two decimal places: 27.",
+    "correct": true
+  },
+  {
+    "id": "q9",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Solution:\nStep 1: Subtract 17 from 100: 100 - 17 = 83\nStep 2: Divide 83 by 3: 83 \u00f7 3 = 27.67\nStep 3: Round the result to two decimal places: 27.67 rounded to two decimal places is 27.67\nStep 4: The result is 27.67.",
+    "correct": true
+  },
+  {
+    "id": "q9",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Solution:\nStep 1: Subtract 17 from 100: 100 - 17 = 83\nStep 2: Divide 83 by 3: 83 \u00f7 3 = 27.67\nStep 3: Round the result to two decimal places: 27.67 rounded to two decimal places is 27.67\nStep 4: The result is 27.67.",
+    "correct": true
+  },
+  {
+    "id": "q10",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Calculate the total cost of the notebooks.\nThe cost of each notebook is $3, and you buy 4 notebooks.\nTotal cost = $3 * 4 = $12.\n\nTherefore, you pay $12 for",
+    "correct": true
+  },
+  {
+    "id": "q10",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Calculate the total cost of the notebooks.\nThe cost of each notebook is $3, and you buy 4 notebooks.\nTotal cost = $3 * 4 = $12.\n\nTherefore, you pay $12 for 4 notebooks.\n\nComplete detailed textbook-level solutions",
+    "correct": true
+  },
+  {
+    "id": "q10",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Calculate the total cost of the notebooks.\nThe cost of each notebook is $3, and you buy 4 notebooks.\nTotal cost = $3 * 4 = $12.\n\nTherefore, you pay $12 for 4 notebooks.\n\nComplete detailed textbook-level solutions",
+    "correct": true
+  },
+  {
+    "id": "q10",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Exercise 3:\nQuestion: A recipe requires 2 cups of flour. If you want to make half the recipe, how much flour do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nEx",
+    "correct": false
+  },
+  {
+    "id": "q10",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Exercise 3:\nQuestion: A recipe requires 2 cups of flour. If you want to make half the recipe, how much flour do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A car travels at a speed of 60 miles per hour. How far will it travel in 3 hours?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:\nQuestion",
+    "correct": false
+  },
+  {
+    "id": "q10",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Exercise 3:\nQuestion: A recipe requires 2 cups of flour. If you want to make half the recipe, how much flour do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A car travels at a speed of 60 miles per hour. How far will it travel in 3 hours?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:\nQuestion: A rectangular garden has a length of 10 meters and a width of 5 meters. What is its area?\nAnswer: Solve step by step using at most 5 short steps.\n\nAnswer:\nExercise 1:\nAnswer: The total cost of buying 5 apples is $15.\n\nExercise 2:\nAnswer: If you buy 4 notebooks, you pay $12.\n\nExercise 3:\nAnswer: If you want to make half the recipe, you need",
+    "correct": true
+  },
+  {
+    "id": "q11",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Add all the numbers together: 10 + 20 + 30 + 40 = 100\nStep 2: Divide the sum by the total number of numbers: 100 \u00f7 4 = 25\n\nTherefore, the average of 10, 20,",
+    "correct": true
+  },
+  {
+    "id": "q11",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Add all the numbers together: 10 + 20 + 30 + 40 = 100\nStep 2: Divide the sum by the total number of numbers: 100 \u00f7 4 = 25\n\nTherefore, the average of 10, 20, 30, and 40 is 25.\n\nExercise 2:\nQuestion: A recipe calls for 2 cups of flour, 1 cup of sugar, and 3 eggs. If you want to make half the recipe, how much flour, sugar, and",
+    "correct": true
+  },
+  {
+    "id": "q11",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Add all the numbers together: 10 + 20 + 30 + 40 = 100\nStep 2: Divide the sum by the total number of numbers: 100 \u00f7 4 = 25\n\nTherefore, the average of 10, 20, 30, and 40 is 25.\n\nExercise 2:\nQuestion: A recipe calls for 2 cups of flour, 1 cup of sugar, and 3 eggs. If you want to make half the recipe, how much flour, sugar, and eggs do you need?\nAnswer: Let's solve step by step.\n\nStep 1: Divide each ingredient by 2:\n- Flour: 2 cups \u00f7 2 = 1 cup\n- Sugar: 1 cup \u00f7 2 = 0.5 cups\n- Eggs: 3 eggs \u00f7 2 = 1.5 eggs (round to the nearest whole number)\n\nTherefore, to make half the recipe, you need 1 cup of flour, 0.5 cups of sugar, and",
+    "correct": true
+  },
+  {
+    "id": "q11",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Exercise 2:\nQuestion: What is the value of x in the equation 2x + 5 = 15?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 3:\nQuestion: What is",
+    "correct": false
+  },
+  {
+    "id": "q11",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Exercise 2:\nQuestion: What is the value of x in the equation 2x + 5 = 15?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 3:\nQuestion: What is the area of a rectangle with length 8 cm and width 5 cm?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: What is the value of y in the equation 3y -",
+    "correct": false
+  },
+  {
+    "id": "q11",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Exercise 2:\nQuestion: What is the value of x in the equation 2x + 5 = 15?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 3:\nQuestion: What is the area of a rectangle with length 8 cm and width 5 cm?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: What is the value of y in the equation 3y - 7 = 14?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:\nQuestion: What is the perimeter of a square with side length 6 cm?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 6:\nQuestion: What is the value of z in the equation 4z + 9 = 33?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise",
+    "correct": false
+  },
+  {
+    "id": "q12",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Start with the whole pizza, which is represented by the fraction 8/8.\nStep 2: Subtract the number of slices you ate, which is 3/8.\nStep 3: The remaining fraction is 5/",
+    "correct": false
+  },
+  {
+    "id": "q12",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Start with the whole pizza, which is represented by the fraction 8/8.\nStep 2: Subtract the number of slices you ate, which is 3/8.\nStep 3: The remaining fraction is 5/8.\n\nExercise 2:\nQuestion: If a recipe calls for 2/3 cup of flour and you want to make half the recipe, how much flour do you need?\nAnswer: Let's solve step by step.",
+    "correct": false
+  },
+  {
+    "id": "q12",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Start with the whole pizza, which is represented by the fraction 8/8.\nStep 2: Subtract the number of slices you ate, which is 3/8.\nStep 3: The remaining fraction is 5/8.\n\nExercise 2:\nQuestion: If a recipe calls for 2/3 cup of flour and you want to make half the recipe, how much flour do you need?\nAnswer: Let's solve step by step.\n\nStep 1: Start with the original amount of flour, which is 2/3 cup.\nStep 2: Multiply the original amount by the fraction representing half, which is 1/2.\nStep 3: The amount of flour needed is 1/3 cup.\n\nExercise 3:\nQuestion: If a car travels at a speed of 60 miles per hour, how far will it travel in 2.5 hours?\nAnswer: Let's solve step by step.",
+    "correct": false
+  },
+  {
+    "id": "q12",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Exercise 3:\nQuestion: If a recipe calls for 2 cups of flour and you only have 1 cup, what fraction of the required flour do you have?\nAnswer: Solve step by step using at most 5 short steps.",
+    "correct": false
+  },
+  {
+    "id": "q12",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Exercise 3:\nQuestion: If a recipe calls for 2 cups of flour and you only have 1 cup, what fraction of the required flour do you have?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: If a car travels 300 miles in 5 hours, what is its average speed in miles per hour?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:",
+    "correct": false
+  },
+  {
+    "id": "q12",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Exercise 3:\nQuestion: If a recipe calls for 2 cups of flour and you only have 1 cup, what fraction of the required flour do you have?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: If a car travels 300 miles in 5 hours, what is its average speed in miles per hour?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:\nQuestion: If a store offers a 20% discount on a $50 item, how much money will you save?\nAnswer: Solve step by step using at most 5 short steps.\n\nAnswer:\nExercise 1:\nAnswer: The fraction of the pizza that remains is 5/8.\n\nExercise 2:\nAnswer: The fraction of the pizza that remains is 5/8.\n\nExercise 3:\nAnswer: The fraction of the required flour you have",
+    "correct": false
+  },
+  {
+    "id": "q13",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Convert the departure and arrival times to minutes.\n9:15 AM = 9 * 60 + 15 = 555 minutes\n11:45 AM = 11 * 60 + 45 = 705 minutes\n\nStep 2: Subtract",
+    "correct": false
+  },
+  {
+    "id": "q13",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Convert the departure and arrival times to minutes.\n9:15 AM = 9 * 60 + 15 = 555 minutes\n11:45 AM = 11 * 60 + 45 = 705 minutes\n\nStep 2: Subtract the departure time from the arrival time.\n705 minutes - 555 minutes = 150 minutes\n\nTherefore, the journey took 150 minutes.\n\nExercise 3:\nQuestion: A recipe requires 2 cups of flour, but you only have 1/",
+    "correct": true
+  },
+  {
+    "id": "q13",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Convert the departure and arrival times to minutes.\n9:15 AM = 9 * 60 + 15 = 555 minutes\n11:45 AM = 11 * 60 + 45 = 705 minutes\n\nStep 2: Subtract the departure time from the arrival time.\n705 minutes - 555 minutes = 150 minutes\n\nTherefore, the journey took 150 minutes.\n\nExercise 3:\nQuestion: A recipe requires 2 cups of flour, but you only have 1/2 cup. How much more flour do you need?\nAnswer: Let's solve step by step.\n\nStep 1: Convert the required amount of flour to a fraction.\n2 cups = 2/1 cups\n\nStep 2: Subtract the available amount of flour from the required amount.\n2/1 cups - 1/2 cup = 4/2 cups - 1/2 cup = 3/2 cups\n\nTherefore, you need an additional 3/2 cups of",
+    "correct": true
+  },
+  {
+    "id": "q13",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Exercise 3:\nQuestion: A recipe requires 2 cups of flour, but you only have 1/2 cup. How much more flour do you need?\nAnswer: Solve step by step using at most 5 short steps.",
+    "correct": false
+  },
+  {
+    "id": "q13",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Exercise 3:\nQuestion: A recipe requires 2 cups of flour, but you only have 1/2 cup. How much more flour do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A store is offering a 20% discount on all items. If a shirt originally costs $25, how much will it cost after the discount?\nAnswer: Solve step by step using at most 5 short steps",
+    "correct": false
+  },
+  {
+    "id": "q13",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Exercise 3:\nQuestion: A recipe requires 2 cups of flour, but you only have 1/2 cup. How much more flour do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A store is offering a 20% discount on all items. If a shirt originally costs $25, how much will it cost after the discount?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:\nQuestion: A rectangular garden has a length of 12 meters and a width of 8 meters. What is the area of the garden?\nAnswer: Solve step by step using at most 5 short steps.\n\nAnswer:\nExercise 1:\nAnswer: The total cost of the items is $45.\n\nExercise 2:\nAnswer: The journey lasted 2 hours and 30 minutes.\n\nExercise 3:\nAnswer: You need",
+    "correct": false
+  },
+  {
+    "id": "q14",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Set up a proportion:\n5 toys / $45 = 8 toys / x\n\nStep 2: Cross-multiply and solve for x:\n5x = 8 * $45\n5x = $360",
+    "correct": false
+  },
+  {
+    "id": "q14",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Set up a proportion:\n5 toys / $45 = 8 toys / x\n\nStep 2: Cross-multiply and solve for x:\n5x = 8 * $45\n5x = $360\nx = $360 / 5\nx = $72\n\nTherefore, 8 toys would cost $72.\n\nExercise 3:\nQuestion: If a recipe calls for 2 cups of flour to make 12 cookies, how much flour would be",
+    "correct": true
+  },
+  {
+    "id": "q14",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Set up a proportion:\n5 toys / $45 = 8 toys / x\n\nStep 2: Cross-multiply and solve for x:\n5x = 8 * $45\n5x = $360\nx = $360 / 5\nx = $72\n\nTherefore, 8 toys would cost $72.\n\nExercise 3:\nQuestion: If a recipe calls for 2 cups of flour to make 12 cookies, how much flour would be needed to make 24 cookies?\nAnswer: Let's solve step by step.\n\nStep 1: Set up a proportion:\n2 cups / 12 cookies = x cups / 24 cookies\n\nStep 2: Cross-multiply and solve for x:\n12x = 2 * 24\n12x = 48\nx = 48 / 12\nx = 4\n\nTherefore, 4 cups of flour would be needed to make 24 cookies.\n\nExercise 4:\nQuestion:",
+    "correct": true
+  },
+  {
+    "id": "q14",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Exercise 3:\nQuestion: If a car travels at a speed of 60 miles per hour, how far will it travel in 3 hours?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4",
+    "correct": false
+  },
+  {
+    "id": "q14",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Exercise 3:\nQuestion: If a car travels at a speed of 60 miles per hour, how far will it travel in 3 hours?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: If a recipe calls for 2 cups of flour and you want to make half the recipe, how much flour do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:",
+    "correct": false
+  },
+  {
+    "id": "q14",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Exercise 3:\nQuestion: If a car travels at a speed of 60 miles per hour, how far will it travel in 3 hours?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: If a recipe calls for 2 cups of flour and you want to make half the recipe, how much flour do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:\nQuestion: If a store is having a sale with a 20% discount on all items, and a shirt originally costs $25, how much will it cost after the discount?\nAnswer: Solve step by step using at most 5 short steps.\n\nAnswer:\nExercise 1:\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 2:\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise",
+    "correct": false
+  },
+  {
+    "id": "q15",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Add the lengths of all three sides.\n7 + 8 + 9 = 24\n\nStep 2: The perimeter of the triangle is 24 units.\n\nExercise 3:\nQuestion: A rectangle has a length of 12",
+    "correct": true
+  },
+  {
+    "id": "q15",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Add the lengths of all three sides.\n7 + 8 + 9 = 24\n\nStep 2: The perimeter of the triangle is 24 units.\n\nExercise 3:\nQuestion: A rectangle has a length of 12 units and a width of 5 units. What is its perimeter?\nAnswer: Let's solve step by step.\n\nStep 1: Add the lengths of all four sides.\n12 + 5 + 12 + 5 = 34\n\nStep 2",
+    "correct": true
+  },
+  {
+    "id": "q15",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Add the lengths of all three sides.\n7 + 8 + 9 = 24\n\nStep 2: The perimeter of the triangle is 24 units.\n\nExercise 3:\nQuestion: A rectangle has a length of 12 units and a width of 5 units. What is its perimeter?\nAnswer: Let's solve step by step.\n\nStep 1: Add the lengths of all four sides.\n12 + 5 + 12 + 5 = 34\n\nStep 2: The perimeter of the rectangle is 34 units.\n\nExercise 4:\nQuestion: A square has a side length of 6 units. What is its perimeter?\nAnswer: Let's solve step by step.\n\nStep 1: Multiply the side length by 4.\n6 x 4 = 24\n\nStep 2: The perimeter of the square is 24 units.\n\nExercise 5:\nQuestion: A pentagon has side lengths of 3 units, 4 units,",
+    "correct": true
+  },
+  {
+    "id": "q15",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Exercise 3:\nQuestion: A rectangle has a length of 12 units and a width of 5 units. What is its area?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:",
+    "correct": false
+  },
+  {
+    "id": "q15",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Exercise 3:\nQuestion: A rectangle has a length of 12 units and a width of 5 units. What is its area?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A square has a side length of 6 units. What is its perimeter?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:\nQuestion: A circle has a radius of 5 units.",
+    "correct": false
+  },
+  {
+    "id": "q15",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Exercise 3:\nQuestion: A rectangle has a length of 12 units and a width of 5 units. What is its area?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A square has a side length of 6 units. What is its perimeter?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:\nQuestion: A circle has a radius of 5 units. What is its circumference?\nAnswer: Solve step by step using at most 5 short steps.\n\nAnswer:\nExercise 1:\nAnswer: The perimeter of the rectangle is 26 units.\n\nExercise 2:\nAnswer: The perimeter of the triangle is 24 units.\n\nExercise 3:\nAnswer: The area of the rectangle is 60 square units.\n\nExercise 4:\nAnswer: The perimeter of the square is 24 units.\n\nExercise",
+    "correct": true
+  },
+  {
+    "id": "q16",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Triple 12: 12 x 3 = 36\nStep 2: Subtract 20: 36 - 20 = 16\nTherefore, you get 16.\n\nExercise 3:\nQuestion: If you divide 48 by 6 and then add",
+    "correct": true
+  },
+  {
+    "id": "q16",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Triple 12: 12 x 3 = 36\nStep 2: Subtract 20: 36 - 20 = 16\nTherefore, you get 16.\n\nExercise 3:\nQuestion: If you divide 48 by 6 and then add 10, what number do you get?\nAnswer: Let's solve step by step.\nStep 1: Divide 48 by 6: 48 \u00f7 6 = 8\nStep 2: Add 10: 8 + 10 = 18\nTherefore, you get",
+    "correct": true
+  },
+  {
+    "id": "q16",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Triple 12: 12 x 3 = 36\nStep 2: Subtract 20: 36 - 20 = 16\nTherefore, you get 16.\n\nExercise 3:\nQuestion: If you divide 48 by 6 and then add 10, what number do you get?\nAnswer: Let's solve step by step.\nStep 1: Divide 48 by 6: 48 \u00f7 6 = 8\nStep 2: Add 10: 8 + 10 = 18\nTherefore, you get 18.\n\nExercise 4:\nQuestion: If you multiply 9 by 7 and then subtract 15, what number do you get?\nAnswer: Let's solve step by step.\nStep 1: Multiply 9 by 7: 9 x 7 = 63\nStep 2: Subtract 15: 63 - 15 = 48\nTherefore, you get 48.\n\nExercise 5:\nQuestion: If you divide 36 by 4 and then add 5, what number do you get",
+    "correct": true
+  },
+  {
+    "id": "q16",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Solution:\nStep 1: Multiply 12 by 3.\n12 * 3 = 36\n\nStep 2: Subtract 20 from the result.\n36 - 20 = 16\n\nTherefore, if you triple 12 and then subtract",
+    "correct": true
+  },
+  {
+    "id": "q16",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Solution:\nStep 1: Multiply 12 by 3.\n12 * 3 = 36\n\nStep 2: Subtract 20 from the result.\n36 - 20 = 16\n\nTherefore, if you triple 12 and then subtract 20, you get 16.",
+    "correct": true
+  },
+  {
+    "id": "q16",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Solution:\nStep 1: Multiply 12 by 3.\n12 * 3 = 36\n\nStep 2: Subtract 20 from the result.\n36 - 20 = 16\n\nTherefore, if you triple 12 and then subtract 20, you get 16.",
+    "correct": true
+  },
+  {
+    "id": "q17",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Divide the total number of crayons by the number of children.\n144 crayons \u00f7 12 children = 12 crayons per child\n\nTherefore, each child gets 12 crayons.\n\nComplete detailed",
+    "correct": true
+  },
+  {
+    "id": "q17",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Divide the total number of crayons by the number of children.\n144 crayons \u00f7 12 children = 12 crayons per child\n\nTherefore, each child gets 12 crayons.\n\nComplete detailed textbook-level solutions",
+    "correct": true
+  },
+  {
+    "id": "q17",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Divide the total number of crayons by the number of children.\n144 crayons \u00f7 12 children = 12 crayons per child\n\nTherefore, each child gets 12 crayons.\n\nComplete detailed textbook-level solutions",
+    "correct": true
+  },
+  {
+    "id": "q17",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Exercise 3:\nQuestion: A recipe requires 2 cups of flour to make 12 cookies. How many cups of flour are needed to make 36 cookies?\nAnswer: Solve step by step using at most 5 short steps.\n\nEx",
+    "correct": true
+  },
+  {
+    "id": "q17",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Exercise 3:\nQuestion: A recipe requires 2 cups of flour to make 12 cookies. How many cups of flour are needed to make 36 cookies?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A car travels at a speed of 60 miles per hour. How far will it travel in 3 hours?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:\nQuestion",
+    "correct": true
+  },
+  {
+    "id": "q17",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Exercise 3:\nQuestion: A recipe requires 2 cups of flour to make 12 cookies. How many cups of flour are needed to make 36 cookies?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A car travels at a speed of 60 miles per hour. How far will it travel in 3 hours?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:\nQuestion: A rectangular garden has a length of 12 meters and a width of 8 meters. What is its area?\nAnswer: Solve step by step using at most 5 short steps.\n\nAnswer:\nExercise 1:\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 2:\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 3:\nAnswer: Solve step by step using at most 5",
+    "correct": true
+  },
+  {
+    "id": "q18",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: All roses are flowers.\nStep 2: Some flowers are red.\n\nConclusion: We cannot conclude that all roses are red. While it is true that all roses are flowers, and some flowers are red, it does not",
+    "correct": false
+  },
+  {
+    "id": "q18",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: All roses are flowers.\nStep 2: Some flowers are red.\n\nConclusion: We cannot conclude that all roses are red. While it is true that all roses are flowers, and some flowers are red, it does not necessarily mean that all roses are red. There could be other types of flowers that are red but not roses.\n\nExercise 3:\nQuestion: If all birds have feathers and some birds can fly, can we conclude that all birds can fly",
+    "correct": false
+  },
+  {
+    "id": "q18",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: All roses are flowers.\nStep 2: Some flowers are red.\n\nConclusion: We cannot conclude that all roses are red. While it is true that all roses are flowers, and some flowers are red, it does not necessarily mean that all roses are red. There could be other types of flowers that are red but not roses.\n\nExercise 3:\nQuestion: If all birds have feathers and some birds can fly, can we conclude that all birds can fly?\nAnswer: Let's solve step by step.\n\nStep 1: All birds have feathers.\nStep 2: Some birds can fly.\n\nConclusion: We cannot conclude that all birds can fly. While it is true that all birds have feathers, and some birds can fly, it does not necessarily mean that all birds can fly. There could be other types of birds that have feathers but cannot fly.\n\nExercise 4:\nQuestion: If all dogs have tails and some",
+    "correct": false
+  },
+  {
+    "id": "q18",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Solution:\nStep 1: Let's assume that all roses are flowers.\nStep 2: Let's assume that some flowers are red.\nStep 3: If all roses are flowers and some flowers are red, then it is possible that all",
+    "correct": false
+  },
+  {
+    "id": "q18",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Solution:\nStep 1: Let's assume that all roses are flowers.\nStep 2: Let's assume that some flowers are red.\nStep 3: If all roses are flowers and some flowers are red, then it is possible that all roses are red.\nStep 4: However, we cannot conclude that all roses are red based on the given information.\nStep 5: Therefore, we cannot determine whether all roses are red or not.",
+    "correct": false
+  },
+  {
+    "id": "q18",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Solution:\nStep 1: Let's assume that all roses are flowers.\nStep 2: Let's assume that some flowers are red.\nStep 3: If all roses are flowers and some flowers are red, then it is possible that all roses are red.\nStep 4: However, we cannot conclude that all roses are red based on the given information.\nStep 5: Therefore, we cannot determine whether all roses are red or not.",
+    "correct": false
+  },
+  {
+    "id": "q19",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "1. Tom is taller than Jerry.\n2. Jerry is taller than Mike.\nFrom statement 1, we know that Tom is taller than Jerry. From statement 2, we know that Jerry is taller than Mike. Therefore, Mike is the shortest",
+    "correct": true
+  },
+  {
+    "id": "q19",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "1. Tom is taller than Jerry.\n2. Jerry is taller than Mike.\nFrom statement 1, we know that Tom is taller than Jerry. From statement 2, we know that Jerry is taller than Mike. Therefore, Mike is the shortest.",
+    "correct": true
+  },
+  {
+    "id": "q19",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "1. Tom is taller than Jerry.\n2. Jerry is taller than Mike.\nFrom statement 1, we know that Tom is taller than Jerry. From statement 2, we know that Jerry is taller than Mike. Therefore, Mike is the shortest.",
+    "correct": true
+  },
+  {
+    "id": "q19",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Solution:\n1. Tom is taller than Jerry.\n2. Jerry is taller than Mike.\n3. Therefore, Tom is taller than Mike.\n4. Since Tom is taller than both Jerry and Mike, he is the tallest.",
+    "correct": true
+  },
+  {
+    "id": "q19",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Solution:\n1. Tom is taller than Jerry.\n2. Jerry is taller than Mike.\n3. Therefore, Tom is taller than Mike.\n4. Since Tom is taller than both Jerry and Mike, he is the tallest.\n5. Therefore, Mike is the shortest.",
+    "correct": true
+  },
+  {
+    "id": "q19",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Solution:\n1. Tom is taller than Jerry.\n2. Jerry is taller than Mike.\n3. Therefore, Tom is taller than Mike.\n4. Since Tom is taller than both Jerry and Mike, he is the tallest.\n5. Therefore, Mike is the shortest.",
+    "correct": true
+  },
+  {
+    "id": "q20",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "1. If it rains, the ground gets wet. (Premise)\n2. The ground is wet. (Premise)\n3. Therefore, it necessarily rained. (Conclusion)\n\nTo determine the validity of the argument",
+    "correct": false
+  },
+  {
+    "id": "q20",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "1. If it rains, the ground gets wet. (Premise)\n2. The ground is wet. (Premise)\n3. Therefore, it necessarily rained. (Conclusion)\n\nTo determine the validity of the argument, we need to check if the conclusion follows logically from the premises. In this case, the argument is valid because the conclusion is a logical consequence of the premises. If it rains, the ground gets wet, and the ground is wet, it necessarily",
+    "correct": false
+  },
+  {
+    "id": "q20",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "1. If it rains, the ground gets wet. (Premise)\n2. The ground is wet. (Premise)\n3. Therefore, it necessarily rained. (Conclusion)\n\nTo determine the validity of the argument, we need to check if the conclusion follows logically from the premises. In this case, the argument is valid because the conclusion is a logical consequence of the premises. If it rains, the ground gets wet, and the ground is wet, it necessarily rained.\n\n\nComplete detailed textbook-level solutions",
+    "correct": false
+  },
+  {
+    "id": "q20",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Solution:\nStep 1: Let's assume that it did not rain.\nStep 2: According to the given statement, if it rains, the ground gets wet.\nStep 3: Since we assumed that it did not rain, the ground",
+    "correct": false
+  },
+  {
+    "id": "q20",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Solution:\nStep 1: Let's assume that it did not rain.\nStep 2: According to the given statement, if it rains, the ground gets wet.\nStep 3: Since we assumed that it did not rain, the ground should not be wet.\nStep 4: However, the ground is wet, which contradicts our assumption.\nStep 5: Therefore, it must have rained.",
+    "correct": false
+  },
+  {
+    "id": "q20",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Solution:\nStep 1: Let's assume that it did not rain.\nStep 2: According to the given statement, if it rains, the ground gets wet.\nStep 3: Since we assumed that it did not rain, the ground should not be wet.\nStep 4: However, the ground is wet, which contradicts our assumption.\nStep 5: Therefore, it must have rained.",
+    "correct": false
+  },
+  {
+    "id": "q21",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Identify the pattern.\nThe given sequence is doubling each time.\n\nStep 2: Apply the pattern.\nTo find the next number, we double the last number in the sequence.\n16 x 2 = 32",
+    "correct": true
+  },
+  {
+    "id": "q21",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Identify the pattern.\nThe given sequence is doubling each time.\n\nStep 2: Apply the pattern.\nTo find the next number, we double the last number in the sequence.\n16 x 2 = 32\n\nTherefore, the next number in the sequence is 32.\n\nExercise 3:\nQuestion: In a sequence: 3, 6, 9, 12,... what is the next number?\nAnswer: Let's solve step by step.",
+    "correct": true
+  },
+  {
+    "id": "q21",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Identify the pattern.\nThe given sequence is doubling each time.\n\nStep 2: Apply the pattern.\nTo find the next number, we double the last number in the sequence.\n16 x 2 = 32\n\nTherefore, the next number in the sequence is 32.\n\nExercise 3:\nQuestion: In a sequence: 3, 6, 9, 12,... what is the next number?\nAnswer: Let's solve step by step.\n\nStep 1: Identify the pattern.\nThe given sequence is increasing by 3 each time.\n\nStep 2: Apply the pattern.\nTo find the next number, we add 3 to the last number in the sequence.\n12 + 3 = 15\n\nTherefore, the next number in the sequence is 15.\n\nExercise 4:\nQuestion: In a sequence: 1, 4, 9, 16,... what is the next number?\nAnswer: Let's",
+    "correct": true
+  },
+  {
+    "id": "q21",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Exercise 2:\nQuestion: In a sequence: 1, 4, 9, 16,... what is the next number?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 3:\nQuestion",
+    "correct": false
+  },
+  {
+    "id": "q21",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Exercise 2:\nQuestion: In a sequence: 1, 4, 9, 16,... what is the next number?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 3:\nQuestion: In a sequence: 3, 6, 12, 24,... what is the next number?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: In a sequence: 1,",
+    "correct": false
+  },
+  {
+    "id": "q21",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Exercise 2:\nQuestion: In a sequence: 1, 4, 9, 16,... what is the next number?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 3:\nQuestion: In a sequence: 3, 6, 12, 24,... what is the next number?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: In a sequence: 1, 3, 6, 10,... what is the next number?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:\nQuestion: In a sequence: 2, 5, 10, 17,... what is the next number?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 6:\nQuestion: In a sequence: 1, 4, 9, 16, 25,... what is the next number",
+    "correct": false
+  },
+  {
+    "id": "q22",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "1. If no cats are dogs, it means that there is no overlap between the set of cats and the set of dogs.\n2. If all dogs are animals, it means that every element in the set of dogs is also an element",
+    "correct": false
+  },
+  {
+    "id": "q22",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "1. If no cats are dogs, it means that there is no overlap between the set of cats and the set of dogs.\n2. If all dogs are animals, it means that every element in the set of dogs is also an element in the set of animals.\n3. Combining these two statements, we can conclude that there is no overlap between the set of animals and the set of cats.\n4. Therefore, there are no animals that are cats.\n\nAnswer",
+    "correct": false
+  },
+  {
+    "id": "q22",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "1. If no cats are dogs, it means that there is no overlap between the set of cats and the set of dogs.\n2. If all dogs are animals, it means that every element in the set of dogs is also an element in the set of animals.\n3. Combining these two statements, we can conclude that there is no overlap between the set of animals and the set of cats.\n4. Therefore, there are no animals that are cats.\n\nAnswer: No, some animals are not cats.\n\nExercise 2:\nQuestion: If all birds can fly and penguins are birds, can penguins fly?\nAnswer: Let's solve step by step.\n\n1. If all birds can fly, it means that every element in the set of birds is also an element in the set of flying creatures.\n2. If penguins are birds, it means that every element in the set of penguins is also an element in",
+    "correct": false
+  },
+  {
+    "id": "q22",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Solution:\nStep 1: Let's assume that some animals are cats.\nStep 2: According to the given information, no cats are dogs.\nStep 3: If some animals are cats, then they cannot be dogs.\nStep 4",
+    "correct": false
+  },
+  {
+    "id": "q22",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Solution:\nStep 1: Let's assume that some animals are cats.\nStep 2: According to the given information, no cats are dogs.\nStep 3: If some animals are cats, then they cannot be dogs.\nStep 4: Therefore, our assumption that some animals are cats is false.\nStep 5: Hence, no animals are cats.",
+    "correct": false
+  },
+  {
+    "id": "q22",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Solution:\nStep 1: Let's assume that some animals are cats.\nStep 2: According to the given information, no cats are dogs.\nStep 3: If some animals are cats, then they cannot be dogs.\nStep 4: Therefore, our assumption that some animals are cats is false.\nStep 5: Hence, no animals are cats.",
+    "correct": false
+  },
+  {
+    "id": "q23",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Calculate the differences between consecutive terms:\nB - A = 6 - 3 = 3\nC - B = 9 - 6 = 3\n\nStep 2: Observe the pattern:\nThe differences between consecutive terms are all",
+    "correct": false
+  },
+  {
+    "id": "q23",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Calculate the differences between consecutive terms:\nB - A = 6 - 3 = 3\nC - B = 9 - 6 = 3\n\nStep 2: Observe the pattern:\nThe differences between consecutive terms are all equal to 3.\n\nStep 3: Apply the pattern to find D:\nD - C =?\nSince the pattern is that the differences between consecutive terms are equal to 3, we can add 3 to C to find D:\nD",
+    "correct": false
+  },
+  {
+    "id": "q23",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Calculate the differences between consecutive terms:\nB - A = 6 - 3 = 3\nC - B = 9 - 6 = 3\n\nStep 2: Observe the pattern:\nThe differences between consecutive terms are all equal to 3.\n\nStep 3: Apply the pattern to find D:\nD - C =?\nSince the pattern is that the differences between consecutive terms are equal to 3, we can add 3 to C to find D:\nD - C = 9 + 3 = 12\n\nTherefore, D should equal 12.\n\nExercise 2:\nQuestion: A = 2, B = 4, C = 8, D =?. What is the pattern and what should D equal?\nAnswer: Let's solve step by step.\n\nStep 1: Calculate the differences between consecutive terms:\nB - A = 4 - 2 = 2\nC - B = 8 - 4 = 4\n\nStep 2:",
+    "correct": true
+  },
+  {
+    "id": "q23",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Exercise 2:\nQuestion: A = 2, B = 4, C = 8. What is the pattern and what should D equal?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 3",
+    "correct": false
+  },
+  {
+    "id": "q23",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Exercise 2:\nQuestion: A = 2, B = 4, C = 8. What is the pattern and what should D equal?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 3:\nQuestion: A = 5, B = 10, C = 15. What is the pattern and what should D equal?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion:",
+    "correct": false
+  },
+  {
+    "id": "q23",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Exercise 2:\nQuestion: A = 2, B = 4, C = 8. What is the pattern and what should D equal?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 3:\nQuestion: A = 5, B = 10, C = 15. What is the pattern and what should D equal?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A = 1, B = 3, C = 5. What is the pattern and what should D equal?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:\nQuestion: A = 7, B = 14, C = 21. What is the pattern and what should D equal?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 6:\nQuestion: A = 4, B = 8,",
+    "correct": false
+  },
+  {
+    "id": "q24",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Monday comes before Tuesday.\nStep 2: Wednesday comes after Tuesday.\n\nBased on the given information, we can conclude that Tuesday is in the middle.\n\nTherefore, Tuesday is in the middle.",
+    "correct": true
+  },
+  {
+    "id": "q24",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Monday comes before Tuesday.\nStep 2: Wednesday comes after Tuesday.\n\nBased on the given information, we can conclude that Tuesday is in the middle.\n\nTherefore, Tuesday is in the middle.",
+    "correct": true
+  },
+  {
+    "id": "q24",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Monday comes before Tuesday.\nStep 2: Wednesday comes after Tuesday.\n\nBased on the given information, we can conclude that Tuesday is in the middle.\n\nTherefore, Tuesday is in the middle.",
+    "correct": true
+  },
+  {
+    "id": "q24",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Exercise 3:\nQuestion: If a train leaves the station at 9:00 AM and arrives at its destination at 12:30 PM, how long is the journey?\nAnswer: Solve step by step using at most 5 short steps",
+    "correct": false
+  },
+  {
+    "id": "q24",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Exercise 3:\nQuestion: If a train leaves the station at 9:00 AM and arrives at its destination at 12:30 PM, how long is the journey?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: If a recipe calls for 2 cups of flour and you want to make half the recipe, how much flour do you need?\nAnswer: Solve step by step using at most 5 short steps.",
+    "correct": false
+  },
+  {
+    "id": "q24",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Exercise 3:\nQuestion: If a train leaves the station at 9:00 AM and arrives at its destination at 12:30 PM, how long is the journey?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: If a recipe calls for 2 cups of flour and you want to make half the recipe, how much flour do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:\nQuestion: If a store is having a sale with a 20% discount on all items, and you want to buy a shirt that costs $25, how much will you pay after the discount?\nAnswer: Solve step by step using at most 5 short steps.\n\nAnswer:\nExercise 1: Answer: The sum of 5 and 8 is 13.\nExercise 2: Answer: Wednesday is in the middle.\nExercise 3: Answer",
+    "correct": false
+  },
+  {
+    "id": "q25",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: You pass the person in second place.\nStep 2: You are now in first place.\n\nTherefore, you are in first place now.",
+    "correct": false
+  },
+  {
+    "id": "q25",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: You pass the person in second place.\nStep 2: You are now in first place.\n\nTherefore, you are in first place now.",
+    "correct": false
+  },
+  {
+    "id": "q25",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: You pass the person in second place.\nStep 2: You are now in first place.\n\nTherefore, you are in first place now.",
+    "correct": false
+  },
+  {
+    "id": "q25",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Solution:\n1. You pass the person in second place.\n2. This means you are now in first place.\n3. Therefore, you are in first place now.",
+    "correct": false
+  },
+  {
+    "id": "q25",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Solution:\n1. You pass the person in second place.\n2. This means you are now in first place.\n3. Therefore, you are in first place now.",
+    "correct": false
+  },
+  {
+    "id": "q25",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Solution:\n1. You pass the person in second place.\n2. This means you are now in first place.\n3. Therefore, you are in first place now.",
+    "correct": false
+  },
+  {
+    "id": "q26",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Determine the time taken by one machine to make one widget.\nSince 5 machines take 5 minutes to make 5 widgets, it means that each machine takes 1 minute to make 1 widget.\n\nStep 2: Determine the",
+    "correct": true
+  },
+  {
+    "id": "q26",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Determine the time taken by one machine to make one widget.\nSince 5 machines take 5 minutes to make 5 widgets, it means that each machine takes 1 minute to make 1 widget.\n\nStep 2: Determine the time taken by 100 machines to make 100 widgets.\nSince each machine takes 1 minute to make 1 widget, 100 machines would take 100 minutes to make 100 widgets.\n\nTherefore, it would take 100 machines 100 minutes to make 100 widgets.",
+    "correct": true
+  },
+  {
+    "id": "q26",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Determine the time taken by one machine to make one widget.\nSince 5 machines take 5 minutes to make 5 widgets, it means that each machine takes 1 minute to make 1 widget.\n\nStep 2: Determine the time taken by 100 machines to make 100 widgets.\nSince each machine takes 1 minute to make 1 widget, 100 machines would take 100 minutes to make 100 widgets.\n\nTherefore, it would take 100 machines 100 minutes to make 100 widgets.",
+    "correct": true
+  },
+  {
+    "id": "q26",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Solution:\nStep 1: Find the time taken by one machine to make one widget.\nSince 5 machines take 5 minutes to make 5 widgets, it means that each machine takes 1 minute to make 1 widget.\n\nStep 2: Find",
+    "correct": true
+  },
+  {
+    "id": "q26",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Solution:\nStep 1: Find the time taken by one machine to make one widget.\nSince 5 machines take 5 minutes to make 5 widgets, it means that each machine takes 1 minute to make 1 widget.\n\nStep 2: Find the time taken by 100 machines to make 100 widgets.\nSince each machine takes 1 minute to make 1 widget, 100 machines will take 100 minutes to make 100 widgets.\n\nTherefore, it would take 100 machines 100 minutes to make 100 widgets.",
+    "correct": true
+  },
+  {
+    "id": "q26",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Solution:\nStep 1: Find the time taken by one machine to make one widget.\nSince 5 machines take 5 minutes to make 5 widgets, it means that each machine takes 1 minute to make 1 widget.\n\nStep 2: Find the time taken by 100 machines to make 100 widgets.\nSince each machine takes 1 minute to make 1 widget, 100 machines will take 100 minutes to make 100 widgets.\n\nTherefore, it would take 100 machines 100 minutes to make 100 widgets.",
+    "correct": true
+  },
+  {
+    "id": "q27",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Exercise 2:\nQuestion: If x + y = 10 and x - y = 2, find the values of x and y.\nAnswer: Let's solve step by step.\n\nExercise 3:\nQuestion: If a",
+    "correct": false
+  },
+  {
+    "id": "q27",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Exercise 2:\nQuestion: If x + y = 10 and x - y = 2, find the values of x and y.\nAnswer: Let's solve step by step.\n\nExercise 3:\nQuestion: If a = 3 and b = 5, find the value of 2a + 3b.\nAnswer: Let's solve step by step.\n\nExercise 4:\nQuestion: If a = 4 and b = 2, find the value of a",
+    "correct": false
+  },
+  {
+    "id": "q27",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Exercise 2:\nQuestion: If x + y = 10 and x - y = 2, find the values of x and y.\nAnswer: Let's solve step by step.\n\nExercise 3:\nQuestion: If a = 3 and b = 5, find the value of 2a + 3b.\nAnswer: Let's solve step by step.\n\nExercise 4:\nQuestion: If a = 4 and b = 2, find the value of a^2 - b^2.\nAnswer: Let's solve step by step.\n\nExercise 5:\nQuestion: If a = 2 and b = 3, find the value of a^2 + b^2.\nAnswer: Let's solve step by step.\n\nExercise 6:\nQuestion: If a = 5 and b = 2, find the value of a^2 - b^2.\nAnswer: Let's solve step by step.\n\nEx",
+    "correct": false
+  },
+  {
+    "id": "q27",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Exercise 2:\nQuestion: If x + y = 10 and x - y = 2, find the values of x and y.\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 3:",
+    "correct": false
+  },
+  {
+    "id": "q27",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Exercise 2:\nQuestion: If x + y = 10 and x - y = 2, find the values of x and y.\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 3:\nQuestion: If a = 3 and b = 5, find the value of 2a + 3b.\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: If a = 4",
+    "correct": false
+  },
+  {
+    "id": "q27",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Exercise 2:\nQuestion: If x + y = 10 and x - y = 2, find the values of x and y.\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 3:\nQuestion: If a = 3 and b = 5, find the value of 2a + 3b.\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: If a = 4 and b = 2, find the value of a^2 - b^2.\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:\nQuestion: If a = 2 and b = 3, find the value of a^2 + b^2.\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 6:\nQuestion: If a = 5 and b = 2, find the value of a",
+    "correct": false
+  },
+  {
+    "id": "q28",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Circle, Square, Triangle, Circle, Square, ___\nStep 2: Circle, Square, Triangle, Circle, Square, Triangle\nStep 3: Circle, Square, Triangle, Circle, Square, Triangle, Circle\n\nThe",
+    "correct": true
+  },
+  {
+    "id": "q28",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Circle, Square, Triangle, Circle, Square, ___\nStep 2: Circle, Square, Triangle, Circle, Square, Triangle\nStep 3: Circle, Square, Triangle, Circle, Square, Triangle, Circle\n\nThe next shape in the pattern is Circle.",
+    "correct": true
+  },
+  {
+    "id": "q28",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Circle, Square, Triangle, Circle, Square, ___\nStep 2: Circle, Square, Triangle, Circle, Square, Triangle\nStep 3: Circle, Square, Triangle, Circle, Square, Triangle, Circle\n\nThe next shape in the pattern is Circle.",
+    "correct": true
+  },
+  {
+    "id": "q28",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "1. Look at the pattern: Circle, Square, Triangle, Circle, Square, ___?\n2. Notice that the pattern repeats every three shapes: Circle, Square, Triangle.\n3. Identify the missing shape in the pattern:",
+    "correct": true
+  },
+  {
+    "id": "q28",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "1. Look at the pattern: Circle, Square, Triangle, Circle, Square, ___?\n2. Notice that the pattern repeats every three shapes: Circle, Square, Triangle.\n3. Identify the missing shape in the pattern: Circle, Square, Triangle, Circle, Square, Triangle.\n4. Determine the next shape in the pattern: Circle, Square, Triangle, Circle, Square, Triangle.\n5. The missing shape is a Circle.\n\nAnswer:",
+    "correct": true
+  },
+  {
+    "id": "q28",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "1. Look at the pattern: Circle, Square, Triangle, Circle, Square, ___?\n2. Notice that the pattern repeats every three shapes: Circle, Square, Triangle.\n3. Identify the missing shape in the pattern: Circle, Square, Triangle, Circle, Square, Triangle.\n4. Determine the next shape in the pattern: Circle, Square, Triangle, Circle, Square, Triangle.\n5. The missing shape is a Circle.\n\nAnswer: Circle",
+    "correct": true
+  },
+  {
+    "id": "q29",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Some birds can fly.\nStep 2: Penguins are birds.\n\nConclusion: Therefore, all penguins can fly.\n\nExercise 2:\nQuestion: If all cats have fur and Fluffy is a cat,",
+    "correct": false
+  },
+  {
+    "id": "q29",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Some birds can fly.\nStep 2: Penguins are birds.\n\nConclusion: Therefore, all penguins can fly.\n\nExercise 2:\nQuestion: If all cats have fur and Fluffy is a cat, does Fluffy have fur?\nAnswer: Let's solve step by step.\n\nStep 1: All cats have fur.\nStep 2: Fluffy is a cat.\n\nConclusion: Therefore, Fluffy has fur.\n\nEx",
+    "correct": false
+  },
+  {
+    "id": "q29",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Some birds can fly.\nStep 2: Penguins are birds.\n\nConclusion: Therefore, all penguins can fly.\n\nExercise 2:\nQuestion: If all cats have fur and Fluffy is a cat, does Fluffy have fur?\nAnswer: Let's solve step by step.\n\nStep 1: All cats have fur.\nStep 2: Fluffy is a cat.\n\nConclusion: Therefore, Fluffy has fur.\n\nExercise 3:\nQuestion: If all squares are rectangles and all rectangles have four sides, do all squares have four sides?\nAnswer: Let's solve step by step.\n\nStep 1: All squares are rectangles.\nStep 2: All rectangles have four sides.\n\nConclusion: Therefore, all squares have four sides.\n\nExercise 4:\nQuestion: If some dogs are brown and Max is a dog, can Max be brown?\nAnswer: Let",
+    "correct": false
+  },
+  {
+    "id": "q29",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Solution:\nStep 1: Identify the given information:\n- Some birds can fly.\n- Penguins are birds.\n\nStep 2: Analyze the information:\n- The statement \"some birds can fly\" implies that there are",
+    "correct": false
+  },
+  {
+    "id": "q29",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Solution:\nStep 1: Identify the given information:\n- Some birds can fly.\n- Penguins are birds.\n\nStep 2: Analyze the information:\n- The statement \"some birds can fly\" implies that there are birds that can fly.\n- The statement \"penguins are birds\" implies that penguins belong to the category of birds.\n\nStep 3: Apply logical reasoning:\n- Since penguins are birds and some birds can fly, it",
+    "correct": false
+  },
+  {
+    "id": "q29",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Solution:\nStep 1: Identify the given information:\n- Some birds can fly.\n- Penguins are birds.\n\nStep 2: Analyze the information:\n- The statement \"some birds can fly\" implies that there are birds that can fly.\n- The statement \"penguins are birds\" implies that penguins belong to the category of birds.\n\nStep 3: Apply logical reasoning:\n- Since penguins are birds and some birds can fly, it is possible that penguins can fly.\n\nStep 4: Conclusion:\n- Based on the given information and logical reasoning, it is possible that all penguins can fly.\n\nFollow-up exercises:\n1. If all penguins can fly, what can we conclude about the ability of other birds to fly?\nSolution: We cannot conclude anything about the ability of other birds to fly based on the given information.\n\n2. If some birds cannot fly, what can we",
+    "correct": false
+  },
+  {
+    "id": "q30",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Identify the pattern.\nThe pattern in this sequence is that each letter is shifted two positions forward in the alphabet.\n\nStep 2: Apply the pattern.\nUsing the pattern, we can determine the next letter in the",
+    "correct": false
+  },
+  {
+    "id": "q30",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Identify the pattern.\nThe pattern in this sequence is that each letter is shifted two positions forward in the alphabet.\n\nStep 2: Apply the pattern.\nUsing the pattern, we can determine the next letter in the sequence.\n\nJ -> K\nF -> I\nM -> N\nA -> C\nM -> N\nJ -> K\n\nTherefore, the next letter in the sequence is K.\n\nExercise 2:\nQuestion: What",
+    "correct": true
+  },
+  {
+    "id": "q30",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Identify the pattern.\nThe pattern in this sequence is that each letter is shifted two positions forward in the alphabet.\n\nStep 2: Apply the pattern.\nUsing the pattern, we can determine the next letter in the sequence.\n\nJ -> K\nF -> I\nM -> N\nA -> C\nM -> N\nJ -> K\n\nTherefore, the next letter in the sequence is K.\n\nExercise 2:\nQuestion: What comes next in this sequence: 1, 4, 9, 16, 25, ___?\nAnswer: Let's solve step by step.\n\nStep 1: Identify the pattern.\nThe pattern in this sequence is that each number is the square of the counting number.\n\nStep 2: Apply the pattern.\nUsing the pattern, we can determine the next number in the sequence.\n\n1^2 = 1\n2^2 = 4\n3^2 = 9",
+    "correct": true
+  },
+  {
+    "id": "q30",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Solution:\nStep 1: Look for a pattern in the sequence.\nStep 2: Notice that the letters are alternating between J and F.\nStep 3: Continue the pattern by adding F to the end of the sequence.\nStep 4",
+    "correct": true
+  },
+  {
+    "id": "q30",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Solution:\nStep 1: Look for a pattern in the sequence.\nStep 2: Notice that the letters are alternating between J and F.\nStep 3: Continue the pattern by adding F to the end of the sequence.\nStep 4: The next letter in the sequence is F.\nStep 5: The final answer is F.\n\nFollow-up Exercise 1:\nQuestion: What comes next in this sequence: A, B, C, D, E, F,",
+    "correct": true
+  },
+  {
+    "id": "q30",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Solution:\nStep 1: Look for a pattern in the sequence.\nStep 2: Notice that the letters are alternating between J and F.\nStep 3: Continue the pattern by adding F to the end of the sequence.\nStep 4: The next letter in the sequence is F.\nStep 5: The final answer is F.\n\nFollow-up Exercise 1:\nQuestion: What comes next in this sequence: A, B, C, D, E, F, ___?\nAnswer: Solve step by step using at most 5 short steps.\n\nSolution:\nStep 1: Look for a pattern in the sequence.\nStep 2: Notice that the letters are increasing by 1 each time.\nStep 3: Continue the pattern by adding 1 to the last letter in the sequence.\nStep 4: The next letter in the sequence is F.\nStep 5: The final answer is F.\n\nFollow-up Exercise 2:\nQuestion:",
+    "correct": true
+  },
+  {
+    "id": "q31",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Determine the current day.\nGiven that today is Wednesday, we can assign it the number 3.\n\nStep 2: Determine the number of days ago.\nSince we want to find the day 10 days ago,",
+    "correct": false
+  },
+  {
+    "id": "q31",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Determine the current day.\nGiven that today is Wednesday, we can assign it the number 3.\n\nStep 2: Determine the number of days ago.\nSince we want to find the day 10 days ago, we subtract 10 from the current day.\n3 - 10 = -7\n\nStep 3: Determine the day corresponding to the negative number.\nSince -7 is less than 0, we need to count back from the previous day.",
+    "correct": false
+  },
+  {
+    "id": "q31",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Determine the current day.\nGiven that today is Wednesday, we can assign it the number 3.\n\nStep 2: Determine the number of days ago.\nSince we want to find the day 10 days ago, we subtract 10 from the current day.\n3 - 10 = -7\n\nStep 3: Determine the day corresponding to the negative number.\nSince -7 is less than 0, we need to count back from the previous day.\n-7 + 7 = 0\n\nTherefore, 10 days ago, it was Sunday.\n\nComplete detailed textbook-level solutions",
+    "correct": true
+  },
+  {
+    "id": "q31",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Solution:\nStep 1: Determine the current day.\nGiven that today is Wednesday, we can assign it the value of 3.\n\nStep 2: Subtract 10 days from the current day.\nTo find the day 10",
+    "correct": false
+  },
+  {
+    "id": "q31",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Solution:\nStep 1: Determine the current day.\nGiven that today is Wednesday, we can assign it the value of 3.\n\nStep 2: Subtract 10 days from the current day.\nTo find the day 10 days ago, we subtract 10 from the current day: 3 - 10 = -7.\n\nStep 3: Determine the day corresponding to the negative value.\nSince the result is negative, we need to count the number of days from the",
+    "correct": false
+  },
+  {
+    "id": "q31",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Solution:\nStep 1: Determine the current day.\nGiven that today is Wednesday, we can assign it the value of 3.\n\nStep 2: Subtract 10 days from the current day.\nTo find the day 10 days ago, we subtract 10 from the current day: 3 - 10 = -7.\n\nStep 3: Determine the day corresponding to the negative value.\nSince the result is negative, we need to count the number of days from the previous week.\n\nStep 4: Determine the day corresponding to the negative value.\nSince there are 7 days in a week, we count 7 days from the previous week: -7 + 7 = 0.\n\nStep 5: Determine the day corresponding to the zero value.\nSince the result is zero, the day corresponding to the zero value is Monday.\n\nTherefore, 10 days ago, it was Monday.",
+    "correct": false
+  },
+  {
+    "id": "q32",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Each daughter has 1 brother, so there are 6 brothers in total.\nStep 2: Each daughter and brother are counted as one child, so we need to add the number of daughters and brothers.\nStep 3: There are 6",
+    "correct": false
+  },
+  {
+    "id": "q32",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Each daughter has 1 brother, so there are 6 brothers in total.\nStep 2: Each daughter and brother are counted as one child, so we need to add the number of daughters and brothers.\nStep 3: There are 6 daughters and 6 brothers, so the total number of children in the family is 6 + 6 = 12.\nTherefore, there are 12 children in the family.",
+    "correct": false
+  },
+  {
+    "id": "q32",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Each daughter has 1 brother, so there are 6 brothers in total.\nStep 2: Each daughter and brother are counted as one child, so we need to add the number of daughters and brothers.\nStep 3: There are 6 daughters and 6 brothers, so the total number of children in the family is 6 + 6 = 12.\nTherefore, there are 12 children in the family.",
+    "correct": false
+  },
+  {
+    "id": "q32",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Solution:\nStep 1: Let's assume the number of children in the family is x.\nStep 2: Since each daughter has 1 brother, the number of brothers is also x.\nStep 3: The total number of children in the",
+    "correct": false
+  },
+  {
+    "id": "q32",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Solution:\nStep 1: Let's assume the number of children in the family is x.\nStep 2: Since each daughter has 1 brother, the number of brothers is also x.\nStep 3: The total number of children in the family is the sum of the number of daughters and brothers, which is x + x = 2x.\nStep 4: We know that there are 6 daughters, so we can substitute x with 6 in the equation.\nStep 5: 2x",
+    "correct": false
+  },
+  {
+    "id": "q32",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Solution:\nStep 1: Let's assume the number of children in the family is x.\nStep 2: Since each daughter has 1 brother, the number of brothers is also x.\nStep 3: The total number of children in the family is the sum of the number of daughters and brothers, which is x + x = 2x.\nStep 4: We know that there are 6 daughters, so we can substitute x with 6 in the equation.\nStep 5: 2x = 6, which means x = 3.\nTherefore, there are 3 children in the family.",
+    "correct": false
+  },
+  {
+    "id": "q33",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Rearrange the letters in NEW DOOR.\nAnswer: NEW DOOR\n\nStep 2: Check if the rearranged letters form a word.\nAnswer: Yes, the rearranged letters form the word \"NEWDOOR",
+    "correct": false
+  },
+  {
+    "id": "q33",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Rearrange the letters in NEW DOOR.\nAnswer: NEW DOOR\n\nStep 2: Check if the rearranged letters form a word.\nAnswer: Yes, the rearranged letters form the word \"NEWDOOR\".\n\nExercise 3:\nQuestion: If you rearrange the letters in PYTHON, you get one word. What is it?\nAnswer: Let's solve step by step.\n\nStep 1: Rearrange the letters",
+    "correct": false
+  },
+  {
+    "id": "q33",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Rearrange the letters in NEW DOOR.\nAnswer: NEW DOOR\n\nStep 2: Check if the rearranged letters form a word.\nAnswer: Yes, the rearranged letters form the word \"NEWDOOR\".\n\nExercise 3:\nQuestion: If you rearrange the letters in PYTHON, you get one word. What is it?\nAnswer: Let's solve step by step.\n\nStep 1: Rearrange the letters in PYTHON.\nAnswer: PYTHON\n\nStep 2: Check if the rearranged letters form a word.\nAnswer: Yes, the rearranged letters form the word \"PYTHON\".\n\nExercise 4:\nQuestion: If you rearrange the letters in MATH, you get one word. What is it?\nAnswer: Let's solve step by step.\n\nStep 1: Rearrange the letters in MATH.\nAnswer:",
+    "correct": false
+  },
+  {
+    "id": "q33",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Solution:\n1. Rearrange the letters in NEW DOOR to form a word.\n2. The word formed is \"DORNE\".\n3. Rearrange the letters in DORNE to form a word.\n4.",
+    "correct": false
+  },
+  {
+    "id": "q33",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Solution:\n1. Rearrange the letters in NEW DOOR to form a word.\n2. The word formed is \"DORNE\".\n3. Rearrange the letters in DORNE to form a word.\n4. The word formed is \"NORDE\".\n5. Rearrange the letters in NORDE to form a word.\n6. The word formed is \"DORNE\".\n7. Rearrange the letters in DORNE to form a word",
+    "correct": false
+  },
+  {
+    "id": "q33",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Solution:\n1. Rearrange the letters in NEW DOOR to form a word.\n2. The word formed is \"DORNE\".\n3. Rearrange the letters in DORNE to form a word.\n4. The word formed is \"NORDE\".\n5. Rearrange the letters in NORDE to form a word.\n6. The word formed is \"DORNE\".\n7. Rearrange the letters in DORNE to form a word.\n8. The word formed is \"DORNE\".\n9. Rearrange the letters in DORNE to form a word.\n10. The word formed is \"DORNE\".\n\nFollow-up questions:\n1. What is the word formed by rearranging the letters in NEW DOOR?\nAnswer: The word formed is \"DORNE\".\n2. How many steps did it take to form the word \"DORNE\" from the letters in",
+    "correct": false
+  },
+  {
+    "id": "q34",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Let's assume the cost of the ball is x dollars.\nAccording to the given information, the bat costs $1 more than the ball, so the cost of the bat is x + $1.\n\nThe total cost of the bat",
+    "correct": false
+  },
+  {
+    "id": "q34",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Let's assume the cost of the ball is x dollars.\nAccording to the given information, the bat costs $1 more than the ball, so the cost of the bat is x + $1.\n\nThe total cost of the bat and ball is $1.10, so we can write the equation:\nx + (x + $1) = $1.10\n\nSimplifying the equation:\n2x + $1 = $1.10\n2",
+    "correct": false
+  },
+  {
+    "id": "q34",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Let's assume the cost of the ball is x dollars.\nAccording to the given information, the bat costs $1 more than the ball, so the cost of the bat is x + $1.\n\nThe total cost of the bat and ball is $1.10, so we can write the equation:\nx + (x + $1) = $1.10\n\nSimplifying the equation:\n2x + $1 = $1.10\n2x = $1.10 - $1\n2x = $0.10\nx = $0.10 / 2\nx = $0.05\n\nTherefore, the ball costs $0.05.\n\nComplete detailed textbook-level solutions",
+    "correct": true
+  },
+  {
+    "id": "q34",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Complete detailed textbook-level solutions\nLet's assume the cost of the ball is x dollars.\nAccording to the given information, the bat costs $1 more than the ball, so the cost of the bat is (x + $1)",
+    "correct": false
+  },
+  {
+    "id": "q34",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Complete detailed textbook-level solutions\nLet's assume the cost of the ball is x dollars.\nAccording to the given information, the bat costs $1 more than the ball, so the cost of the bat is (x + $1) dollars.\nThe total cost of the bat and ball is $1.10, so we can write the equation:\nx + (x + $1) = $1.10\nCombining like terms, we get:\n2x",
+    "correct": false
+  },
+  {
+    "id": "q34",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Complete detailed textbook-level solutions\nLet's assume the cost of the ball is x dollars.\nAccording to the given information, the bat costs $1 more than the ball, so the cost of the bat is (x + $1) dollars.\nThe total cost of the bat and ball is $1.10, so we can write the equation:\nx + (x + $1) = $1.10\nCombining like terms, we get:\n2x + $1 = $1.10\nSubtracting $1 from both sides of the equation, we get:\n2x = $0.10\nDividing both sides of the equation by 2, we get:\nx = $0.05\nTherefore, the ball costs $0.05.",
+    "correct": true
+  },
+  {
+    "id": "q35",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Start with the initial number of apples: 240.\nStep 2: Subtract the number of apples sold in the morning: 240 - 60 = 180.\nStep 3: Subtract the number of apples sold in the",
+    "correct": false
+  },
+  {
+    "id": "q35",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Start with the initial number of apples: 240.\nStep 2: Subtract the number of apples sold in the morning: 240 - 60 = 180.\nStep 3: Subtract the number of apples sold in the afternoon: 180 - 45 = 135.\nStep 4: Add the number of apples received in the delivery: 135 + 120 = 255.\n\nTherefore, the store now has 255 apples.\n\nComplete detailed textbook-level solutions",
+    "correct": true
+  },
+  {
+    "id": "q35",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Start with the initial number of apples: 240.\nStep 2: Subtract the number of apples sold in the morning: 240 - 60 = 180.\nStep 3: Subtract the number of apples sold in the afternoon: 180 - 45 = 135.\nStep 4: Add the number of apples received in the delivery: 135 + 120 = 255.\n\nTherefore, the store now has 255 apples.\n\nComplete detailed textbook-level solutions",
+    "correct": true
+  },
+  {
+    "id": "q35",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Solution:\nStep 1: Start with the initial number of apples, which is 240.\nStep 2: Subtract the number of apples sold in the morning, which is 60.\n240 - 60 = 180\nStep 3: Sub",
+    "correct": false
+  },
+  {
+    "id": "q35",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Solution:\nStep 1: Start with the initial number of apples, which is 240.\nStep 2: Subtract the number of apples sold in the morning, which is 60.\n240 - 60 = 180\nStep 3: Subtract the number of apples sold in the afternoon, which is 45.\n180 - 45 = 135\nStep 4: Add the number of apples received in the delivery, which is 120.\n135 + 120 = 255\nStep 5: The",
+    "correct": true
+  },
+  {
+    "id": "q35",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Solution:\nStep 1: Start with the initial number of apples, which is 240.\nStep 2: Subtract the number of apples sold in the morning, which is 60.\n240 - 60 = 180\nStep 3: Subtract the number of apples sold in the afternoon, which is 45.\n180 - 45 = 135\nStep 4: Add the number of apples received in the delivery, which is 120.\n135 + 120 = 255\nStep 5: The store now has 255 apples.",
+    "correct": true
+  },
+  {
+    "id": "q36",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Calculate John's total earnings for the week.\nTotal earnings = Hourly rate * Number of hours per day * Number of days\nTotal earnings = $15/hour * 8 hours/day * 5 days\nTotal earnings =",
+    "correct": false
+  },
+  {
+    "id": "q36",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Calculate John's total earnings for the week.\nTotal earnings = Hourly rate * Number of hours per day * Number of days\nTotal earnings = $15/hour * 8 hours/day * 5 days\nTotal earnings = $600\nStep 2: Calculate the amount John saves.\nAmount saved = Total earnings * Savings percentage\nAmount saved = $600 * 20%\nAmount saved = $120\nTherefore, John saves $120.\n\nComplete detailed textbook",
+    "correct": true
+  },
+  {
+    "id": "q36",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Calculate John's total earnings for the week.\nTotal earnings = Hourly rate * Number of hours per day * Number of days\nTotal earnings = $15/hour * 8 hours/day * 5 days\nTotal earnings = $600\nStep 2: Calculate the amount John saves.\nAmount saved = Total earnings * Savings percentage\nAmount saved = $600 * 20%\nAmount saved = $120\nTherefore, John saves $120.\n\nComplete detailed textbook-level solutions",
+    "correct": true
+  },
+  {
+    "id": "q36",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Exercise 3:\nQuestion: A store is offering a 25% discount on all items. If a shirt originally costs $40, what is the discounted price?\nAnswer: Solve step by step using at most 5 short steps.",
+    "correct": false
+  },
+  {
+    "id": "q36",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Exercise 3:\nQuestion: A store is offering a 25% discount on all items. If a shirt originally costs $40, what is the discounted price?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A recipe calls for 2 cups of flour, but you only have 1/2 cup. How much more flour do you need?\nAnswer: Solve step by step using at most 5 short steps.",
+    "correct": false
+  },
+  {
+    "id": "q36",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Exercise 3:\nQuestion: A store is offering a 25% discount on all items. If a shirt originally costs $40, what is the discounted price?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A recipe calls for 2 cups of flour, but you only have 1/2 cup. How much more flour do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:\nQuestion: A car travels at a speed of 60 miles per hour. How far will it travel in 3 hours?\nAnswer: Solve step by step using at most 5 short steps.\n\nAnswer:\nExercise 1:\nAnswer: The total cost of the items is $25.\n\nExercise 2:\nAnswer: John saves $60.\n\nExercise 3:\nAnswer: The discounted price of the shirt is $30.",
+    "correct": false
+  },
+  {
+    "id": "q37",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Start with the initial amount of water in the tank, which is 500 liters.\nStep 2: Subtract the amount of water that leaked out, which is 150 liters.\n500 - 150 = 350 liters",
+    "correct": false
+  },
+  {
+    "id": "q37",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Start with the initial amount of water in the tank, which is 500 liters.\nStep 2: Subtract the amount of water that leaked out, which is 150 liters.\n500 - 150 = 350 liters\nStep 3: Add the amount of water that was added, which is 200 liters.\n350 + 200 = 550 liters\nStep 4: Subtract the amount of water that was used, which is 100 liters.\n550",
+    "correct": false
+  },
+  {
+    "id": "q37",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Start with the initial amount of water in the tank, which is 500 liters.\nStep 2: Subtract the amount of water that leaked out, which is 150 liters.\n500 - 150 = 350 liters\nStep 3: Add the amount of water that was added, which is 200 liters.\n350 + 200 = 550 liters\nStep 4: Subtract the amount of water that was used, which is 100 liters.\n550 - 100 = 450 liters\n\nTherefore, 450 liters of water remain in the tank.\n\nComplete detailed textbook-level solutions",
+    "correct": true
+  },
+  {
+    "id": "q37",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Exercise 5:\nQuestion: A rectangular garden has a length of 12 meters and a width of 8 meters. What is the area of the garden?\nAnswer: Solve step by step using at most 5 short steps.\n\nEx",
+    "correct": false
+  },
+  {
+    "id": "q37",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Exercise 5:\nQuestion: A rectangular garden has a length of 12 meters and a width of 8 meters. What is the area of the garden?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 6:\nQuestion: A recipe calls for 2 cups of flour, but you only have 1/2 cup. How much more flour do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nEx",
+    "correct": false
+  },
+  {
+    "id": "q37",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Exercise 5:\nQuestion: A rectangular garden has a length of 12 meters and a width of 8 meters. What is the area of the garden?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 6:\nQuestion: A recipe calls for 2 cups of flour, but you only have 1/2 cup. How much more flour do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 7:\nQuestion: A car travels at a speed of 60 miles per hour. How far will it travel in 3 hours?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 8:\nQuestion: A store is having a sale with a discount of 20% off all items. If an item originally costs $50, how much will it cost after the discount?\nAnswer: Solve step by step using at most 5 short steps.",
+    "correct": false
+  },
+  {
+    "id": "q38",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Calculate the total cost of the shirts.\n3 shirts * $25/shirt = $75\n\nStep 2: Calculate the total cost of the pants.\n2 pants * $40/pair = $80",
+    "correct": false
+  },
+  {
+    "id": "q38",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Calculate the total cost of the shirts.\n3 shirts * $25/shirt = $75\n\nStep 2: Calculate the total cost of the pants.\n2 pants * $40/pair = $80\n\nStep 3: Calculate the total cost of the purchase.\n$75 + $80 = $155\n\nStep 4: Calculate the change.\n$200 - $155 = $45\n\nTherefore, Maria receives $45 in",
+    "correct": true
+  },
+  {
+    "id": "q38",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Calculate the total cost of the shirts.\n3 shirts * $25/shirt = $75\n\nStep 2: Calculate the total cost of the pants.\n2 pants * $40/pair = $80\n\nStep 3: Calculate the total cost of the purchase.\n$75 + $80 = $155\n\nStep 4: Calculate the change.\n$200 - $155 = $45\n\nTherefore, Maria receives $45 in change.\n\nComplete detailed textbook-level solutions",
+    "correct": true
+  },
+  {
+    "id": "q38",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Exercise 3:\nQuestion: A recipe calls for 2 cups of flour, but you only have 1/2 cup. How much more flour do you need?\nAnswer: Solve step by step using at most 5 short steps.",
+    "correct": false
+  },
+  {
+    "id": "q38",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Exercise 3:\nQuestion: A recipe calls for 2 cups of flour, but you only have 1/2 cup. How much more flour do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A car travels at a speed of 60 miles per hour. How far will it travel in 3 hours?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:",
+    "correct": false
+  },
+  {
+    "id": "q38",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Exercise 3:\nQuestion: A recipe calls for 2 cups of flour, but you only have 1/2 cup. How much more flour do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A car travels at a speed of 60 miles per hour. How far will it travel in 3 hours?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:\nQuestion: A rectangular garden has a length of 10 meters and a width of 5 meters. What is its area?\nAnswer: Solve step by step using at most 5 short steps.\n\nAnswer:\nExercise 1:\nAnswer: The total cost of the items is $15 + $20 + $10 = $45.\n\nExercise 2:\nAnswer: The total cost of the shirts is 3 * $25 = $75.\nThe total cost of the",
+    "correct": true
+  },
+  {
+    "id": "q39",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Find the ratio of cups of flour to cookies.\n2 cups of flour / 12 cookies = 1/6 cup of flour per cookie\n\nStep 2: Multiply the ratio by the number of cookies needed.\n(",
+    "correct": false
+  },
+  {
+    "id": "q39",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Find the ratio of cups of flour to cookies.\n2 cups of flour / 12 cookies = 1/6 cup of flour per cookie\n\nStep 2: Multiply the ratio by the number of cookies needed.\n(1/6 cup of flour per cookie) * 30 cookies = 5 cups of flour\n\nTherefore, 5 cups of flour are needed for 30 cookies.\n\nComplete detailed textbook-level solutions",
+    "correct": true
+  },
+  {
+    "id": "q39",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Find the ratio of cups of flour to cookies.\n2 cups of flour / 12 cookies = 1/6 cup of flour per cookie\n\nStep 2: Multiply the ratio by the number of cookies needed.\n(1/6 cup of flour per cookie) * 30 cookies = 5 cups of flour\n\nTherefore, 5 cups of flour are needed for 30 cookies.\n\nComplete detailed textbook-level solutions",
+    "correct": true
+  },
+  {
+    "id": "q39",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Exercise 3:\nQuestion: A car travels at a speed of 60 miles per hour. How far will it travel in 3 hours?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:",
+    "correct": true
+  },
+  {
+    "id": "q39",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Exercise 3:\nQuestion: A car travels at a speed of 60 miles per hour. How far will it travel in 3 hours?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A rectangular garden has a length of 10 meters and a width of 5 meters. What is its area?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:\nQuestion: A store",
+    "correct": true
+  },
+  {
+    "id": "q39",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Exercise 3:\nQuestion: A car travels at a speed of 60 miles per hour. How far will it travel in 3 hours?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A rectangular garden has a length of 10 meters and a width of 5 meters. What is its area?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:\nQuestion: A store is offering a 20% discount on all items. If a shirt originally costs $25, what is the discounted price?\nAnswer: Solve step by step using at most 5 short steps.\n\nAnswer:\nExercise 1:\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 2:\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 3:\nAnswer: Solve step by step using at",
+    "correct": true
+  },
+  {
+    "id": "q40",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Calculate the perimeter of the garden.\nPerimeter = 2 * (Length + Width)\nPerimeter = 2 * (15 + 8)\nPerimeter = 2 * 23\nPerimeter = 46 meters\n\nStep",
+    "correct": false
+  },
+  {
+    "id": "q40",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Calculate the perimeter of the garden.\nPerimeter = 2 * (Length + Width)\nPerimeter = 2 * (15 + 8)\nPerimeter = 2 * 23\nPerimeter = 46 meters\n\nStep 2: Calculate the cost of fencing.\nCost = Perimeter * Cost per meter\nCost = 46 * $12\nCost = $552\n\nTherefore, it costs $552 to fence the entire garden.\n\nComplete detailed textbook-",
+    "correct": true
+  },
+  {
+    "id": "q40",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Calculate the perimeter of the garden.\nPerimeter = 2 * (Length + Width)\nPerimeter = 2 * (15 + 8)\nPerimeter = 2 * 23\nPerimeter = 46 meters\n\nStep 2: Calculate the cost of fencing.\nCost = Perimeter * Cost per meter\nCost = 46 * $12\nCost = $552\n\nTherefore, it costs $552 to fence the entire garden.\n\nComplete detailed textbook-level solutions",
+    "correct": true
+  },
+  {
+    "id": "q40",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Exercise 3:\nQuestion: A recipe calls for 2 cups of flour, but you only have 1/2 cup. How much more flour do you need?\nAnswer: Solve step by step using at most 5 short steps.",
+    "correct": false
+  },
+  {
+    "id": "q40",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Exercise 3:\nQuestion: A recipe calls for 2 cups of flour, but you only have 1/2 cup. How much more flour do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A car travels at a speed of 60 miles per hour. How far will it travel in 3 hours?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:",
+    "correct": false
+  },
+  {
+    "id": "q40",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Exercise 3:\nQuestion: A recipe calls for 2 cups of flour, but you only have 1/2 cup. How much more flour do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A car travels at a speed of 60 miles per hour. How far will it travel in 3 hours?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:\nQuestion: A store is having a sale with a 20% discount on all items. If a shirt originally costs $25, how much will it cost after the discount?\nAnswer: Solve step by step using at most 5 short steps.\n\nAnswer:\nExercise 1:\nAnswer: The total cost of the items is $45.\n\nExercise 2:\nAnswer: It will cost $84 to fence the entire garden.\n\nExercise 3:\nAnswer",
+    "correct": false
+  },
+  {
+    "id": "q41",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Calculate the number of books sold on Tuesday.\nTwice as many books as Monday = 2 * 35 = 70 books.\n\nStep 2: Calculate the number of books sold on Wednesday.\n20 fewer than Tuesday",
+    "correct": false
+  },
+  {
+    "id": "q41",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Calculate the number of books sold on Tuesday.\nTwice as many books as Monday = 2 * 35 = 70 books.\n\nStep 2: Calculate the number of books sold on Wednesday.\n20 fewer than Tuesday = 70 - 20 = 50 books.\n\nStep 3: Calculate the total number of books sold.\nTotal books sold = Monday + Tuesday + Wednesday = 35 + 70 + 50 = 155 books.\n\nTherefore, a total of 155",
+    "correct": true
+  },
+  {
+    "id": "q41",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Calculate the number of books sold on Tuesday.\nTwice as many books as Monday = 2 * 35 = 70 books.\n\nStep 2: Calculate the number of books sold on Wednesday.\n20 fewer than Tuesday = 70 - 20 = 50 books.\n\nStep 3: Calculate the total number of books sold.\nTotal books sold = Monday + Tuesday + Wednesday = 35 + 70 + 50 = 155 books.\n\nTherefore, a total of 155 books were sold.",
+    "correct": true
+  },
+  {
+    "id": "q41",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Complete detailed textbook-level solutions\nLet's solve this problem step by step:\nStep 1: On Monday, the bookstore sold 35 books.\nStep 2: On Tuesday, the bookstore sold twice as many books as Monday, which is 2",
+    "correct": false
+  },
+  {
+    "id": "q41",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Complete detailed textbook-level solutions\nLet's solve this problem step by step:\nStep 1: On Monday, the bookstore sold 35 books.\nStep 2: On Tuesday, the bookstore sold twice as many books as Monday, which is 2 * 35 = 70 books.\nStep 3: On Wednesday, the bookstore sold 20 fewer books than Tuesday, which is 70 - 20 = 50 books.\nStep 4: To find the total number of books sold, we add the number of books",
+    "correct": false
+  },
+  {
+    "id": "q41",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Complete detailed textbook-level solutions\nLet's solve this problem step by step:\nStep 1: On Monday, the bookstore sold 35 books.\nStep 2: On Tuesday, the bookstore sold twice as many books as Monday, which is 2 * 35 = 70 books.\nStep 3: On Wednesday, the bookstore sold 20 fewer books than Tuesday, which is 70 - 20 = 50 books.\nStep 4: To find the total number of books sold, we add the number of books sold on each day: 35 + 70 + 50 = 155 books.\nTherefore, the bookstore sold a total of 155 books.",
+    "correct": true
+  },
+  {
+    "id": "q42",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Calculate the distance covered at 20 km/h for 2 hours.\nDistance = Speed \u00d7 Time\nDistance = 20 km/h \u00d7 2 hours\nDistance = 40 km\n\nStep 2: Calculate the distance covered at",
+    "correct": false
+  },
+  {
+    "id": "q42",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Calculate the distance covered at 20 km/h for 2 hours.\nDistance = Speed \u00d7 Time\nDistance = 20 km/h \u00d7 2 hours\nDistance = 40 km\n\nStep 2: Calculate the distance covered at 15 km/h for 3 hours.\nDistance = Speed \u00d7 Time\nDistance = 15 km/h \u00d7 3 hours\nDistance = 45 km\n\nStep 3: Add the distances covered in Step 1 and Step 2 to find the total distance.",
+    "correct": false
+  },
+  {
+    "id": "q42",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Calculate the distance covered at 20 km/h for 2 hours.\nDistance = Speed \u00d7 Time\nDistance = 20 km/h \u00d7 2 hours\nDistance = 40 km\n\nStep 2: Calculate the distance covered at 15 km/h for 3 hours.\nDistance = Speed \u00d7 Time\nDistance = 15 km/h \u00d7 3 hours\nDistance = 45 km\n\nStep 3: Add the distances covered in Step 1 and Step 2 to find the total distance.\nTotal Distance = Distance at 20 km/h + Distance at 15 km/h\nTotal Distance = 40 km + 45 km\nTotal Distance = 85 km\n\nTherefore, the cyclist covers a total distance of 85 km.\n\nComplete detailed textbook-level solutions",
+    "correct": true
+  },
+  {
+    "id": "q42",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Exercise 3: A car travels at a speed of 60 km/h for 4 hours. How far does it travel?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4: A train travels",
+    "correct": false
+  },
+  {
+    "id": "q42",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Exercise 3: A car travels at a speed of 60 km/h for 4 hours. How far does it travel?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4: A train travels at a speed of 80 km/h for 2.5 hours. How far does it travel?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5: A runner completes a marathon in 3 hours and",
+    "correct": false
+  },
+  {
+    "id": "q42",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Exercise 3: A car travels at a speed of 60 km/h for 4 hours. How far does it travel?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4: A train travels at a speed of 80 km/h for 2.5 hours. How far does it travel?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5: A runner completes a marathon in 3 hours and 45 minutes. If the marathon distance is 42.195 km, what is the runner's average speed?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 6: A boat travels at a speed of 25 km/h for 2 hours, then at 30 km/h for 1.5 hours. What is the total distance covered?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 7: A plane flies",
+    "correct": false
+  },
+  {
+    "id": "q43",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Find the number of students who play at least one sport.\nTo find the number of students who play at least one sport, we add the number of students who play soccer and the number of students who play basketball, and then",
+    "correct": false
+  },
+  {
+    "id": "q43",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Find the number of students who play at least one sport.\nTo find the number of students who play at least one sport, we add the number of students who play soccer and the number of students who play basketball, and then subtract the number of students who play both sports.\nNumber of students who play at least one sport = 18 + 12 - 5 = 25\n\nStep 2: Find the number of students who play neither sport.\nTo find the number of students",
+    "correct": true
+  },
+  {
+    "id": "q43",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Find the number of students who play at least one sport.\nTo find the number of students who play at least one sport, we add the number of students who play soccer and the number of students who play basketball, and then subtract the number of students who play both sports.\nNumber of students who play at least one sport = 18 + 12 - 5 = 25\n\nStep 2: Find the number of students who play neither sport.\nTo find the number of students who play neither sport, we subtract the number of students who play at least one sport from the total number of students in the class.\nNumber of students who play neither sport = 30 - 25 = 5\n\nTherefore, 5 students play neither soccer nor basketball.\n\nComplete detailed textbook-level solutions",
+    "correct": true
+  },
+  {
+    "id": "q43",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Exercise 3:\nQuestion: A store sells apples for $0.50 each and oranges for $0.75 each. If a customer buys 4 apples and 3 oranges, how much does the customer spend in total?\nAnswer: Sol",
+    "correct": true
+  },
+  {
+    "id": "q43",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Exercise 3:\nQuestion: A store sells apples for $0.50 each and oranges for $0.75 each. If a customer buys 4 apples and 3 oranges, how much does the customer spend in total?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A recipe requires 2 cups of flour, 1 cup of sugar, and 3 eggs. If you want to make half of the recipe, how much flour",
+    "correct": true
+  },
+  {
+    "id": "q43",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Exercise 3:\nQuestion: A store sells apples for $0.50 each and oranges for $0.75 each. If a customer buys 4 apples and 3 oranges, how much does the customer spend in total?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A recipe requires 2 cups of flour, 1 cup of sugar, and 3 eggs. If you want to make half of the recipe, how much flour, sugar, and eggs do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:\nQuestion: A car travels at a speed of 60 miles per hour. How far will it travel in 3 hours?\nAnswer: Solve step by step using at most 5 short steps.\n\nAnswer:\nExercise 1:\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 2:",
+    "correct": true
+  },
+  {
+    "id": "q44",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Calculate the discount amount for the first sale.\nDiscount = 25% of $600 = 0.25 * $600 = $150\n\nStep 2: Calculate the sale price after the first discount.\nS",
+    "correct": false
+  },
+  {
+    "id": "q44",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Calculate the discount amount for the first sale.\nDiscount = 25% of $600 = 0.25 * $600 = $150\n\nStep 2: Calculate the sale price after the first discount.\nSale price = $600 - $150 = $450\n\nStep 3: Calculate the discount amount for the second sale.\nDiscount = 10% of $450 = 0.10 * $450 = $45\n\nStep 4:",
+    "correct": false
+  },
+  {
+    "id": "q44",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Calculate the discount amount for the first sale.\nDiscount = 25% of $600 = 0.25 * $600 = $150\n\nStep 2: Calculate the sale price after the first discount.\nSale price = $600 - $150 = $450\n\nStep 3: Calculate the discount amount for the second sale.\nDiscount = 10% of $450 = 0.10 * $450 = $45\n\nStep 4: Calculate the final price after the second discount.\nFinal price = $450 - $45 = $405\n\nTherefore, the final price of the phone is $405.\n\nComplete detailed textbook-level solutions",
+    "correct": true
+  },
+  {
+    "id": "q44",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Exercise 3:\nQuestion: A store offers a 20% discount on all items. If a customer buys a shirt for $25 and a pair of jeans for $40, what is the total cost after the discount?\nAnswer: Sol",
+    "correct": false
+  },
+  {
+    "id": "q44",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Exercise 3:\nQuestion: A store offers a 20% discount on all items. If a customer buys a shirt for $25 and a pair of jeans for $40, what is the total cost after the discount?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A car is originally priced at $20,000. During a sale, it's discounted by 15%. Then an additional 5% off is applied to",
+    "correct": false
+  },
+  {
+    "id": "q44",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Exercise 3:\nQuestion: A store offers a 20% discount on all items. If a customer buys a shirt for $25 and a pair of jeans for $40, what is the total cost after the discount?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A car is originally priced at $20,000. During a sale, it's discounted by 15%. Then an additional 5% off is applied to the sale price. What is the final price?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:\nQuestion: A store offers a 30% discount on all items. If a customer buys a dress for $80 and a pair of shoes for $60, what is the total cost after the discount?\nAnswer: Solve step by step using at most 5 short steps.\n\nAnswer:\nExercise 1:\nAnswer: The",
+    "correct": false
+  },
+  {
+    "id": "q45",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Calculate the number of legs for the chickens.\nNumber of chickens = 24\nNumber of legs per chicken = 2\nTotal number of legs for chickens = 24 * 2 = 48\n\nStep 2: Calculate the number",
+    "correct": false
+  },
+  {
+    "id": "q45",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Calculate the number of legs for the chickens.\nNumber of chickens = 24\nNumber of legs per chicken = 2\nTotal number of legs for chickens = 24 * 2 = 48\n\nStep 2: Calculate the number of legs for the cows.\nNumber of cows = 8\nNumber of legs per cow = 4\nTotal number of legs for cows = 8 * 4 = 32\n\nStep 3: Calculate the total number of legs.\nTotal number of",
+    "correct": false
+  },
+  {
+    "id": "q45",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Calculate the number of legs for the chickens.\nNumber of chickens = 24\nNumber of legs per chicken = 2\nTotal number of legs for chickens = 24 * 2 = 48\n\nStep 2: Calculate the number of legs for the cows.\nNumber of cows = 8\nNumber of legs per cow = 4\nTotal number of legs for cows = 8 * 4 = 32\n\nStep 3: Calculate the total number of legs.\nTotal number of legs = Total number of legs for chickens + Total number of legs for cows\nTotal number of legs = 48 + 32 = 80\n\nTherefore, there are 80 legs in total.",
+    "correct": true
+  },
+  {
+    "id": "q45",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Solution:\n\nStep 1: Find the number of legs of the chickens by multiplying the number of chickens by the number of legs per chicken.\n\n24 chickens x 2 legs per chicken = 48 legs\n\nStep 2: Find the number",
+    "correct": false
+  },
+  {
+    "id": "q45",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Solution:\n\nStep 1: Find the number of legs of the chickens by multiplying the number of chickens by the number of legs per chicken.\n\n24 chickens x 2 legs per chicken = 48 legs\n\nStep 2: Find the number of legs of the cows by multiplying the number of cows by the number of legs per cow.\n\n8 cows x 4 legs per cow = 32 legs\n\nStep 3: Find the total number of legs by adding the number of legs of the",
+    "correct": false
+  },
+  {
+    "id": "q45",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Solution:\n\nStep 1: Find the number of legs of the chickens by multiplying the number of chickens by the number of legs per chicken.\n\n24 chickens x 2 legs per chicken = 48 legs\n\nStep 2: Find the number of legs of the cows by multiplying the number of cows by the number of legs per cow.\n\n8 cows x 4 legs per cow = 32 legs\n\nStep 3: Find the total number of legs by adding the number of legs of the chickens and the number of legs of the cows.\n\n48 legs + 32 legs = 80 legs\n\nStep 4: Write the final answer.\n\nThere are 80 legs in total.",
+    "correct": true
+  },
+  {
+    "id": "q46",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Calculate the tank's capacity.\nThe tank fills at a rate of 30 liters per minute, and it takes 8 minutes to fill.\nSo, the tank's capacity is 30 liters/minute * 8 minutes =",
+    "correct": false
+  },
+  {
+    "id": "q46",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Calculate the tank's capacity.\nThe tank fills at a rate of 30 liters per minute, and it takes 8 minutes to fill.\nSo, the tank's capacity is 30 liters/minute * 8 minutes = 240 liters.\n\nStep 2: Calculate the remaining amount of water.\nIf 100 liters are drained, we subtract 100 liters from the tank's capacity.\n240 liters - 100 liters = 140 liters.",
+    "correct": true
+  },
+  {
+    "id": "q46",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Calculate the tank's capacity.\nThe tank fills at a rate of 30 liters per minute, and it takes 8 minutes to fill.\nSo, the tank's capacity is 30 liters/minute * 8 minutes = 240 liters.\n\nStep 2: Calculate the remaining amount of water.\nIf 100 liters are drained, we subtract 100 liters from the tank's capacity.\n240 liters - 100 liters = 140 liters.\n\nTherefore, the tank's capacity is 240 liters, and 140 liters remain after draining 100 liters.\n\nComplete detailed textbook-level solutions",
+    "correct": true
+  },
+  {
+    "id": "q46",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Exercise 3:\nQuestion: A rectangular garden has a length of 12 meters and a width of 8 meters. What is the area of the garden?\nAnswer: Solve step by step using at most 5 short steps.\n\nEx",
+    "correct": false
+  },
+  {
+    "id": "q46",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Exercise 3:\nQuestion: A rectangular garden has a length of 12 meters and a width of 8 meters. What is the area of the garden?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A recipe calls for 2 cups of flour, but you only have 1/2 cup. How much more flour do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nEx",
+    "correct": false
+  },
+  {
+    "id": "q46",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Exercise 3:\nQuestion: A rectangular garden has a length of 12 meters and a width of 8 meters. What is the area of the garden?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A recipe calls for 2 cups of flour, but you only have 1/2 cup. How much more flour do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:\nQuestion: A car travels at a speed of 60 miles per hour. How far will it travel in 3 hours?\nAnswer: Solve step by step using at most 5 short steps.\n\nAnswer:\nExercise 1:\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 2:\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 3:\nAnswer: Solve step by",
+    "correct": false
+  },
+  {
+    "id": "q47",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Calculate the amount spent on groceries.\nAmount spent on groceries = (1/3) * $150 = $50\n\nStep 2: Calculate the remainder after buying groceries.\nRemainder = $150 -",
+    "correct": false
+  },
+  {
+    "id": "q47",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Calculate the amount spent on groceries.\nAmount spent on groceries = (1/3) * $150 = $50\n\nStep 2: Calculate the remainder after buying groceries.\nRemainder = $150 - $50 = $100\n\nStep 3: Calculate the amount spent on gas.\nAmount spent on gas = (1/5) * $100 = $20\n\nStep 4: Calculate the money left.\nMoney left =",
+    "correct": false
+  },
+  {
+    "id": "q47",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Calculate the amount spent on groceries.\nAmount spent on groceries = (1/3) * $150 = $50\n\nStep 2: Calculate the remainder after buying groceries.\nRemainder = $150 - $50 = $100\n\nStep 3: Calculate the amount spent on gas.\nAmount spent on gas = (1/5) * $100 = $20\n\nStep 4: Calculate the money left.\nMoney left = $100 - $20 = $80\n\nTherefore, Emily has $80 left.\n\nComplete detailed textbook-level solutions",
+    "correct": true
+  },
+  {
+    "id": "q47",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Exercise 5:\nQuestion: A recipe requires 2/3 cup of flour. If you want to make half the recipe, how much flour do you need?\nAnswer: Solve step by step using at most 5 short steps.",
+    "correct": false
+  },
+  {
+    "id": "q47",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Exercise 5:\nQuestion: A recipe requires 2/3 cup of flour. If you want to make half the recipe, how much flour do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nConclusion:\nCongratulations on completing this comprehensive manual on fractions and fraction word problems",
+    "correct": false
+  },
+  {
+    "id": "q47",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Exercise 5:\nQuestion: A recipe requires 2/3 cup of flour. If you want to make half the recipe, how much flour do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nConclusion:\nCongratulations on completing this comprehensive manual on fractions and fraction word problems",
+    "correct": false
+  },
+  {
+    "id": "q48",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Calculate the cost of renting the car for 3 days.\nCost of renting for 3 days = $40/day * 3 days = $120\n\nStep 2: Calculate the cost of driving 200 miles.\nCost",
+    "correct": false
+  },
+  {
+    "id": "q48",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Calculate the cost of renting the car for 3 days.\nCost of renting for 3 days = $40/day * 3 days = $120\n\nStep 2: Calculate the cost of driving 200 miles.\nCost of driving 200 miles = $0.25/mile * 200 miles = $50\n\nStep 3: Add the cost of renting and driving to find the total cost.\nTotal cost = $120 + $50 = $170\n\nTherefore",
+    "correct": true
+  },
+  {
+    "id": "q48",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Calculate the cost of renting the car for 3 days.\nCost of renting for 3 days = $40/day * 3 days = $120\n\nStep 2: Calculate the cost of driving 200 miles.\nCost of driving 200 miles = $0.25/mile * 200 miles = $50\n\nStep 3: Add the cost of renting and driving to find the total cost.\nTotal cost = $120 + $50 = $170\n\nTherefore, the total cost of renting the car for 3 days and driving 200 miles is $170.\n\nComplete detailed textbook-level solutions",
+    "correct": true
+  },
+  {
+    "id": "q48",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Exercise 5:\nQuestion: A recipe calls for 2 cups of flour and 1 cup of sugar. If you want to make half the recipe, how much flour and sugar do you need?\nAnswer: Solve step by step using at",
+    "correct": false
+  },
+  {
+    "id": "q48",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Exercise 5:\nQuestion: A recipe calls for 2 cups of flour and 1 cup of sugar. If you want to make half the recipe, how much flour and sugar do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nRemember, practice makes perfect",
+    "correct": false
+  },
+  {
+    "id": "q48",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Exercise 5:\nQuestion: A recipe calls for 2 cups of flour and 1 cup of sugar. If you want to make half the recipe, how much flour and sugar do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nRemember, practice makes perfect",
+    "correct": false
+  },
+  {
+    "id": "q49",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Calculate the number of muffins sold in the morning.\nNumber of muffins sold in the morning = 3/4 * 80 = 60 muffins\n\nStep 2: Calculate the revenue from the muffins sold in",
+    "correct": false
+  },
+  {
+    "id": "q49",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Calculate the number of muffins sold in the morning.\nNumber of muffins sold in the morning = 3/4 * 80 = 60 muffins\n\nStep 2: Calculate the revenue from the muffins sold in the morning.\nRevenue from muffins sold in the morning = 60 * $2 = $120\n\nStep 3: Calculate the number of muffins sold in the afternoon.\nNumber of muffins sold in the afternoon = 80 -",
+    "correct": false
+  },
+  {
+    "id": "q49",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Calculate the number of muffins sold in the morning.\nNumber of muffins sold in the morning = 3/4 * 80 = 60 muffins\n\nStep 2: Calculate the revenue from the muffins sold in the morning.\nRevenue from muffins sold in the morning = 60 * $2 = $120\n\nStep 3: Calculate the number of muffins sold in the afternoon.\nNumber of muffins sold in the afternoon = 80 - 60 = 20 muffins\n\nStep 4: Calculate the revenue from the muffins sold in the afternoon.\nRevenue from muffins sold in the afternoon = 20 * $1.50 = $30\n\nStep 5: Calculate the total revenue.\nTotal revenue = Revenue from muffins sold in the morning + Revenue from muffins sold in the afternoon\nTotal revenue = $120 + $30 = $150\n\nTherefore, the total revenue is $150.",
+    "correct": true
+  },
+  {
+    "id": "q49",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Solution:\nStep 1: Calculate the number of muffins sold in the morning.\nNumber of muffins sold in the morning = 3/4 * 80 = 60 muffins\n\nStep 2: Calculate the revenue from the muff",
+    "correct": false
+  },
+  {
+    "id": "q49",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Solution:\nStep 1: Calculate the number of muffins sold in the morning.\nNumber of muffins sold in the morning = 3/4 * 80 = 60 muffins\n\nStep 2: Calculate the revenue from the muffins sold in the morning.\nRevenue from muffins sold in the morning = 60 * $2 = $120\n\nStep 3: Calculate the number of muffins sold in the afternoon.\nNumber of muffins sold in the afternoon",
+    "correct": false
+  },
+  {
+    "id": "q49",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Solution:\nStep 1: Calculate the number of muffins sold in the morning.\nNumber of muffins sold in the morning = 3/4 * 80 = 60 muffins\n\nStep 2: Calculate the revenue from the muffins sold in the morning.\nRevenue from muffins sold in the morning = 60 * $2 = $120\n\nStep 3: Calculate the number of muffins sold in the afternoon.\nNumber of muffins sold in the afternoon = 80 - 60 = 20 muffins\n\nStep 4: Calculate the revenue from the muffins sold in the afternoon.\nRevenue from muffins sold in the afternoon = 20 * $1.50 = $30\n\nStep 5: Calculate the total revenue.\nTotal revenue = Revenue from muffins sold in the morning + Revenue from muffins sold in the afternoon\nTotal revenue = $120 + $30 = $150\n\nTherefore, the total revenue is $150",
+    "correct": true
+  },
+  {
+    "id": "q50",
+    "strategy": "cot",
+    "budget": 50,
+    "output": "Step 1: Calculate the amount of water filled by Pipe A in 15 minutes.\nPipe A fills at 50 liters/minute, so in 15 minutes, it fills 50 * 15 = 750 liters.\n\nStep 2:",
+    "correct": false
+  },
+  {
+    "id": "q50",
+    "strategy": "cot",
+    "budget": 100,
+    "output": "Step 1: Calculate the amount of water filled by Pipe A in 15 minutes.\nPipe A fills at 50 liters/minute, so in 15 minutes, it fills 50 * 15 = 750 liters.\n\nStep 2: Calculate the amount of water filled by Pipe B in 15 minutes.\nPipe B fills at 30 liters/minute, so in 15 minutes, it fills 30 * 15 = 450 liters.\n\nStep 3: Calculate the total",
+    "correct": false
+  },
+  {
+    "id": "q50",
+    "strategy": "cot",
+    "budget": 200,
+    "output": "Step 1: Calculate the amount of water filled by Pipe A in 15 minutes.\nPipe A fills at 50 liters/minute, so in 15 minutes, it fills 50 * 15 = 750 liters.\n\nStep 2: Calculate the amount of water filled by Pipe B in 15 minutes.\nPipe B fills at 30 liters/minute, so in 15 minutes, it fills 30 * 15 = 450 liters.\n\nStep 3: Calculate the total amount of water in the pool.\nThe total amount of water in the pool is the sum of the water filled by Pipe A and Pipe B.\n750 + 450 = 1200 liters.\n\nTherefore, there are 1200 liters in the pool.\n\nComplete detailed textbook-level solutions",
+    "correct": true
+  },
+  {
+    "id": "q50",
+    "strategy": "cot_5",
+    "budget": 50,
+    "output": "Exercise 3:\nQuestion: A car travels at a speed of 60 miles/hour. How far will it travel in 2.5 hours?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise",
+    "correct": false
+  },
+  {
+    "id": "q50",
+    "strategy": "cot_5",
+    "budget": 100,
+    "output": "Exercise 3:\nQuestion: A car travels at a speed of 60 miles/hour. How far will it travel in 2.5 hours?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A recipe calls for 2 cups of flour and 1 cup of sugar. If you want to make half the recipe, how much flour and sugar do you need?\nAnswer: Solve step by step using at most 5 short",
+    "correct": false
+  },
+  {
+    "id": "q50",
+    "strategy": "cot_5",
+    "budget": 200,
+    "output": "Exercise 3:\nQuestion: A car travels at a speed of 60 miles/hour. How far will it travel in 2.5 hours?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 4:\nQuestion: A recipe calls for 2 cups of flour and 1 cup of sugar. If you want to make half the recipe, how much flour and sugar do you need?\nAnswer: Solve step by step using at most 5 short steps.\n\nExercise 5:\nQuestion: A rectangular garden has a length of 12 meters and a width of 8 meters. What is the area of the garden?\nAnswer: Solve step by step using at most 5 short steps.\n\nAnswer:\nExercise 1:\nAnswer: The total number of apples is 5 + 3 = 8.\n\nExercise 2:\nAnswer: The total number of liters in the pool is (50 + 30) * 15",
+    "correct": false
+  }
+]

@@ -1,0 +1,70 @@
+id,output,correct,tokens
+q1,"6. The irrelevant statements about buying and giving away do not affect the answer of adding 3 to 5 which equals 8, then subtracting 2 from that total is equal to 6.",True,50
+q2,"To find the number of boxes, we can divide the total number of cookies by the number of cookies in each box. So, 48 / 6 = 8. The baker needs 8 boxes to pack all his cookies.",True,50
+q3,The distance traveled is 180 miles.,True,50
+q4,"To find out how much money Sarah has left, we need to subtract the amount spent from her initial balance of $50. 
+$50 - ($12 + $8) = $30
+Therefore, Sarah has $30 left after spending $",True,50
+q5,"The formula for the perimeter of a rectangle is P = 2(l + w), where l represents the length, w represents the width, and P represents the perimeter. Substituting in the given values, we get P = 2(12 +",False,50
+q6,"One pencil costs $2.
+
+Exercise 3: 
+Statement: A recipe calls for 2 cups of flour to make 12 cookies. How many cups of flour are needed to make 24 cookies?
+Answer: 4 cups of flour are needed",True,50
+q7,"To find the total number of marbles, we add the initial amount with the additional ones received and subtract those lost. So, 25 + 15 - 8 = 32 marbles.",True,50
+q8,"To find the number of desks, we multiply the number of rows by the number of desks per row. In this case, it would be 6 x 5 = 30 desks.",True,50
+q9,The answer would be 29.67 (100-17=83; 83/3 = 27.33).,False,50
+q10,"To find the total cost of buying multiple items at a given price per item, we multiply the number of items by the price per item. In this case, since there are 4 notebooks and they cost $3 each, the total amount paid is 4",False,50
+q11,"The sum of these numbers is 100. Dividing by 4 (the number of values), we get an average of 25.",True,50
+q12,5/8.,False,50
+q13,"The journey took 2 hours and 30 minutes, which is equal to 150 minutes (2 x 60 + 30).",True,50
+q14,"To find the answer, we can set up a proportion. Let's call the unknown price of 8 toys ""x"". The ratio of the number of toys to their total cost is constant. So, we have (5/8) = ($45",False,50
+q15,"The sum of the lengths of all three sides = 7 + 8 + 9 = 24 units. Therefore, the perimeter of the triangle is 24 units.",True,50
+q16,You would end up with -4.,False,50
+q17,"Each child gets 12 crayons because the total number of crayons (144) is divisible by the number of children (12).
+
+Exercise 3: Find a common multiple between 8 and 10.
+Answer: The common multi",True,50
+q18,"No. This is an example of the fallacy known as affirming the consequent. Just because some flowers are red does not mean that all roses must be red. There could be other types of flowers that are also red but not roses. Therefore,",True,50
+q19,Mike,True,50
+q20,"No, because there could be other reasons for the ground to get wet (e.g., sprinklers).",True,50
+q21,"The pattern in this sequence involves multiplying each term by 2. Therefore, the next number would be 32 (16 x 2).",True,50
+q22,No. The argument is invalid because it commits the fallacy of affirming the consequent. Just because all dogs are animals does not mean that any animal that is a dog must be a cat. There could be other kinds of animals besides cats or dogs,False,50
+q23,"The pattern here seems to be that each number in the sequence increases by a factor of 2 (A*2=B, B*2=C). Therefore, if we continue this pattern, D would equal 18. 
+
+Exercise 4",False,50
+q24,"The answer depends on how you define ""middle."" In terms of days of the week, there are seven possible answers. However, if we consider a linear sequence from Monday to Sunday, then Tuesday would be considered as the midpoint between Monday and Wednesday",True,50
+q25,You are still in third place because passing someone does not change your position relative to others who have passed as well.,False,50
+q26,"It would still take 5 minutes. The number of machines and the amount of time taken are inversely proportional, so doubling both values will result in the same outcome.",True,50
+q27,True. This is an example of the transitive property in mathematics.,True,50
+q28,The next shape in the pattern is a triangle.,False,50
+q29,"No. Just because some birds can fly does not mean that all birds have the ability to do so. Penguins are a specific type of bird that is adapted for swimming rather than flying. Therefore, it cannot be assumed that they possess the same abilities as",True,50
+q30,"The missing letter is B. This is because the letters are arranged alphabetically and each letter represents a word that starts with its first sound (J for jump, F for fish, etc.). To find the next word, we need to look at the",True,50
+q31,It would have been Tuesday.,False,50
+q32,There are 11 children in the family (6 daughters + 5 brothers).,False,50
+q33,"The answer is ""Door"". Rearranging the letters of a word can create new words with different meanings and uses. This exercise tests your ability to think creatively and make connections between seemingly unrelated things.",False,50
+q34,"Let's assume that the price of the ball is x dollars. Since the bat costs $1 more, its price would be (x + 1) dollars. According to the problem, their total cost is $1.10. So we can write",False,50
+q35,"To find out how many apples are left, we need to subtract the number sold from the initial amount and then add the delivered ones. 
+240 - (60 + 45) = 135
+135 + 120 = 255
+Therefore, there are 255",True,50
+q36,"To find the amount saved by John, we need to calculate his total earnings first. His daily earning is 15 * 8 = 120 dollars. Since he works for 5 days in a week, his weekly earning would be 120 * 5 = 600 dollars.",True,50
+q37,"To find the amount of water remaining in the tank after these operations, we need to subtract the total volume leaked or removed from the initial quantity. 
+Initial quantity = 500 liters
+Volume leaked/removed = (150 + 200) -",False,50
+q38,"To find the total cost of the shirts, we multiply the price per shirt by the number of shirts: 3 * 25 = 75 dollars. Similarly, to find the total cost of the pants, we multiply the price per pair by the number of pairs",False,50
+q39,"To find the number of cups of flour needed, we can set up a proportion using the ratio of cups of flour to the number of cookies in each scenario and solve for x (the unknown). The equation is 2/12 = x/30.",False,50
+q40,"To find out how much it will cost to fence the entire garden, we need to calculate the perimeter of the garden first. The formula for finding the perimeter of a rectangle is P = 2(l + w), where l represents length and w represents",False,50
+q41,"To find the total number of books sold, we need to add up the quantities for each day. 
+On Monday, they sell 35 books. 
+On Tuesday, they sell 2 * 35 = 70 books (twice as many).",False,50
+q42,"The average speed of a moving object is given by the formula v = d / t, where v is the speed in m/s, d is the distance in meters and t is the time in seconds. To find the total distance covered, we",False,50
+q43,"To find the number of students who do not play either sport, we need to subtract the total number of students playing sports from the total number of students in the class. The formula for this is given by: Total - (Soccer + Basketball)",False,50
+q44,"The discount on the original price of $600 would be 0.25 * 600 = $150. So after the first discount, the new price becomes 600 - 150 = $450. Applying another 10% off this amount gives us 450 - (",False,50
+q45,"To find the number of legs, we need to multiply the number of animals by the number of legs per animal for each type of animal, then add them together. For chickens, this is 24 x 2 = 48 legs. For cows, this is",False,50
+q46,"The tank can hold 240 liters (30*8). After draining 100 liters, there will be 140 liters left in the tank.",True,50
+q47,"To find out how much money Emily spent on groceries, we multiply her total amount by 1/3: 150 * (1/3) = 50 dollars. 
+To calculate the remaining amount after buying groceries, we subtract this from her initial amount",False,50
+q48,"The daily rate is 40 x 3 = 120 dollars. The mileage charge is 0.25 x 200 = 50 dollars. Therefore, the total cost is 120 + 50 = 170 dollars.",True,50
+q49,"To find out how many muffins were sold in the morning, we multiply the total number of muffins by 3/4: (3/4) * 80 = 60 muffins. The revenue from selling these muffins can be calculated as follows",False,50
+q50,The total amount of water added to the pool can be calculated as follows: (50 + 30) * 15 = 1125 liters.,False,50
