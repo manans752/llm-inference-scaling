@@ -142,9 +142,9 @@ def majority_vote(predictions):
     return vote.most_common(1)[0][0]
 
 results = []
-# tasks_small = tasks[1:3]
+tasks_small = tasks[1:3]
 # print(tasks_small)
-for task in tasks:
+for task in tasks_small:
     q = task["question"]
     answer = normalise(str(task["answer"]))
 
@@ -155,12 +155,9 @@ for task in tasks:
     )
 
     for n in N_SAMPLES:
-        samples = [sample(prompt) for _ in range(n)]
-
+        samples = [extract_final_answer(sample(prompt)) for _ in range(n)]
         final_answer = majority_vote(samples)
-
-        correct = answers_match(final_answer, answer)
-
+        correct = answers_match(normalise(final_answer), answer)
 
         #disagreement across extracted answers
         variance = len(set(samples)) / len(samples)
