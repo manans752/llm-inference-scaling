@@ -1,16 +1,10 @@
-import json
-import torch
 import pandas as pd
-import re
-from pathlib import Path
-from collections import Counter
-from transformers import AutoTokenizer, AutoModelForCausalLM, AutoConfig
 
-from .common import extract_final_answer, normalise, answers_match, is_valid_answer, majority_vote
-from .model_setup import load_tokenizer, load_model
-from .data_loader import load_tasks
-from .generate import generate
-from .results_saver import save_results
+from inference.common.common import extract_final_answer, normalise, answers_match, is_valid_answer, majority_vote
+from inference.common.model_setup import load_tokenizer, load_model
+from inference.common.data_loader import load_tasks
+from inference.common.generate import generate
+from inference.common.results_saver import save_results
 
 N_SAMPLES = [1,5,10]
 

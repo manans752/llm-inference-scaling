@@ -1,7 +1,7 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, AutoConfig
 
-from .common import MODEL_NAME
+from inference.common.common import MODEL_NAME
 
 def load_tokenizer():
     tokenizer = AutoTokenizer.from_pretrained(

@@ -1,14 +1,10 @@
-import json
-import re
-import torch
 import pandas as pd
-from pathlib import Path
 
-from .common import extract_final_answer, normalise, answers_match, low_confidence
-from .model_setup import load_tokenizer, load_model
-from .data_loader import load_tasks
-from .generate import generate
-from .results_saver import save_results
+from inference.common.common import extract_final_answer, normalise, answers_match, low_confidence
+from inference.common.model_setup import load_tokenizer, load_model
+from inference.common.data_loader import load_tasks
+from inference.common.generate import generate
+from inference.common.results_saver import save_results
 
 tasks = load_tasks()
 tokenizer = load_tokenizer()
