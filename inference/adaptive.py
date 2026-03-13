@@ -195,17 +195,15 @@ for task in tasks:
     correct = answers_match(prediction, answer)
     print(f"Pred: {prediction} | True: {answer}")
     print("Correct:", correct, "Tokens:", tokens_used)
-    print("-" * 60)
-
 
     results.append({
         "id": task["id"],
-        "output": output,
+        "prediction": prediction,
+        "answer": answer,
         "correct": correct,
         "tokens_used": tokens_used
     })
 
-    print("Correct:", correct, "Tokens:", tokens_used)
 
 
 PATH_TO_RESULTS = HERE.parent / "results" / "adaptive_results.json"

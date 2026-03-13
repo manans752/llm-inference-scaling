@@ -50,11 +50,19 @@ def extract_final_answer(text: str):
     match = re.search(r"Final Answer:\s*(.*)", text, re.IGNORECASE)
     if match:
         return match.group(1).strip()
+
+    # fallback: skip junk lines like "Question:" or "Problem:"
     lines = [l.strip() for l in text.split("\n") if l.strip()]
-    return lines[0] if lines else None
+    for line in lines:
+        if line.lower().startswith("question"):
+            continue
+        if line.lower().startswith("problem"):
+            continue
+        return line
 
+    return None
 
-def normalise(ans: str): # yes = YES
+def normalise_string(ans: str): # yes = YES
     if ans is None:
         return None
     return ans.strip().lower()
@@ -84,6 +92,23 @@ def answers_match(pred: str, target_answer: str): #ensure semantically equal ans
 
     return pred == target_answer
 
+def is_valid_answer(ans: str):
+    if ans is None:
+        return False
+
+    ans = ans.strip().lower()
+
+    # reject placeholders
+    if "<answer>" in ans or "<option>" in ans:
+        return False
+
+    # reject reasoning-like outputs
+    bad_starts = ["to find", "let x", "step", "a farmer", "question"]
+    if any(ans.startswith(b) for b in bad_starts):
+        return False
+
+    return True
+
 def sample(prompt: str, max_new_tokens=100):
     inputs = tokenizer(prompt, return_tensors="pt")
     inputs = {k: v.to(model.device) for k, v in inputs.items()}
@@ -95,9 +120,11 @@ def sample(prompt: str, max_new_tokens=100):
             **inputs,
             max_new_tokens=max_new_tokens,
             do_sample=True, #don't always pick the most likely token, sample from distribution
-            temperature=0.7, #randomness of output, will produce different reasoning paths
-            top_p=0.9, #guarantees we only pick from 'reasonable' tokens
-            repetition_penalty=1.1 #ensure we don't get stuck in loops
+            temperature=0.5, #randomness of output, will produce different reasoning paths
+            top_p=0.95, #guarantees we only pick from 'reasonable' tokens
+            repetition_penalty=1.1, #ensure we don't get stuck in loops
+            pad_token_id=tokenizer.eos_token_id,
+            eos_token_id=tokenizer.eos_token_id
         )
 
     generated_tokens = output_ids[0][input_len:]
@@ -114,53 +141,50 @@ def sample(prompt: str, max_new_tokens=100):
 
     return decoded.strip()
 
-# def extract_final_number(text: str) -> str:
-#     text = text.strip()
-#
-#     # Find all integers or decimals
-#     numbers = re.findall(r"-?\d+\.?\d*", text)
-#
-#     if not numbers:
-#         return ""
-#
-#     return numbers[-1]  # last number should be the final answer
-#
-# def majority_vote(outputs):
-#     answers = [extract_final_number(o) for o in outputs]
-#     answers = [x for x in answers if x != ""]
-#
-#     if len(answers) == 0:
-#         return "", answers
-#
-#     vote = Counter(answers)
-#     final_answer = vote.most_common(1)[0][0]
-#
-#     return final_answer, answers
-
 def majority_vote(predictions):
+    predictions = [p for p in predictions if p is not None and p != ""]
+    if len(predictions) == 0:
+        return None
+
     vote = Counter(predictions)
     return vote.most_common(1)[0][0]
 
 results = []
-tasks_small = tasks[1:3]
-# print(tasks_small)
-for task in tasks_small:
+# tasks_small = tasks[1:3]
+# # print(tasks_small)
+for task in tasks:
     q = task["question"]
-    answer = normalise(str(task["answer"]))
+    answer = normalise_string(str(task["answer"]))
 
     prompt = (
-        f"Problem: {task['question']}\n"
+        f"Problem: {q}\n"
         "Solve step by step.\n"
-        "End with: Final Answer: <answer>\n"
+        "End with exactly:\n"
+        "Final Answer: <answer>\n\n"
+        "Final Answer:"
     )
 
     for n in N_SAMPLES:
-        samples = [extract_final_answer(sample(prompt)) for _ in range(n)]
-        final_answer = majority_vote(samples)
-        correct = answers_match(normalise(final_answer), answer)
+        raw_samples = [sample(prompt) for _ in range(n)]
+
+        extracted = []
+        for r in raw_samples:
+            ans = extract_final_answer(r)
+            ans = normalise_string(ans)
+
+            if is_valid_answer(ans):
+                extracted.append(ans)
+
+        final_answer = majority_vote(extracted)
+
+        # extracted = [normalise_string(extract_final_answer(s)) for s in raw_samples]
+        # final_answer = majority_vote(extracted)
+        correct = answers_match(final_answer, answer)
 
         #disagreement across extracted answers
-        variance = len(set(samples)) / len(samples)
+        variance = 0
+        if (len(extracted)!=0):
+            variance = len(set(extracted)) / len(extracted)
 
         results.append({
             "id": task["id"],
@@ -170,13 +194,11 @@ for task in tasks_small:
             "variance": variance
         })
 
-        print(f"Task={task['id']} N={n}")
-        # print("Extracted answers:", extracted_answers)
+        print(f"\nTask={task['id']} N={n}")
+        print("Extracted:", extracted)
         print("Final vote:", final_answer)
         print("Correct:", correct)
         print("Variance:", variance)
-
-        # print(f"N={n} correct={correct} variance={variance:.2f}")
 
 PATH_TO_RESULTS = HERE.parent / "results" / "self_consistency_results.json"
 

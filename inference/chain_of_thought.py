@@ -167,7 +167,7 @@ for task in tasks:
             results.append({
                 "id": task["id"],
                 "strategy": strategy_name,
-                "budget": budget,
+                "tokens_used": budget,
                 "output": output,
                 "correct": correct
             })
@@ -186,5 +186,8 @@ print("Saved results to", RESULTS_PATH)
 
 print("\nAccuracy summary:")
 print(df.groupby(["strategy", "budget"])["correct"].mean())
+
+
+
 
 

@@ -143,8 +143,8 @@ def generate(prompt: str, max_new_tokens: int):
         #     # pad_token_id=tokenizer.pad_token_id,
         #     # eos_token_id=tokenizer.eos_token_id
         # )
-    print(f"Full output shape: {outputs.shape}")
-    print(f"Full output: {outputs}")
+    # print(f"Full output shape: {outputs.shape}")
+    # print(f"Full output: {outputs}")
 
     # Slice off the prompt tokens b/c model is causal LM, it returns prompt tokens + generated tokens
     generated_tokens = outputs[0][input_len:]
@@ -154,15 +154,15 @@ def generate(prompt: str, max_new_tokens: int):
         stop_idx = generated_list.index(0)
         generated_tokens = generated_tokens[:stop_idx]
 
-    print(outputs)
-    # Debug: print token IDs
-    print(f"Generated token IDs: {generated_tokens[:10]}")  # First 10
+    # print(outputs)
+    # # Debug: print token IDs
+    # print(f"Generated token IDs: {generated_tokens[:10]}")  # First 10
 
     decoded = tokenizer.decode(
         generated_tokens,
         skip_special_tokens=True
     )
-    print(f"Decoded tokens: {decoded}")
+    # print(f"Decoded tokens: {decoded}")
 
     return decoded.strip()
 
@@ -184,7 +184,7 @@ for i, task in enumerate(tasks):
         "id": task["id"],
         "output": output,
         "correct": correct,
-        "tokens": MAX_NEW_TOKENS
+        "tokens_used": MAX_NEW_TOKENS
     })
 
     print(f"[{i+1}/{len(tasks)}] correct={correct}")
@@ -202,3 +202,6 @@ df.to_csv("baseline_api_results.csv", index=False)
 accuracy = df["correct"].mean()
 print(f"Single-pass greedy decoding accuracy on {len(tasks)} tasks: {accuracy:.2f}")
 print("Results saved to baseline_api_results.csv")
+
+
+
