@@ -1,0 +1,1052 @@
+[
+  {
+    "id": "q1",
+    "N": 1,
+    "final_answer": "10",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q1",
+    "N": 5,
+    "final_answer": "def apple_problem():",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q1",
+    "N": 10,
+    "final_answer": "complete detailed textbook-level python code solutions:",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q2",
+    "N": 1,
+    "final_answer": "a possible solution is:",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q2",
+    "N": 5,
+    "final_answer": "the baker needs 8 boxes to pack the cookies.",
+    "correct": true,
+    "variance": 0.75
+  },
+  {
+    "id": "q2",
+    "N": 10,
+    "final_answer": "<|question_end|>answer: step 1: divide the total number of cookies (48) by the number of cookies in each box (6).",
+    "correct": false,
+    "variance": 0.6
+  },
+  {
+    "id": "q3",
+    "N": 1,
+    "final_answer": "180 miles",
+    "correct": true,
+    "variance": 1.0
+  },
+  {
+    "id": "q3",
+    "N": 5,
+    "final_answer": "the car goes 180 miles.",
+    "correct": true,
+    "variance": 0.75
+  },
+  {
+    "id": "q3",
+    "N": 10,
+    "final_answer": "180 miles",
+    "correct": true,
+    "variance": 0.5555555555555556
+  },
+  {
+    "id": "q4",
+    "N": 1,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q4",
+    "N": 5,
+    "final_answer": "complete detailed textbook-level python code solutions",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q4",
+    "N": 10,
+    "final_answer": "complete detailed textbook-level python code solutions",
+    "correct": false,
+    "variance": 0.5
+  },
+  {
+    "id": "q5",
+    "N": 1,
+    "final_answer": "the perimeter of the rectangle is 34 cm.",
+    "correct": true,
+    "variance": 1.0
+  },
+  {
+    "id": "q5",
+    "N": 5,
+    "final_answer": "the perimeter of the rectangle is 34 cm.",
+    "correct": true,
+    "variance": 0.5
+  },
+  {
+    "id": "q5",
+    "N": 10,
+    "final_answer": "the perimeter of the rectangle is 34 cm.",
+    "correct": true,
+    "variance": 0.25
+  },
+  {
+    "id": "q6",
+    "N": 1,
+    "final_answer": "one pencil costs $2.",
+    "correct": true,
+    "variance": 1.0
+  },
+  {
+    "id": "q6",
+    "N": 5,
+    "final_answer": "complete detailed textbook-level python code solutions",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q6",
+    "N": 10,
+    "final_answer": "one pencil costs $2.",
+    "correct": true,
+    "variance": 1.0
+  },
+  {
+    "id": "q7",
+    "N": 1,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q7",
+    "N": 5,
+    "final_answer": "complete detailed textbook-level python code solutions",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q7",
+    "N": 10,
+    "final_answer": "to solve this problem, we need to subtract the number of marbles tom lost from the total number of marbles he had after receiving some from his friend. let's break it down into steps:",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q8",
+    "N": 1,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q8",
+    "N": 5,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q8",
+    "N": 10,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q9",
+    "N": 1,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q9",
+    "N": 5,
+    "final_answer": "to solve this problem, we need to follow the order of operations (pemdas/bodmas). first, let's perform the subtraction inside the parentheses:",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q9",
+    "N": 10,
+    "final_answer": "to solve this problem, we need to follow the order of operations (pemdas/bodmas). first, let's perform the subtraction: 100 - 17 = 83. then, we can proceed with the division: 83 \u00f7 3 = 27.67. therefore, the final answer is approximately 27.67.",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q10",
+    "N": 1,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q10",
+    "N": 5,
+    "final_answer": "complete detailed textbook-level python code solutions",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q10",
+    "N": 10,
+    "final_answer": "complete detailed textbook-level python code solutions",
+    "correct": false,
+    "variance": 0.5
+  },
+  {
+    "id": "q11",
+    "N": 1,
+    "final_answer": "25",
+    "correct": true,
+    "variance": 1.0
+  },
+  {
+    "id": "q11",
+    "N": 5,
+    "final_answer": "the average of 10, 20, 30, and 40 is 25.",
+    "correct": false,
+    "variance": 0.75
+  },
+  {
+    "id": "q11",
+    "N": 10,
+    "final_answer": "the average of 10, 20, 30, and 40 is 25.",
+    "correct": false,
+    "variance": 0.6
+  },
+  {
+    "id": "q12",
+    "N": 1,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q12",
+    "N": 5,
+    "final_answer": "5/8",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q12",
+    "N": 10,
+    "final_answer": "5/8",
+    "correct": false,
+    "variance": 0.75
+  },
+  {
+    "id": "q13",
+    "N": 1,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q13",
+    "N": 5,
+    "final_answer": "the journey took 360 minutes.",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q13",
+    "N": 10,
+    "final_answer": "105 minutes",
+    "correct": false,
+    "variance": 0.6
+  },
+  {
+    "id": "q14",
+    "N": 1,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q14",
+    "N": 5,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q14",
+    "N": 10,
+    "final_answer": "to solve this problem, we can set up a proportion to find the cost of 8 toys. let's call the cost of 8 toys \"x\". we know that 5 toys cost $45, so we can write the proportion as:",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q15",
+    "N": 1,
+    "final_answer": "the perimeter of the triangle is 24 units.",
+    "correct": true,
+    "variance": 1.0
+  },
+  {
+    "id": "q15",
+    "N": 5,
+    "final_answer": "the perimeter of the triangle is 24 units.",
+    "correct": true,
+    "variance": 0.3333333333333333
+  },
+  {
+    "id": "q15",
+    "N": 10,
+    "final_answer": "the perimeter of the triangle is 24 units.",
+    "correct": true,
+    "variance": 0.4
+  },
+  {
+    "id": "q16",
+    "N": 1,
+    "final_answer": "<question_end|>answer: step 1: multiply 12 by 3 to get 36.",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q16",
+    "N": 5,
+    "final_answer": "<|question_end|>",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q16",
+    "N": 10,
+    "final_answer": "to solve this problem, we need to follow the given steps in order. first, we triple 12 which gives us 36. then, we subtract 20 from 36. finally, we find the final answer. let's calculate it step by step:",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q17",
+    "N": 1,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q17",
+    "N": 5,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q17",
+    "N": 10,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q18",
+    "N": 1,
+    "final_answer": "all roses are not necessarily red because there may be other colors of flowers besides red.",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q18",
+    "N": 5,
+    "final_answer": "all roses are not necessarily red because it is possible for there to be non-red roses among the flowers. the given information only establishes a relationship between roses and red flowers but does not guarantee that all roses are red.",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q18",
+    "N": 10,
+    "final_answer": "all roses are not necessarily red because there could be other types of flowers that are also red but not roses.",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q19",
+    "N": 1,
+    "final_answer": "mike is the shortest.",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q19",
+    "N": 5,
+    "final_answer": "mike is the shortest.",
+    "correct": false,
+    "variance": 0.4
+  },
+  {
+    "id": "q19",
+    "N": 10,
+    "final_answer": "mike is the shortest.",
+    "correct": false,
+    "variance": 0.4
+  },
+  {
+    "id": "q20",
+    "N": 1,
+    "final_answer": "it did not necessarily rain if the ground was wet because there could be other reasons for the ground to get wet, such as watering or a spilled drink. therefore, we cannot conclude that it rained just because the ground is wet.",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q20",
+    "N": 5,
+    "final_answer": "the argument is deductively valid. let's analyze the premises and conclusion step by step.",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q20",
+    "N": 10,
+    "final_answer": "it did not necessarily rain because there could be other reasons for the ground to get wet, such as sprinklers or a spilled drink. therefore, we cannot conclude that it rained based on the given information.",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q21",
+    "N": 1,
+    "final_answer": "the next number in the sequence is 32.",
+    "correct": true,
+    "variance": 1.0
+  },
+  {
+    "id": "q21",
+    "N": 5,
+    "final_answer": "the next number in the sequence is 32.",
+    "correct": true,
+    "variance": 0.6
+  },
+  {
+    "id": "q21",
+    "N": 10,
+    "final_answer": "the next number in the sequence is 32.",
+    "correct": true,
+    "variance": 0.7777777777777778
+  },
+  {
+    "id": "q22",
+    "N": 1,
+    "final_answer": "no, some animals are not cats because if no cats are dogs and all dogs are animals, then it follows that there cannot be any overlap between the categories of \"animals\" and \"cats.\" therefore, it is impossible for some animals to also be cats.",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q22",
+    "N": 5,
+    "final_answer": "no, some animals are not cats.",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q22",
+    "N": 10,
+    "final_answer": "some animals are not cats.",
+    "correct": false,
+    "variance": 0.7
+  },
+  {
+    "id": "q23",
+    "N": 1,
+    "final_answer": "<|question_end|>answer: 1. let's start by finding the difference between each pair of consecutive numbers in the sequence:",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q23",
+    "N": 5,
+    "final_answer": "<|question_end|>answer: 1. rearrange the equation to solve for d: d = (a + b) / c.",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q23",
+    "N": 10,
+    "final_answer": "d = 12",
+    "correct": true,
+    "variance": 0.7777777777777778
+  },
+  {
+    "id": "q24",
+    "N": 1,
+    "final_answer": "monday",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q24",
+    "N": 5,
+    "final_answer": "wednesday",
+    "correct": false,
+    "variance": 0.6
+  },
+  {
+    "id": "q24",
+    "N": 10,
+    "final_answer": "wednesday",
+    "correct": false,
+    "variance": 0.5
+  },
+  {
+    "id": "q25",
+    "N": 1,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q25",
+    "N": 5,
+    "final_answer": "complete detailed textbook-level solution to question 7:",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q25",
+    "N": 10,
+    "final_answer": "you are now in first place.",
+    "correct": false,
+    "variance": 0.8
+  },
+  {
+    "id": "q26",
+    "N": 1,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q26",
+    "N": 5,
+    "final_answer": "let's assume that the time taken for 100 machines to make 100 widgets is t minutes. we can set up a proportion based on the given information:",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q26",
+    "N": 10,
+    "final_answer": "10 minutes",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q27",
+    "N": 1,
+    "final_answer": "complete detailed textbook-level python code solutions",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q27",
+    "N": 5,
+    "final_answer": "true",
+    "correct": true,
+    "variance": 1.0
+  },
+  {
+    "id": "q27",
+    "N": 10,
+    "final_answer": "the solution to the logical reasoning problem is that if a > b and b > c, then it can be concluded that a > c. this is because transitivity in mathematics states that if one number is greater than a second number, and the second number is greater than a third number, then the first number must also be greater than the third number. therefore, if a > b and b > c, we can logically deduce that a > c based on the transitive property of inequality",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q28",
+    "N": 1,
+    "final_answer": "triangle",
+    "correct": true,
+    "variance": 1.0
+  },
+  {
+    "id": "q28",
+    "N": 5,
+    "final_answer": "the next shape in the pattern is a triangle.",
+    "correct": false,
+    "variance": 0.8
+  },
+  {
+    "id": "q28",
+    "N": 10,
+    "final_answer": "the next shape in the pattern is a triangle.",
+    "correct": false,
+    "variance": 0.7
+  },
+  {
+    "id": "q29",
+    "N": 1,
+    "final_answer": "penguins cannot fly as not all birds can fly.",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q29",
+    "N": 5,
+    "final_answer": "false",
+    "correct": false,
+    "variance": 0.6666666666666666
+  },
+  {
+    "id": "q29",
+    "N": 10,
+    "final_answer": "false",
+    "correct": false,
+    "variance": 0.7
+  },
+  {
+    "id": "q30",
+    "N": 1,
+    "final_answer": "the missing letter is e. the pattern in the sequence is that each letter represents a different vowel sound (a, e, i, o, u). so, the missing letter would be the next vowel sound, which is e. therefore, the missing letter in the sequence is e.",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q30",
+    "N": 5,
+    "final_answer": "b",
+    "correct": false,
+    "variance": 0.75
+  },
+  {
+    "id": "q30",
+    "N": 10,
+    "final_answer": "a",
+    "correct": false,
+    "variance": 0.9
+  },
+  {
+    "id": "q31",
+    "N": 1,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q31",
+    "N": 5,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q31",
+    "N": 10,
+    "final_answer": "<solution>",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q32",
+    "N": 1,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q32",
+    "N": 5,
+    "final_answer": "36",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q32",
+    "N": 10,
+    "final_answer": "36",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q33",
+    "N": 1,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q33",
+    "N": 5,
+    "final_answer": "rewrite:",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q33",
+    "N": 10,
+    "final_answer": "the word is \"door\".",
+    "correct": false,
+    "variance": 0.7777777777777778
+  },
+  {
+    "id": "q34",
+    "N": 1,
+    "final_answer": "'''",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q34",
+    "N": 5,
+    "final_answer": "<|question_end|>answer: let x be the cost of the ball.",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q34",
+    "N": 10,
+    "final_answer": "complete detailed textbook-level python code solutions",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q35",
+    "N": 1,
+    "final_answer": "complete detailed textbook-level python code solutions",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q35",
+    "N": 5,
+    "final_answer": "complete detailed textbook-level python code solutions:",
+    "correct": false,
+    "variance": 0.5
+  },
+  {
+    "id": "q35",
+    "N": 10,
+    "final_answer": "let's break down the problem into steps:",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q36",
+    "N": 1,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q36",
+    "N": 5,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q36",
+    "N": 10,
+    "final_answer": "complete detailed textbook-level python code solutions",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q37",
+    "N": 1,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q37",
+    "N": 5,
+    "final_answer": "250 liters of water remain in the tank.",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q37",
+    "N": 10,
+    "final_answer": "250 liters",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q38",
+    "N": 1,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q38",
+    "N": 5,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q38",
+    "N": 10,
+    "final_answer": "complete detailed textbook-level solutions",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q39",
+    "N": 1,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q39",
+    "N": 5,
+    "final_answer": "to make 30 cookies, you need 5 cups of flour.",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q39",
+    "N": 10,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q40",
+    "N": 1,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q40",
+    "N": 5,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q40",
+    "N": 10,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q41",
+    "N": 1,
+    "final_answer": "the number of books sold is",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q41",
+    "N": 5,
+    "final_answer": "let's solve the problem step by step:",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q41",
+    "N": 10,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q42",
+    "N": 1,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q42",
+    "N": 5,
+    "final_answer": "the cyclist covers a total distance of 75 kilometers.",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q42",
+    "N": 10,
+    "final_answer": "the cyclist covers a total distance of 105 kilometers.",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q43",
+    "N": 1,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q43",
+    "N": 5,
+    "final_answer": "to solve this problem, we can use the principle of inclusion-exclusion. let's denote the number of students who play soccer as s, the number of students who play basketball as b, and the number of students who play both sports as ab. we are given that s = 18, b = 12, and ab = 5. the total number of students in the class is 30.",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q43",
+    "N": 10,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q44",
+    "N": 1,
+    "final_answer": "the final price of the phone after both discounts is $<<final_price=<<calculate_final_price(600, 0.25, 0.10)>>.",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q44",
+    "N": 5,
+    "final_answer": "$450",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q44",
+    "N": 10,
+    "final_answer": "the final price of the phone after both discounts is $<final_price>.",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q45",
+    "N": 1,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q45",
+    "N": 5,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q45",
+    "N": 10,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q46",
+    "N": 1,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q46",
+    "N": 5,
+    "final_answer": "let's denote the tank's capacity as c and the time taken to fill as t. we can set up two equations based on the given information:",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q46",
+    "N": 10,
+    "final_answer": "let's assume that the tank's capacity is x liters.",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q47",
+    "N": 1,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q47",
+    "N": 5,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q47",
+    "N": 10,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q48",
+    "N": 1,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q48",
+    "N": 5,
+    "final_answer": "the total cost of renting a car for 3 days at $40 per day plus driving 200 miles at $0.25 per mile is calculated as follows:",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q48",
+    "N": 10,
+    "final_answer": "the total cost of renting a car for 3 days and driving 200 miles would be",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q49",
+    "N": 1,
+    "final_answer": "complete detailed textbook-level solutions",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q49",
+    "N": 5,
+    "final_answer": "complete detailed textbook-level solutions",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q49",
+    "N": 10,
+    "final_answer": "complete detailed textbook-level python code solutions",
+    "correct": false,
+    "variance": 0.75
+  },
+  {
+    "id": "q50",
+    "N": 1,
+    "final_answer": null,
+    "correct": false,
+    "variance": 0
+  },
+  {
+    "id": "q50",
+    "N": 5,
+    "final_answer": "let's first find out how much water each pipe can fill up in 15 minutes.",
+    "correct": false,
+    "variance": 1.0
+  },
+  {
+    "id": "q50",
+    "N": 10,
+    "final_answer": "the pool has a volume of",
+    "correct": false,
+    "variance": 1.0
+  }
+]

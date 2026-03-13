@@ -1,0 +1,302 @@
+[
+  {
+    "id": "q1",
+    "output": "6\n\"\"\"",
+    "correct": true,
+    "tokens_used": 50
+  },
+  {
+    "id": "q2",
+    "output": "8",
+    "correct": true,
+    "tokens_used": 50
+  },
+  {
+    "id": "q3",
+    "output": "180 miles\n\n\n# Solution to Question 5\nspeed = 60 # mph\ntime = 3 # hrs\ndistance = speed * time\nprint(f\"The distance traveled is {distance} miles.\")",
+    "correct": true,
+    "tokens_used": 50
+  },
+  {
+    "id": "q4",
+    "output": "__________",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q5",
+    "output": "34 cm\n\"\"\"",
+    "correct": true,
+    "tokens_used": 50
+  },
+  {
+    "id": "q6",
+    "output": "2 dollars",
+    "correct": true,
+    "tokens_used": 50
+  },
+  {
+    "id": "q7",
+    "output": "____\nAnswer: 32",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q8",
+    "output": "30\n\"\"\"",
+    "correct": true,
+    "tokens_used": 50
+  },
+  {
+    "id": "q9",
+    "output": "29  OUTPUT: The solution to this problem can be found using basic arithmetic operations in Python code as follows:\n```python\nresult = (100 - 17) / 3\nprint(result) # Output: 29.666666666666668",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q10",
+    "output": "12 dollars",
+    "correct": true,
+    "tokens_used": 50
+  },
+  {
+    "id": "q11",
+    "output": "25\n\"\"\"",
+    "correct": true,
+    "tokens_used": 50
+  },
+  {
+    "id": "q12",
+    "output": "5/8",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q13",
+    "output": "135 minutes",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q14",
+    "output": "?  OUTPUT: To solve this problem, we can use a proportion to find out how much one toy costs. We know that 5 toys cost $45, so we can set up an equation like this:\n5/1 = 45/",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q15",
+    "output": "24\n\"\"\"",
+    "correct": true,
+    "tokens_used": 50
+  },
+  {
+    "id": "q16",
+    "output": "16  OUTPUT: To solve this problem, we need to follow these steps:\n1. Multiply 12 by 3: 12 x 3 = 36\n2. Subtract 20 from 36: 36 - 20 = 16\nTherefore,",
+    "correct": true,
+    "tokens_used": 50
+  },
+  {
+    "id": "q17",
+    "output": "__________\n\nSolution 0: To find out how many crayons each child gets, we need to divide the total number of crayons by the number of children. This is called division or sharing. We can use a long division",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q18",
+    "output": "No, not necessarily. Just because something is a rose (a type of flower) does not mean it will always be red. There could be other types of roses or non-rose flowers that are also red. Therefore, we cannot make this conclusion",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q19",
+    "output": "Mike",
+    "correct": true,
+    "tokens_used": 50
+  },
+  {
+    "id": "q20",
+    "output": "Yes or No\n\n\n# Solution to Question 1\npremise1 = \"If it rains, then the ground will get wet.\"\npremise2 = \"The ground got wet.\"\nconclusion = \"It rained?\"\nif premise",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q21",
+    "output": "32\n\"\"\"",
+    "correct": true,
+    "tokens_used": 50
+  },
+  {
+    "id": "q22",
+    "output": "Yes",
+    "correct": true,
+    "tokens_used": 50
+  },
+  {
+    "id": "q23",
+    "output": "12\nExplanation: The pattern is that each letter represents a multiple of its position in the alphabet (A=1, B=2, etc.). So we have 1*3 + 2*6 + 3*9 = 36. To",
+    "correct": true,
+    "tokens_used": 50
+  },
+  {
+    "id": "q24",
+    "output": "__________\n\"\"\"",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q25",
+    "output": "1st Place",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q26",
+    "output": "1 minute",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q27",
+    "output": "__________\n\"\"\"",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q28",
+    "output": "The next shape in the sequence is a triangle.",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q29",
+    "output": "No, not all penguins can fly because they cannot fly even though they are birds.",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q30",
+    "output": "L  OUTPUT: The pattern is that each letter represents a different month of the year (January = 1, February = 2, etc.). So, we can assign numbers to each letter as follows:\nJ - 4\nF - 6",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q31",
+    "output": "Tuesday\n\"\"\"",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q32",
+    "output": "12\n\"\"\"",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q33",
+    "output": "DORDEN",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q34",
+    "output": "10 cents\n\"\"\"",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q35",
+    "output": "255",
+    "correct": true,
+    "tokens_used": 50
+  },
+  {
+    "id": "q36",
+    "output": "____ dollars\n\"\"\"",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q37",
+    "output": "250 liters",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q38",
+    "output": "_______\n\"\"\"",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q39",
+    "output": "5\n\"\"\"",
+    "correct": true,
+    "tokens_used": 50
+  },
+  {
+    "id": "q40",
+    "output": "__________\n\"\"\"",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q41",
+    "output": "__________\n\nExercise 2: Solve the following word problems using addition or subtraction. Write your answer with a unit of measurement (e.g., inches, pounds).\n1) If you have 5 apples and give away 3",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q42",
+    "output": "65 km OUTPUT: The correct answer is 65 km. You should have added the distances traveled in each hour to get the total distance. Don't forget that speed times time equals distance",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q43",
+    "output": "____\n\"\"\"",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q44",
+    "output": "__________\n\"\"\"",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q45",
+    "output": "64",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q46",
+    "output": "200 liters remain in the tank.  OUTPUT: To solve this problem, we need to use multiplication and subtraction operations. First, let's find out the total amount of water that can be filled into the tank by multiplying its filling rate",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q47",
+    "output": "__________\n\"\"\"",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q48",
+    "output": "The total cost of renting a car for 3 days at $40 per day with an additional charge of $0.25 per mile driven would be $115.00.",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q49",
+    "output": "The total revenue from selling all the muffins is $135.00.",
+    "correct": false,
+    "tokens_used": 50
+  },
+  {
+    "id": "q50",
+    "output": "__________\n\nSolution 0: To find out how much water each pipe adds to the pool in one minute, we can use multiplication. We multiply the rate of filling (in liters per minute) by 1, which gives us the amount",
+    "correct": false,
+    "tokens_used": 50
+  }
+]
