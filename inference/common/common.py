@@ -1,7 +1,15 @@
 import re
+import os
 from collections import Counter
+from dotenv import load_dotenv
 
-MODEL_NAME = "microsoft/phi-2"
+# Load environment variables from .env file
+load_dotenv()
+
+# Use a free, open-weights model from Hugging Face
+# Mistral-7B is efficient and performs well on reasoning tasks
+MODEL_NAME = os.getenv("MODEL_NAME", "mistralai/Mistral-7B-Instruct-v0.2")
+HF_TOKEN = os.getenv("HF_TOKEN")
 
 def extract_final_answer(text: str):
     match = re.search(r"Final Answer:\s*(.*)", text, re.IGNORECASE)
