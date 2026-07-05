@@ -1,7 +1,6 @@
 #!/bin/bash
 
-python inference/baseline.py
-python inference/chain_of_thought.py
-python inference/self_consistency.py
-python inference/adaptive.py
-
+./venv/bin/python run_experiment.py \
+  --dataset-path data/tasks.json \
+  --dataset-name prototype_v1 \
+  --strategies baseline chain_of_thought adaptive self_consistency

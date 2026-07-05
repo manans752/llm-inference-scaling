@@ -1,1 +1,16 @@
 .env
+.DS_Store
+.idea/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+venv/
+results/
+!results/.gitkeep
+data/benchmarks/.hf_cache/
+data/benchmarks/.hf_cache*
+data/test_tasks.json
+baseline_api_results.csv
+inference/baseline_api_results.csv
