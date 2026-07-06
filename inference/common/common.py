@@ -1,108 +1,12 @@
-import re
-import os
-from collections import Counter
-from dotenv import load_dotenv
+"""Backward-compatible exports for legacy scripts."""
 
-# Load environment variables from .env file
-load_dotenv()
+from inference.common.evaluation import (
+    answers_match,
+    evaluate_output,
+    extract_final_answer,
+    is_valid_answer,
+    low_confidence,
+    majority_vote,
+    normalize_text as normalise,
+)
 
-# Use a free, open-weights model from Hugging Face
-# Mistral-7B is efficient and performs well on reasoning tasks
-MODEL_NAME = os.getenv("MODEL_NAME", "mistralai/Mistral-7B-Instruct-v0.2")
-HF_TOKEN = os.getenv("HF_TOKEN")
-
-def extract_final_answer(text: str):
-    match = re.search(r"Final Answer:\s*(.*)", text, re.IGNORECASE)
-    if match:
-        return match.group(1).strip()
-
-    # fallback: skip junk lines like "Question:" or "Problem:"
-    lines = [l.strip() for l in text.split("\n") if l.strip()]
-    for line in lines:
-        if line.lower().startswith("question"):
-            continue
-        if line.lower().startswith("problem"):
-            continue
-        return line
-
-    return None
-
-def normalise(ans: str):  # yes = YES
-    if ans is None:
-        return None
-    return ans.strip().lower()
-
-def answers_match(pred: str, target_answer: str):  # ensure semantically equal answers are not marked false
-    if pred is None or target_answer is None:
-        return False
-
-    pred = pred.strip().lower()
-    target_answer = target_answer.strip().lower()
-
-    # target_answer is numeric
-    if target_answer.replace(".", "", 1).isdigit():
-        # extract first number from prediction
-        match = re.search(r"-?\d+(\.\d+)?", pred)
-        if match:
-            pred_num = match.group(0)
-            return pred_num == target_answer
-        return False
-
-    # target_answer is text
-    pred = re.sub(r"[^a-z0-9]", "", pred)
-    target_answer = re.sub(r"[^a-z0-9]", "", target_answer)
-
-    return pred == target_answer
-
-def is_valid_answer(ans: str):
-    if ans is None:
-        return False
-
-    ans = ans.strip().lower()
-
-    # reject placeholders
-    if "<answer>" in ans or "<option>" in ans:
-        return False
-
-    # reject reasoning-like outputs
-    bad_starts = ["to find", "let x", "step", "a farmer", "question"]
-    if any(ans.startswith(b) for b in bad_starts):
-        return False
-
-    return True
-
-def majority_vote(predictions):
-    predictions = [p for p in predictions if p is not None and p != ""]
-    if len(predictions) == 0:
-        return None
-
-    vote = Counter(predictions)
-    return vote.most_common(1)[0][0]
-
-def low_confidence(output: str):
-    ans = extract_final_answer(output)
-    if ans is None:
-        return True
-
-    ans = ans.strip().lower()
-
-    if len(ans) == 0:
-        return True
-
-    # placeholder / junk outputs
-    bad_markers = [
-        "<show",
-        "<answer>",
-        "<option>",
-        "step",
-        "solution",
-        "divide",
-        "let x",
-        "|question_end|"
-    ]
-    if any(b in ans for b in bad_markers):
-        return True
-
-    # answer too long (rambling)
-    if len(ans.split()) > 6:
-        return True

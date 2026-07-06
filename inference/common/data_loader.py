@@ -1,11 +1,4 @@
-import json
-from pathlib import Path
+"""Backward-compatible dataset loader exports."""
 
-HERE = Path(__file__).parent
-PATH_TO_TASKS = HERE.parent / "data" / "tasks.json"
+from inference.common.datasets import load_tasks
 
-def load_tasks():
-    with PATH_TO_TASKS.open("r", encoding="utf-8") as f:
-        tasks = json.load(f)
-    print(f"Confirm loaded {len(tasks)} tasks.")
-    return tasks
