@@ -1,0 +1,502 @@
+[
+  {
+    "id": "q1",
+    "question": "If Alice has 3 apples and buys 5 more, then gives away 2, how many does she have?",
+    "answer": "6",
+    "category": "word_problem",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q2",
+    "question": "A baker makes 48 cookies and packs them into boxes of 6. How many boxes does he need?",
+    "answer": "8",
+    "category": "word_problem",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q3",
+    "question": "If a car travels 60 miles per hour for 3 hours, how far does it go?",
+    "answer": "180",
+    "category": "arithmetic",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q4",
+    "question": "Sarah has $50. She spends $12 on lunch and $8 on a book. How much money does she have left?",
+    "answer": "30",
+    "category": "word_problem",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q5",
+    "question": "A rectangle has a length of 12 cm and width of 5 cm. What is its perimeter?",
+    "answer": "34",
+    "category": "arithmetic",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q6",
+    "question": "If 7 pencils cost $14, how much does one pencil cost?",
+    "answer": "2",
+    "category": "arithmetic",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q7",
+    "question": "Tom has 25 marbles. He gets 15 more from his friend and loses 8. How many marbles does he have now?",
+    "answer": "32",
+    "category": "word_problem",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q8",
+    "question": "A classroom has 6 rows of desks with 5 desks in each row. How many desks are there in total?",
+    "answer": "30",
+    "category": "word_problem",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q9",
+    "question": "If you subtract 17 from 100 and then divide by 3, what is the result?",
+    "answer": "27.67",
+    "category": "arithmetic",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q10",
+    "question": "A store sells notebooks for $3 each. If you buy 4 notebooks, how much do you pay?",
+    "answer": "12",
+    "category": "word_problem",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q11",
+    "question": "What is the average of 10, 20, 30, and 40?",
+    "answer": "25",
+    "category": "arithmetic",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q12",
+    "question": "If a pizza is cut into 8 slices and you eat 3 slices, what fraction of the pizza remains?",
+    "answer": "0.625",
+    "category": "arithmetic",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q13",
+    "question": "A train leaves at 9:15 AM and arrives at 11:45 AM. How many minutes was the journey?",
+    "answer": "150",
+    "category": "word_problem",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q14",
+    "question": "If 5 toys cost $45, how much would 8 toys cost?",
+    "answer": "72",
+    "category": "arithmetic",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q15",
+    "question": "A triangle has sides of length 7, 8, and 9. What is its perimeter?",
+    "answer": "24",
+    "category": "arithmetic",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q16",
+    "question": "If you triple 12 and then subtract 20, what number do you get?",
+    "answer": "16",
+    "category": "arithmetic",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q17",
+    "question": "A box contains 144 crayons. If they are divided equally among 12 children, how many does each child get?",
+    "answer": "12",
+    "category": "arithmetic",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q18",
+    "question": "If all roses are flowers and some flowers are red, can we conclude that all roses are red?",
+    "answer": "No",
+    "category": "logical_reasoning",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q19",
+    "question": "Tom is taller than Jerry. Jerry is taller than Mike. Who is the shortest?",
+    "answer": "Mike",
+    "category": "word_problem",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q20",
+    "question": "If it rains, the ground gets wet. The ground is wet. Did it necessarily rain?",
+    "answer": "No",
+    "category": "logical_reasoning",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q21",
+    "question": "In a sequence: 2, 4, 8, 16, ... what is the next number?",
+    "answer": "32",
+    "category": "pattern_reasoning",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q22",
+    "question": "If no cats are dogs and all dogs are animals, are some animals cats?",
+    "answer": "Yes",
+    "category": "logical_reasoning",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q23",
+    "question": "A = 3, B = 6, C = 9. What is the pattern and what should D equal?",
+    "answer": "12",
+    "category": "pattern_reasoning",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q24",
+    "question": "If Monday comes before Tuesday and Wednesday comes after Tuesday, which day is in the middle?",
+    "answer": "Tuesday",
+    "category": "pattern_reasoning",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q25",
+    "question": "In a race, you pass the person in second place. What place are you in now?",
+    "answer": "Second",
+    "category": "word_problem",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q26",
+    "question": "If 5 machines take 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?",
+    "answer": "5",
+    "category": "word_problem",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q27",
+    "question": "True or False: If A > B and B > C, then A > C?",
+    "answer": "True",
+    "category": "logical_reasoning",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q28",
+    "question": "Complete the pattern: Circle, Square, Triangle, Circle, Square, ___?",
+    "answer": "Triangle",
+    "category": "pattern_reasoning",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q29",
+    "question": "If some birds can fly and penguins are birds, can all penguins fly?",
+    "answer": "No",
+    "category": "word_problem",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q30",
+    "question": "What comes next in this sequence: J, F, M, A, M, J, ___?",
+    "answer": "J",
+    "category": "pattern_reasoning",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q31",
+    "question": "If today is Wednesday, what day was it 10 days ago?",
+    "answer": "Sunday",
+    "category": "word_problem",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q32",
+    "question": "In a family, there are 6 daughters and each daughter has 1 brother. How many children are in the family?",
+    "answer": "7",
+    "category": "word_problem",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q33",
+    "question": "If you rearrange the letters in NEW DOOR, you get one word. What is it?",
+    "answer": "ONE WORD",
+    "category": "word_problem",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q34",
+    "question": "A bat and ball cost $1.10 together. The bat costs $1 more than the ball. How much does the ball cost?",
+    "answer": "0.05",
+    "category": "arithmetic",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q35",
+    "question": "A store has 240 apples. They sell 60 in the morning and 45 in the afternoon. Then they receive a delivery of 120 apples. How many apples do they have now?",
+    "answer": "255",
+    "category": "word_problem",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q36",
+    "question": "John earns $15 per hour and works 8 hours a day for 5 days. If he saves 20% of his earnings, how much does he save?",
+    "answer": "120",
+    "category": "word_problem",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q37",
+    "question": "A tank contains 500 liters of water. 150 liters leak out, then 200 liters are added, and finally 100 liters are used. How much water remains?",
+    "answer": "450",
+    "category": "word_problem",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q38",
+    "question": "Maria buys 3 shirts at $25 each and 2 pairs of pants at $40 each. If she pays with $200, how much change does she receive?",
+    "answer": "45",
+    "category": "word_problem",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q39",
+    "question": "A recipe needs 2 cups of flour for 12 cookies. How many cups of flour are needed for 30 cookies?",
+    "answer": "5",
+    "category": "word_problem",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q40",
+    "question": "A garden is 15 meters long and 8 meters wide. If fencing costs $12 per meter, how much does it cost to fence the entire garden?",
+    "answer": "552",
+    "category": "arithmetic",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q41",
+    "question": "A bookstore sells 35 books on Monday, twice as many on Tuesday, and 20 fewer than Tuesday on Wednesday. How many books were sold in total?",
+    "answer": "155",
+    "category": "word_problem",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q42",
+    "question": "A cyclist rides at 20 km/h for 2 hours, then at 15 km/h for 3 hours. What is the total distance covered?",
+    "answer": "85",
+    "category": "word_problem",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q43",
+    "question": "In a class of 30 students, 18 play soccer, 12 play basketball, and 5 play both. How many students play neither sport?",
+    "answer": "5",
+    "category": "word_problem",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q44",
+    "question": "A phone costs $600. During a sale, it's discounted by 25%. Then an additional 10% off is applied to the sale price. What is the final price?",
+    "answer": "405",
+    "category": "arithmetic",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q45",
+    "question": "A farmer has 24 chickens and 8 cows. Each chicken has 2 legs and each cow has 4 legs. How many legs are there in total?",
+    "answer": "80",
+    "category": "word_problem",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q46",
+    "question": "A water tank fills at a rate of 30 liters per minute. If it takes 8 minutes to fill, what is the tank's capacity? Then if 100 liters are drained, how much remains?",
+    "answer": "140",
+    "category": "word_problem",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q47",
+    "question": "Emily has $150. She spends 1/3 of it on groceries and 1/5 of the remainder on gas. How much money does she have left?",
+    "answer": "80",
+    "category": "word_problem",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q48",
+    "question": "A car rental costs $40 per day plus $0.25 per mile. If you rent for 3 days and drive 200 miles, what is the total cost?",
+    "answer": "170",
+    "category": "arithmetic",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q49",
+    "question": "A bakery makes 80 muffins. They sell 3/4 of them in the morning at $2 each and the rest in the afternoon at $1.50 each. What is the total revenue?",
+    "answer": "150",
+    "category": "word_problem",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  },
+  {
+    "id": "q50",
+    "question": "A pool is being filled by two pipes. Pipe A fills at 50 liters/minute and Pipe B at 30 liters/minute. If both run for 15 minutes, how many liters are in the pool?",
+    "answer": "1200",
+    "category": "word_problem",
+    "source": "prototype_v1",
+    "metadata": {
+      "dataset_version": "v1_prototype"
+    }
+  }
+]

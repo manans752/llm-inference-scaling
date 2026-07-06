@@ -94,11 +94,12 @@ def _extract_api_generated_text(payload: Any) -> tuple[str, dict[str, Any]]:
 def _generate_huggingface_api(model: HuggingFaceAPIModel, prompt: str, generation_config: GenerationConfig) -> dict[str, Any]:
     start = time.perf_counter()
     mode_used = model.task_mode
+    model_arg = {} if model.endpoint_url else {"model": model.model_name}
 
     def run_text_generation() -> Any:
         return model.client.text_generation(
             prompt,
-            model=model.model_name,
+            **model_arg,
             details=True,
             do_sample=generation_config.do_sample,
             max_new_tokens=generation_config.max_new_tokens,
@@ -111,7 +112,7 @@ def _generate_huggingface_api(model: HuggingFaceAPIModel, prompt: str, generatio
     def run_chat_completion() -> Any:
         return model.client.chat_completion(
             messages=[{"role": "user", "content": prompt}],
-            model=model.model_name,
+            **model_arg,
             max_tokens=generation_config.max_new_tokens,
             temperature=generation_config.temperature if generation_config.do_sample else None,
             top_p=generation_config.top_p if generation_config.do_sample else None,

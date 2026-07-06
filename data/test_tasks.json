@@ -1,0 +1,17 @@
+[
+  {
+    "id": "q1",
+    "question": "If Alice has 3 apples and buys 5 more, then gives away 2, how many does she have?",
+    "answer": 6
+  },
+  {
+    "id": "q2",
+    "question": "A baker makes 48 cookies and packs them into boxes of 6. How many boxes does he need?",
+    "answer": 8
+  },
+  {
+    "id": "q3",
+    "question": "If a car travels 60 miles per hour for 3 hours, how far does it go?",
+    "answer": 180
+  }
+]
