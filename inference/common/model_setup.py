@@ -3,8 +3,8 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Any
 
-import requests
 import torch
+from huggingface_hub import InferenceClient
 from transformers import AutoConfig, AutoModelForCausalLM, AutoTokenizer
 
 from inference.common.config import ModelRuntimeConfig
@@ -13,22 +13,14 @@ from inference.common.config import ModelRuntimeConfig
 @dataclass
 class HuggingFaceAPIModel:
     model_name: str
+    provider: str
+    task_mode: str
     api_base_url: str
     token: str | None
     timeout_seconds: int
     wait_for_model: bool
+    client: InferenceClient
     backend: str = "huggingface_api"
-
-    @property
-    def endpoint(self) -> str:
-        base_url = self.api_base_url.rstrip("/")
-        return f"{base_url}/{self.model_name}"
-
-    def build_headers(self) -> dict[str, str]:
-        headers = {"Content-Type": "application/json"}
-        if self.token:
-            headers["Authorization"] = f"Bearer {self.token}"
-        return headers
 
 
 def resolve_device(runtime_config: ModelRuntimeConfig) -> str:
@@ -76,10 +68,17 @@ def load_model(runtime_config: ModelRuntimeConfig, tokenizer: Any) -> Any:
     if runtime_config.backend == "huggingface_api":
         return HuggingFaceAPIModel(
             model_name=runtime_config.api_model_name,
+            provider=runtime_config.api_provider,
+            task_mode=runtime_config.api_task_mode,
             api_base_url=runtime_config.api_base_url,
             token=runtime_config.hf_token,
             timeout_seconds=runtime_config.api_timeout_seconds,
             wait_for_model=runtime_config.api_wait_for_model,
+            client=InferenceClient(
+                provider=runtime_config.api_provider,
+                api_key=runtime_config.hf_token,
+                timeout=runtime_config.api_timeout_seconds,
+            ),
         )
 
     device = resolve_device(runtime_config)
@@ -102,11 +101,3 @@ def load_model(runtime_config: ModelRuntimeConfig, tokenizer: Any) -> Any:
     model.to(device)
     model.eval()
     return model
-
-
-def ensure_api_response_ok(response: requests.Response) -> dict[str, Any] | list[Any]:
-    response.raise_for_status()
-    payload = response.json()
-    if isinstance(payload, dict) and payload.get("error"):
-        raise RuntimeError(f"Hugging Face API error: {payload['error']}")
-    return payload

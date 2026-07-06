@@ -5,11 +5,13 @@ import re
 import time
 from typing import Any
 
-import requests
 import torch
+from huggingface_hub.errors import BadRequestError
+from huggingface_hub.inference._generated.types.chat_completion import ChatCompletionOutput
+from huggingface_hub.inference._generated.types.text_generation import TextGenerationOutput
 
 from inference.common.config import GenerationConfig
-from inference.common.model_setup import HuggingFaceAPIModel, ensure_api_response_ok
+from inference.common.model_setup import HuggingFaceAPIModel
 
 
 def _estimate_token_count(text: str) -> int:
@@ -51,7 +53,24 @@ def _generate_local(model: Any, tokenizer: Any, prompt: str, generation_config: 
     }
 
 
-def _extract_api_generated_text(payload: dict[str, Any] | list[Any]) -> tuple[str, dict[str, Any]]:
+def _extract_api_generated_text(payload: Any) -> tuple[str, dict[str, Any]]:
+    if isinstance(payload, TextGenerationOutput):
+        details = payload.details
+        return payload.generated_text, {
+            "generated_tokens": getattr(details, "generated_tokens", None),
+            "prefill": getattr(details, "prefill", None),
+        }
+
+    if isinstance(payload, ChatCompletionOutput):
+        first_choice = payload.choices[0]
+        content = first_choice.message.content or ""
+        usage = payload.usage
+        return str(content), {
+            "generated_tokens": getattr(usage, "completion_tokens", None),
+            "prompt_tokens": getattr(usage, "prompt_tokens", None),
+            "total_tokens": getattr(usage, "total_tokens", None),
+        }
+
     if isinstance(payload, list):
         first = payload[0] if payload else {}
         if not isinstance(first, dict):
@@ -73,44 +92,66 @@ def _extract_api_generated_text(payload: dict[str, Any] | list[Any]) -> tuple[st
 
 
 def _generate_huggingface_api(model: HuggingFaceAPIModel, prompt: str, generation_config: GenerationConfig) -> dict[str, Any]:
-    payload = {
-        "inputs": prompt,
-        "parameters": {
-            "max_new_tokens": generation_config.max_new_tokens,
-            "do_sample": generation_config.do_sample,
-            "temperature": generation_config.temperature,
-            "top_p": generation_config.top_p,
-            "repetition_penalty": generation_config.repetition_penalty,
-            "return_full_text": False,
-            "details": True,
-        },
-        "options": {
-            "wait_for_model": model.wait_for_model,
-            "use_cache": False,
-        },
-    }
-
     start = time.perf_counter()
-    response = requests.post(
-        model.endpoint,
-        headers=model.build_headers(),
-        json=payload,
-        timeout=model.timeout_seconds,
-    )
-    duration = time.perf_counter() - start
-    parsed_payload = ensure_api_response_ok(response)
-    generated_text, details = _extract_api_generated_text(parsed_payload)
+    mode_used = model.task_mode
 
-    prompt_tokens = int(details.get("prefill", []) and len(details["prefill"]) or _estimate_token_count(prompt))
-    generated_tokens = int(details.get("generated_tokens", _estimate_token_count(generated_text)))
+    def run_text_generation() -> Any:
+        return model.client.text_generation(
+            prompt,
+            model=model.model_name,
+            details=True,
+            do_sample=generation_config.do_sample,
+            max_new_tokens=generation_config.max_new_tokens,
+            repetition_penalty=generation_config.repetition_penalty,
+            return_full_text=False,
+            temperature=generation_config.temperature if generation_config.do_sample else None,
+            top_p=generation_config.top_p if generation_config.do_sample else None,
+        )
+
+    def run_chat_completion() -> Any:
+        return model.client.chat_completion(
+            messages=[{"role": "user", "content": prompt}],
+            model=model.model_name,
+            max_tokens=generation_config.max_new_tokens,
+            temperature=generation_config.temperature if generation_config.do_sample else None,
+            top_p=generation_config.top_p if generation_config.do_sample else None,
+        )
+
+    if model.task_mode == "chat_completion":
+        payload = run_chat_completion()
+        mode_used = "chat_completion"
+    else:
+        try:
+            payload = run_text_generation()
+            mode_used = "text_generation"
+        except (ValueError, BadRequestError) as exc:
+            error_text = str(exc).lower()
+            if model.task_mode == "text_generation":
+                raise
+            if "supported task: conversational" not in error_text and "chat-completion" not in error_text and "conversational" not in error_text:
+                raise
+            payload = run_chat_completion()
+            mode_used = "chat_completion"
+
+    duration = time.perf_counter() - start
+    generated_text, details = _extract_api_generated_text(payload)
+
+    prompt_tokens = int(
+        details.get("prompt_tokens")
+        or (details.get("prefill", []) and len(details["prefill"]))
+        or _estimate_token_count(prompt)
+    )
+    generated_tokens = int(details.get("generated_tokens") or _estimate_token_count(generated_text))
+    total_tokens = int(details.get("total_tokens") or (prompt_tokens + generated_tokens))
 
     return {
         "text": generated_text.strip(),
         "prompt_tokens": prompt_tokens,
         "generated_tokens": generated_tokens,
-        "total_tokens": prompt_tokens + generated_tokens,
+        "total_tokens": total_tokens,
         "latency_seconds": duration,
         "token_count_source": "api_details" if details else "estimated",
+        "api_task_mode_used": mode_used,
     }
 
 
