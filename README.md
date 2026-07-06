@@ -1,6 +1,5 @@
 **Built a local LLM benchmarking pipeline that compares inference-time scaling strategies across prototype and benchmark reasoning datasets, tracking accuracy, token cost, latency, and failure modes to evaluate efficient small-model deployment.**
 
-**Built a local LLM benchmarking pipeline that compares inference-time scaling strategies across prototype and benchmark reasoning datasets, tracking accuracy, token cost, latency, and failure modes to evaluate efficient small-model deployment.**
 # Inference-Time Scaling for Local LLM Reasoning
 
 <p align="center">
@@ -66,7 +65,8 @@ The main benchmark run is `results/v2_qwen_gsm8k_50`, a 50-question GSM8K subset
 | Self-consistency | `0.05` | `770.88` | `13.41s` | `0.00065` |
 
 **Takeaway:** extra inference-time compute did not meaningfully improve GSM8K accuracy for a 0.5B local model, but the pipeline made that limitation measurable and reproducible.
-[V2 Strategy Overview](/analysis/readme_v2_strategy_overview.png)
+
+[Figure 1: V2 Strategy Overview](/analysis/readme_v2_strategy_overview.png)
 
 ```mermaid
 flowchart LR
@@ -97,7 +97,7 @@ Two especially relevant references:
 This repo complements that line of work by asking a narrower but very practical question:
 
 > What happens when we apply inference-time scaling ideas to a tiny, locally deployable model under free and privacy-preserving constraints?
-[Error Type Distribution on GSM8K-50](/analysis/readme_budget_sweep_gsm8k50.png)
+[Figure 2: Error Type Distribution on GSM8K-50](/analysis/readme_budget_sweep_gsm8k50.png)
 ## Run It
 
 ### 1. Install dependencies
