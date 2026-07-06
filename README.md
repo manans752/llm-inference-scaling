@@ -1,3 +1,6 @@
+**Built a local LLM benchmarking pipeline that compares inference-time scaling strategies across prototype and benchmark reasoning datasets, tracking accuracy, token cost, latency, and failure modes to evaluate efficient small-model deployment.**
+
+
 This project explores inference-time scaling strategies and reasoning control mechanisms for LLMs.
 Open-source LMs are smaller, easier to train, and, importantly, don't involve your sensitive data being sent out to a closed source entity.
 Consequently, these smaller models don't have the immediate performance of larger language models.
